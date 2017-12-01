@@ -50,6 +50,21 @@ shufti.documentVerification(method: "type of method for verification",
 
 > **Note:** Run project on real device.
 
+## Parameters 
+
+| Parameter | Card Verification | Documents Verification | Description
+| ------ | ------ | ------ | ------ |
+| method | Not required | Required | Which type of verification would you like for your   customers? <br> Possible   values: <br> <ul><li> passport </li><li> driving_license </li><li> id_card</li></ul> |
+| clientId | Required | Required | Client’s ID provided by Shufti Pro. |
+| secretKey | Required | Required | Secret Key provided by Shufti Pro. |
+| parentVC | Required | Required | Your viewController from where you want to open Shufti Pro |
+| cardFirst6Digits | Required | Not required | First 6 digits of the customer’s credit/debit card number. The maximum and the minimum length required is 6 digits. |
+| cardLast4Digits | Required | Not required | Last 4 digits of the customer’s credit/debit card number. The maximum and the minimum length required is 4 digits. |
+| firstName | Not required | Required | Customer’s First Name. The maximum length of the string is 32 characters and minimum required length is 2 characters. |
+| lastName | Not required | Required | Customer’s Last Name. The maximum length of the string is 32 characters and minimum required length is 2 characters. |
+| dob | Not required | Required | Customer’s date of birth (YYYY-MM-DD). Example: 1980-01-31 |
+| country | Required | Required | Full Country name or ISO2 Code . Example: United Kingdom or GB. |
+| phoneNumber | Required | Required | Customer’s phone number with country code.Example: +440000000000 |
 
 ## Contact
 If you have any questions/queries regarding implementation SDK please feel free to contact ShuftiPro customer service
