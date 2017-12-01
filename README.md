@@ -18,7 +18,7 @@ Supported architectures in SDK:
 3.	Add “ShuftiPro.framework” in Embeded Binaries.
 
 ## Permissions:
-Application Info.plist must contain an **NSCameraUsageDescription** key with a explanation to end-user about how the app uses this data.
+Application Info.plist must contain an **Privacy - Camera Usage Description** key with a explanation to end-user about how the app uses this data.
 
 ## Integration: 
 See the sample project provided to learn the most common use. Make sure to build on real device.
@@ -33,7 +33,7 @@ let instance = Shuftipro(clientId: "your-clientId",
 ```
 For **Debit/Credit Card** verification
 ```sh
-shufti.creditCardVerification(country: "your country",
+instance.creditCardVerification(country: "your country",
                                       cardFirst6Digits: "your cardFirst6Digits",
                                       cardLast4Digits: "your cardLast4Digits",
                                       phoneNumber: "phoneNumber")
@@ -51,7 +51,7 @@ shufti.creditCardVerification(country: "your country",
 
 For **Document** verification (Methods: "**driving_license**" or "**passport**" or "**id_card**")
 ```sh
-shufti.documentVerification(method: "type of method for verification",
+instance.documentVerification(method: "type of method for verification",
                             firstName: "your first name",
                             lastName: "your last name",
                             dob: "yyyy-mm-dd",
