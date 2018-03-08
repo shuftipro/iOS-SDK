@@ -3,10 +3,24 @@
 # What Is This?
 Shufti Pro is a SaaS, that provides quick and accurate digital identity and document verification. E-KYC using government-issued documents like ID card, passport, driving license and even credit/debit cards, etc. has never been easier. Shufti Pro allows for simple and easy ID checks online, securing the virtual trading platforms and FinTech institutions against scams, frauds and money launderers.
 
+# Table of contents
+* [Basic Setup](#basic-setup)
+* [General Requirements](#general-requirements)
+* [SDK Installation Guide](#sdk-installation-guide)
+* [Permissions](#permissions)
+* [Integration](#integration)
+* [Verifications](#verifications)
+  * [Identity Verification](#identity-verification)
+  * [Card Present Verification](#card-present-verification)
+* [Response Status Codes](#response-status-codes)
+* [Sample Project Setup](#sample-project-setup)
+* [Contact](#contact)
+* [Copyright](#copyright)
+
 # Basic Setup
 ## General Requirements
 Followings are minimum requirements for SDK:
-- iOS 10.0 and higher
+- iOS 8.0 and higher
 - Internet connection
 
 Supported architectures in SDK:
@@ -20,6 +34,11 @@ Supported architectures in SDK:
 ## Permissions:
 Application Info.plist must contain an **Privacy - Camera Usage Description** key with a explanation to end-user about how the app uses this data.
 
+## Verifications:
+Shufti Pro supports two modes of verification:<br />
+**1. Identity Verification**<br />
+**2. Card Present Verification**
+
 ## Integration: 
 See the sample project provided to learn the most common use. Make sure to build on real device.
 ```sh
@@ -31,7 +50,8 @@ let instance = Shuftipro(clientId: "your-clientId",
                                secretKey: "your-secretKey",
                                parentVC: your viewController from where you want to open ShuftiPro)
 ```
-For **Debit/Credit Card** verification
+## Card Present Verification
+For **Card Present** verification
 ```sh
 instance.creditCardVerification(country: "your country",
                                       cardFirst6Digits: "your cardFirst6Digits",
@@ -48,7 +68,7 @@ instance.creditCardVerification(country: "your country",
 ```
 
 
-## Request Parameters 
+#### Request Parameters 
 
 | Parameter | Description |
 | ------ | ------ |
@@ -57,7 +77,8 @@ instance.creditCardVerification(country: "your country",
 | country | Full Country name or ISO2 Code . Example: United Kingdom or GB. |
 | phoneNumber | Customer’s phone number with country code. Example: +440000000000 |
 
-For **Document** verification (Methods: "**driving_license**" or "**passport**" or "**id_card**")
+## Identity Verification
+For **Identity** verification using ID documents (Methods: "**driving_license**" or "**passport**" or "**id_card**")
 ```sh
 instance.documentVerification(method: "type of method for verification",
                             firstName: "your first name",
@@ -77,7 +98,7 @@ instance.documentVerification(method: "type of method for verification",
 
 > **Note:** Run project on real device.
 
-## Request Parameters 
+#### Request Parameters 
 
 | Parameter | Description |
 | ------ | ------ |
@@ -110,9 +131,12 @@ instance.documentVerification(method: "type of method for verification",
 | SP26 | User has been landed on verification page |
 | SP27 | Request is already processed |
 
+## Sample project setup
+In ViewController.swift add your **Client ID** on line 14 and **Secret Key** on line 15, thats it!
+> **Note:** Run project on real device.
 
 ## Contact
-If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com)
+If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com).
 
 ## Copyright
-2016-17 © ShuftiPro Ltd.
+2016-17 © Shufti Pro Ltd.
