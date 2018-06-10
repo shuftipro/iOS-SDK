@@ -12,8 +12,8 @@
 		9F4AAAF4203D643200ADA681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4AAAF2203D643200ADA681 /* Main.storyboard */; };
 		9F4AAAF6203D643200ADA681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4AAAF5203D643200ADA681 /* Assets.xcassets */; };
 		9F4AAAF9203D643200ADA681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4AAAF7203D643200ADA681 /* LaunchScreen.storyboard */; };
-		9F4AAB01203D647C00ADA681 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4AAB00203D647C00ADA681 /* ShuftiPro.framework */; };
-		9F4AAB02203D647C00ADA681 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4AAB00203D647C00ADA681 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F8776A420CD9994000EF374 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8776A320CD9994000EF374 /* ShuftiPro.framework */; };
+		9F8776A520CD9994000EF374 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8776A320CD9994000EF374 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FC1E214203EA4480042DEC0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1E213203EA4480042DEC0 /* FirstViewController.swift */; };
 		9FC1E216203EAEA00042DEC0 /* CurvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1E215203EAEA00042DEC0 /* CurvedView.swift */; };
 		9FC1E218203EBC0F0042DEC0 /* ElementShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1E217203EBC0F0042DEC0 /* ElementShadow.swift */; };
@@ -32,7 +32,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F4AAB02203D647C00ADA681 /* ShuftiPro.framework in Embed Frameworks */,
+				9F8776A520CD9994000EF374 /* ShuftiPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +47,7 @@
 		9F4AAAF5203D643200ADA681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4AAAF8203D643200ADA681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4AAAFA203D643200ADA681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F4AAB00203D647C00ADA681 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
+		9F8776A320CD9994000EF374 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
 		9FC1E213203EA4480042DEC0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		9FC1E215203EAEA00042DEC0 /* CurvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedView.swift; sourceTree = "<group>"; };
 		9FC1E217203EBC0F0042DEC0 /* ElementShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementShadow.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4AAB01203D647C00ADA681 /* ShuftiPro.framework in Frameworks */,
+				9F8776A420CD9994000EF374 /* ShuftiPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 		9F4AAAE2203D643200ADA681 = {
 			isa = PBXGroup;
 			children = (
-				9F4AAB00203D647C00ADA681 /* ShuftiPro.framework */,
+				9F8776A320CD9994000EF374 /* ShuftiPro.framework */,
 				9F4AAAED203D643200ADA681 /* Sample */,
 				9FC1E222203F30A20042DEC0 /* TPKeyboardAvoidingCollectionView.h */,
 				9FC1E223203F30A20042DEC0 /* TPKeyboardAvoidingCollectionView.m */,
@@ -156,7 +156,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Programmers Force";
 				TargetAttributes = {
 					9F4AAAEA203D643200ADA681 = {
@@ -252,6 +252,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -259,6 +260,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -309,6 +311,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -316,6 +319,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -357,7 +361,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Sample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.programmersforce.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -380,7 +384,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Sample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.programmersforce.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
