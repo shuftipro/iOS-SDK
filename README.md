@@ -58,11 +58,12 @@ instance.creditCardVerification(country: "your country",
                                       cardLast4Digits: "your cardLast4Digits",
                                       phoneNumber: "phoneNumber") { 
     (result: Any) in
+    print(result) // Callback response for verification verified/declined
     let reponse = result as! NSDictionary
     if reponse.value(forKey: "status_code") as! String == "SP1" {
-        print("Verified")
+        // Verified: Do something
     }else{
-        print(reponse.value(forKey: "message") as! String)
+        // Declined: Do something
     }
 }
 ```
@@ -87,11 +88,12 @@ instance.documentVerification(method: "type of method for verification",
                             country: "your country",
                             phoneNumber: "your phone number") { 
     (result: Any) in
+    print(result) // Callback response for verification verified/declined
     let reponse = result as! NSDictionary
     if reponse.value(forKey: "status_code") as! String == "SP1" {
-        print("Verified")
+        // Verified: Do something
     }else{
-        print(reponse.value(forKey: "message") as! String)
+        // Declined: Do something
     }
 }
 ```

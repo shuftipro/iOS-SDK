@@ -52,12 +52,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         varify.creditCardVerification(country: countryField.text!, cardFirst6Digits: cardSixDigits.text!, cardLast4Digits: card4Digits.text!, phoneNumber: phoneField.text!){
             (result: Any) in
             
+            print(result) // Callback response for verification verified/declined
             let reponse = result as! NSDictionary
             if reponse.value(forKey: "status_code") as! String == "SP1" {
-                print("Verified")
+                // Verified: Do something
             }else{
-                //print(reponse.value(forKey: "message") as! String)
-                print(result)
+                // Declined: Do something
             }
         }
     }
@@ -69,12 +69,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         varify.documentVerification(method: selectedMethod, firstName: fnameField.text!, lastName: lnameField.text!, dob: dobField.text!, country: countryFieldForDoc.text!, phoneNumber: phoneFieldForDoc.text!){
             (result: Any) in
             
+            print(result) // Callback response for verification verified/declined
             let reponse = result as! NSDictionary
             if reponse.value(forKey: "status_code") as! String == "SP1" {
-                print("Verified")
+                // Verified: Do something
             }else{
-                //print(reponse.value(forKey: "message") as! String)
-                print(result)
+                // Declined: Do something
             }
         }
     }
