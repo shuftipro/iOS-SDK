@@ -49,6 +49,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBAction func cardVerificationBtnClicked(_ sender: Any) {
         let varify = Shuftipro(clientId: clientIdString, secretKey: secretKeyString, parentVC: self)
+        varify.topBarColor = "" //Hex Color Code
+        varify.topBarTextColor = "" //Hex Color Code
+        varify.bottomBarColor = "" //Hex Color Code
+        varify.bottomBarTextColor = "" //Hex Color Code
+        varify.progressBarColor = "" //Hex Color Code
+        varify.activityIndicatorColor = "" //Hex Color Code
         varify.creditCardVerification(country: countryField.text!, cardFirst6Digits: cardSixDigits.text!, cardLast4Digits: card4Digits.text!, phoneNumber: phoneField.text!){
             (result: Any) in
             
@@ -66,6 +72,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBAction func docVerificationBtnClicked(_ sender: Any) {
         
         let varify = Shuftipro(clientId: clientIdString, secretKey: secretKeyString, parentVC: self)
+        varify.topBarColor = "" //Hex Color Code
+        varify.topBarTextColor = "" //Hex Color Code
+        varify.bottomBarColor = "" //Hex Color Code
+        varify.bottomBarTextColor = "" //Hex Color Code
+        varify.progressBarColor = "" //Hex Color Code
+        varify.activityIndicatorColor = "" //Hex Color Code
         varify.documentVerification(method: selectedMethod, firstName: fnameField.text!, lastName: lnameField.text!, dob: dobField.text!, country: countryFieldForDoc.text!, phoneNumber: phoneFieldForDoc.text!){
             (result: Any) in
             

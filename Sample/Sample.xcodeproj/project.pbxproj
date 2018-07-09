@@ -12,8 +12,8 @@
 		9F4AAAF4203D643200ADA681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4AAAF2203D643200ADA681 /* Main.storyboard */; };
 		9F4AAAF6203D643200ADA681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4AAAF5203D643200ADA681 /* Assets.xcassets */; };
 		9F4AAAF9203D643200ADA681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4AAAF7203D643200ADA681 /* LaunchScreen.storyboard */; };
-		9F55E12D20DBD6920064BEB7 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F55E12C20DBD6920064BEB7 /* ShuftiPro.framework */; };
-		9F55E12E20DBD6920064BEB7 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F55E12C20DBD6920064BEB7 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F7FD30C20F3A42F002FD94C /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7FD30B20F3A42F002FD94C /* ShuftiPro.framework */; };
+		9F7FD30D20F3A42F002FD94C /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7FD30B20F3A42F002FD94C /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FC1E214203EA4480042DEC0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1E213203EA4480042DEC0 /* FirstViewController.swift */; };
 		9FC1E216203EAEA00042DEC0 /* CurvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1E215203EAEA00042DEC0 /* CurvedView.swift */; };
 		9FC1E218203EBC0F0042DEC0 /* ElementShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1E217203EBC0F0042DEC0 /* ElementShadow.swift */; };
@@ -32,7 +32,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F55E12E20DBD6920064BEB7 /* ShuftiPro.framework in Embed Frameworks */,
+				9F7FD30D20F3A42F002FD94C /* ShuftiPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +47,7 @@
 		9F4AAAF5203D643200ADA681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4AAAF8203D643200ADA681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4AAAFA203D643200ADA681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F55E12C20DBD6920064BEB7 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
+		9F7FD30B20F3A42F002FD94C /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
 		9FC1E213203EA4480042DEC0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		9FC1E215203EAEA00042DEC0 /* CurvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedView.swift; sourceTree = "<group>"; };
 		9FC1E217203EBC0F0042DEC0 /* ElementShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementShadow.swift; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F55E12D20DBD6920064BEB7 /* ShuftiPro.framework in Frameworks */,
+				9F7FD30C20F3A42F002FD94C /* ShuftiPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 		9F4AAAE2203D643200ADA681 = {
 			isa = PBXGroup;
 			children = (
-				9F55E12C20DBD6920064BEB7 /* ShuftiPro.framework */,
+				9F7FD30B20F3A42F002FD94C /* ShuftiPro.framework */,
 				9F4AAAED203D643200ADA681 /* Sample */,
 				9FC1E222203F30A20042DEC0 /* TPKeyboardAvoidingCollectionView.h */,
 				9FC1E223203F30A20042DEC0 /* TPKeyboardAvoidingCollectionView.m */,

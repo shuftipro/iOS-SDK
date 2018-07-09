@@ -28,8 +28,8 @@ Supported architectures in SDK:
 
 ## SDK Installation Guide
 1. Copy “ShuftiPro.framework” into your project folder.
-2.	In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
-3.	Add “ShuftiPro.framework” in Embeded Binaries.
+2.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
+3.  Add “ShuftiPro.framework” in Embeded Binaries.
 
 ## Permissions:
 Application Info.plist must contain an **Privacy - Camera Usage Description** key with a explanation to end-user about how the app uses this data.
@@ -111,6 +111,28 @@ instance.documentVerification(method: "type of method for verification",
 | country | Full Country name or ISO2 Code. Example: United Kingdom or GB. |
 | phoneNumber | Customer’s phone number with country code. Example: +440000000000 |
 
+## Customize Colors
+We can customize SDK colors by giving **Hex Color Codes**
+```sh
+instance.topBarColor = "" //Hex Color Code
+instance.topBarTextColor = "" //Hex Color Code
+instance.bottomBarColor = "" //Hex Color Code
+instance.bottomBarTextColor = "" //Hex Color Code
+instance.progressBarColor = "" //Hex Color Code
+instance.activityIndicatorColor = "" //Hex Color Code
+```
+
+
+#### Request Parameters 
+
+| Parameter | Description |
+| ------ | ------ |
+| topBarColor | Color for top bars except camera view |
+| topBarTextColor | Color for text in top bars except camera view |
+| bottomBarColor | Color for bottom bar except camera view |
+| bottomBarTextColor | Color for text in bottom bars |
+| progressBarColor | Color for Progress bar |
+| activityIndicatorColor | color for activity indicator |
 
 ## Response Status Codes 
 | Status Code | Description |
