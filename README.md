@@ -10,8 +10,9 @@ Shufti Pro is a SaaS, that provides quick and accurate digital identity and docu
 * [Permissions](#permissions)
 * [Integration](#integration)
 * [Verifications](#verifications)
-  * [Identity Verification](#identity-verification)
   * [Card Present Verification](#card-present-verification)
+  * [Identity Verification](#identity-verification)
+* [Customize Colors](#customize-colors)
 * [Response Status Codes](#response-status-codes)
 * [Sample Project Setup](#sample-project-setup)
 * [Contact](#contact)
@@ -112,27 +113,15 @@ instance.documentVerification(method: "type of method for verification",
 | phoneNumber | Customer’s phone number with country code. Example: +440000000000 |
 
 ## Customize Colors
-We can customize SDK colors by giving **Hex Color Codes**
+You can customize SDK colors by using their **Hex Color Codes**
 ```sh
-instance.topBarColor = "" //Hex Color Code
-instance.topBarTextColor = "" //Hex Color Code
-instance.bottomBarColor = "" //Hex Color Code
-instance.bottomBarTextColor = "" //Hex Color Code
-instance.progressBarColor = "" //Hex Color Code
-instance.activityIndicatorColor = "" //Hex Color Code
+instance.topBarColor = "#C62B2A" // Color for top bars except camera view
+instance.topBarTextColor = "#FFFFFF" // Color for text in top bars except camera view
+instance.bottomBarColor = "#C62B2A" // Color for bottom bar except camera view
+instance.bottomBarTextColor = "#FFFFFF" // Color for text in bottom bars
+instance.progressBarColor = "#01A95B" // Color for Progress bar
+instance.activityIndicatorColor = "#C62B2A" // color for activity indicator
 ```
-
-
-#### Request Parameters 
-
-| Parameter | Description |
-| ------ | ------ |
-| topBarColor | Color for top bars except camera view |
-| topBarTextColor | Color for text in top bars except camera view |
-| bottomBarColor | Color for bottom bar except camera view |
-| bottomBarTextColor | Color for text in bottom bars |
-| progressBarColor | Color for Progress bar |
-| activityIndicatorColor | color for activity indicator |
 
 ## Response Status Codes 
 | Status Code | Description |
