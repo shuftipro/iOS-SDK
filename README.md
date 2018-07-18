@@ -13,6 +13,7 @@ Shufti Pro is a SaaS, that provides quick and accurate digital identity and docu
   * [Card Present Verification](#card-present-verification)
   * [Identity Verification](#identity-verification)
 * [Customize Colors](#customize-colors)
+* [Asyncronous Feedback](#asyncronous-feedback)
 * [Response Status Codes](#response-status-codes)
 * [Sample Project Setup](#sample-project-setup)
 * [Contact](#contact)
@@ -121,6 +122,12 @@ instance.bottomBarColor = "#C62B2A" // Color for bottom bar except camera view
 instance.bottomBarTextColor = "#FFFFFF" // Color for text in bottom bars
 instance.progressBarColor = "#01A95B" // Color for Progress bar
 instance.activityIndicatorColor = "#C62B2A" // color for activity indicator
+```
+
+## Asyncronous Feedback
+You can allow asyncronous feedback after uploading images for verification.
+```sh
+instance.async = "true"
 ```
 
 ## Response Status Codes 

@@ -55,6 +55,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         varify.bottomBarTextColor = "" //Hex Color Code
         varify.progressBarColor = "" //Hex Color Code
         varify.activityIndicatorColor = "" //Hex Color Code
+        varify.async = "" //true or false
         varify.creditCardVerification(country: countryField.text!, cardFirst6Digits: cardSixDigits.text!, cardLast4Digits: card4Digits.text!, phoneNumber: phoneField.text!){
             (result: Any) in
             
@@ -78,6 +79,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         varify.bottomBarTextColor = "" //Hex Color Code
         varify.progressBarColor = "" //Hex Color Code
         varify.activityIndicatorColor = "" //Hex Color Code
+        varify.async = "" //true or false
         varify.documentVerification(method: selectedMethod, firstName: fnameField.text!, lastName: lnameField.text!, dob: dobField.text!, country: countryFieldForDoc.text!, phoneNumber: phoneFieldForDoc.text!){
             (result: Any) in
             
