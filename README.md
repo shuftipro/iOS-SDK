@@ -125,7 +125,8 @@ instance.activityIndicatorColor = "#C62B2A" // color for activity indicator
 ```
 
 ## Asyncronous Feedback
-You can allow asyncronous feedback after uploading images for verification.
+If async value is set to true then you'll instantly get the user's control back so you don't have to wait for the verification results. When a request is verified you'll automatically get a callback and you can also check the verification status by making a separate [RESTful API call](https://github.com/shuftipro/integration-guide#get-request-status). 
+
 ```sh
 instance.async = "true"
 ```
