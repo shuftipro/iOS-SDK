@@ -143,18 +143,18 @@ All verification services are optional. You can provide Shufti Pro a single serv
  
  * <h3>supported_types</h3>
 
-  Required: **Yes**  
-  Type: **Array**
+    Required: **Yes**  
+    Type: **Array**
  
-    Supported Types      |
-    ---------------------|
-    passport             |
-    id_card            |
-    driving_license    |
-    credit_or_debit_card |
+      Supported Types      |
+      ---------------------|
+      passport             |
+      id_card            |
+      driving_license    |
+      credit_or_debit_card |
 
-  **Example 1** ["driving_license"]  
-  **Example 2** ["id_card", "credit_or_debit_card", "passport"]
+    **Example 1** ["driving_license"]  
+    **Example 2** ["id_card", "credit_or_debit_card", "passport"]
 
  * <h3>name</h3>
 
@@ -230,28 +230,30 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Customised documents/notes can also be verified by Shufti Pro. Company documents, employee cards or any other personalised note can be authenticated by this module. You can choose handwritten or printed document format but only one form of document can be verified in this verification module. Text whose presence on the note/customized document is to be verified, is also needed to be provided.
  For **consent verification** just add key "consent" in data dictionary. Here are the additional keys for consent
  
- * <h3>format</h3>
+   * <h3>format</h3>
 
-  Required: **Yes**  
-  Type: **string**
+    Required: **Yes**  
+    Type: **string**
 
-  Text provided in the consent verification can be verified by handwritten documents or printed documents. If “any” is mentioned in the format parameter, then user can verify provided note using either of these two documents. Mention only one format from the following list.
+	Text provided in the consent verification can be verified by handwritten documents or printed documents. If “any” is mentioned in the format parameter, then user can verify provided note using either of these two documents. Mention only one format from the following list.
 
-    Formats              |
-    ---------------------|
-    handwritten          |
-    printed            |
-    any                |
+	Formats              |
+	---------------------|
+	handwritten          |
+	printed            |
+	any                |
 
-  **Example 1**  "printed"  
-  **Example 2**  "any"
+	**Example 1**  "printed"  
+	**Example 2**  "any"
 
-  * <h3>text</h3>
+   
 
-  Required: **Yes**  
-  Type: **string**  
-  Minimum: **2 characters**  
-  Maximum: **100 chracters**
+    * <h3>text</h3>
+
+    Required: **Yes**  
+    Type: **string**  
+    Minimum: **2 characters**  
+    Maximum: **100 chracters**
 
   Provide text in the string format which will be verified from a given proof.
  
