@@ -11,8 +11,8 @@ import Shuftipro
 
 class ViewController: UIViewController {
 
-    let clientIdStr = "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3"
-    let secretKeyStr = "G3RFRQMJFQ1XW22GYYEMD8IBQMLH52GS"
+    let clientIdStr = "" // your client id here
+    let secretKeyStr = "" // your secret key here
     
     @IBOutlet weak var faceVerificationUIView: UIView!
     @IBOutlet weak var documentVerificationUIView: UIView!
