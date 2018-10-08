@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Shuftipro
+import ShuftiPro
 
 class ViewController: UIViewController {
 
@@ -112,7 +112,7 @@ class ViewController: UIViewController {
                 ]
             }
             
-            let shufti = Shuftipro(clientId: clientIdStr, secretKey: secretKeyStr, parentVC: self)
+            let shufti = ShuftiPro(clientId: clientIdStr, secretKey: secretKeyStr, parentVC: self)
             shufti.verification(dataObject: dataDictionary){(result: Any) in
                 print("Got response from sdk: \(result)")
             }
