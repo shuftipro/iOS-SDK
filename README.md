@@ -6,7 +6,7 @@ Shufti Pro has designed this Verification API document for its customers that ha
 
 **Shufti Pro’s AI & HI hybrid technology ensures 99.6% accurate results and quickest response time.**
 
-Shufti Pro’s API supports two verification types, i.e. on-site and off-site. 
+Shufti Pro’s API supports verification with and without OCR. 
 
 
 ## Verification
