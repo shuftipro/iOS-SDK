@@ -361,7 +361,12 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   Provide text in the string format which will be verified from a given proof.
  
+## Asyncronous Feedback
+If async value is set to **true** you'll instantly get the user's control back so you don't have to wait for the verification results. When a request is completed you'll automatically get a callback.
 
+```sh
+instance.async = "true"
+```
 
 
 ## Response Status Codes 
@@ -418,3 +423,10 @@ If you have any questions/queries regarding implementation SDK please feel free 
 
 ## Copyright
 2016-17 © Shufti Pro Ltd.
+
+
+## Revision History
+
+Date            | Description 
+--------------- | ------------
+5 Nov 2018     | Added async parameter in sdk.
