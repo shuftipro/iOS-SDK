@@ -429,4 +429,5 @@ If you have any questions/queries regarding implementation SDK please feel free 
 
 Date            | Description 
 --------------- | ------------
+8 Nov 2018     | Added non-ocr demo app.
 5 Nov 2018     | Added async parameter in sdk.
