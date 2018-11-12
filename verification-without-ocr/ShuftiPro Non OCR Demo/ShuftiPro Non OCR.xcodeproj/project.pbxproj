@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F5AF6182199613F00B05883 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5AF6172199613F00B05883 /* ShuftiPro.framework */; };
+		9F5AF6192199613F00B05883 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5AF6172199613F00B05883 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F756A212192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1B2192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		9F756A222192B56C001FECCA /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1C2192B56C001FECCA /* TPKeyboardAvoidingTableView.m */; };
 		9F756A232192B56C001FECCA /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1D2192B56C001FECCA /* TPKeyboardAvoidingScrollView.m */; };
 		9F756A242192B56C001FECCA /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1F2192B56C001FECCA /* TPKeyboardAvoidingCollectionView.m */; };
-		9F7D7D0921941369007C6E08 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7D7D0821941369007C6E08 /* ShuftiPro.framework */; };
-		9F7D7D0A21941369007C6E08 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7D7D0821941369007C6E08 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F8F2819219173B100C629EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F2818219173B100C629EE /* AppDelegate.swift */; };
 		9F8F281B219173B100C629EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F281A219173B100C629EE /* ViewController.swift */; };
 		9F8F281E219173B100C629EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F281C219173B100C629EE /* Main.storyboard */; };
@@ -27,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F7D7D0A21941369007C6E08 /* ShuftiPro.framework in Embed Frameworks */,
+				9F5AF6192199613F00B05883 /* ShuftiPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9F5AF6172199613F00B05883 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
 		9F756A192192B56C001FECCA /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		9F756A1A2192B56C001FECCA /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		9F756A1B2192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		9F756A1E2192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		9F756A1F2192B56C001FECCA /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		9F756A202192B56C001FECCA /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
-		9F7D7D0821941369007C6E08 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
 		9F8F2815219173B100C629EE /* ShuftiPro Non OCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShuftiPro Non OCR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8F2818219173B100C629EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F8F281A219173B100C629EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7D7D0921941369007C6E08 /* ShuftiPro.framework in Frameworks */,
+				9F5AF6182199613F00B05883 /* ShuftiPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		9F8F280C219173B100C629EE = {
 			isa = PBXGroup;
 			children = (
-				9F7D7D0821941369007C6E08 /* ShuftiPro.framework */,
+				9F5AF6172199613F00B05883 /* ShuftiPro.framework */,
 				9F8F2817219173B100C629EE /* ShuftiPro Non OCR */,
 				9F756A182192B56C001FECCA /* TPKeyboardAvoiding */,
 				9F8F2816219173B100C629EE /* Products */,
@@ -341,7 +341,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "ShuftiPro Non OCR/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,7 +364,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "ShuftiPro Non OCR/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
