@@ -113,7 +113,7 @@ class ViewController: UIViewController {
             }
             
             let shufti = ShuftiPro(clientId: clientIdStr, secretKey: secretKeyStr, parentVC: self)
-            //shufti.async = "true"
+            shufti.async = "" //or true
             shufti.verification(dataObject: dataDictionary){(result: Any) in
                 print("Got response from sdk: \(result)")
             }
