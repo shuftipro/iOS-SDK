@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F519DD021EF2122001D0F02 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F519DCF21EF2122001D0F02 /* ShuftiPro.framework */; };
-		9F519DD121EF2122001D0F02 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F519DCF21EF2122001D0F02 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9F756A212192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1B2192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		9F756A222192B56C001FECCA /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1C2192B56C001FECCA /* TPKeyboardAvoidingTableView.m */; };
 		9F756A232192B56C001FECCA /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1D2192B56C001FECCA /* TPKeyboardAvoidingScrollView.m */; };
@@ -18,6 +16,8 @@
 		9F8F281E219173B100C629EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F281C219173B100C629EE /* Main.storyboard */; };
 		9F8F2820219173C100C629EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F281F219173C100C629EE /* Assets.xcassets */; };
 		9F8F2823219173C100C629EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F2821219173C100C629EE /* LaunchScreen.storyboard */; };
+		C5D6C68721F76111009109E8 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D6C68621F76111009109E8 /* ShuftiPro.framework */; };
+		C5D6C68821F76111009109E8 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5D6C68621F76111009109E8 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F519DD121EF2122001D0F02 /* ShuftiPro.framework in Embed Frameworks */,
+				C5D6C68821F76111009109E8 /* ShuftiPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,7 +35,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9F519DCF21EF2122001D0F02 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
 		9F756A192192B56C001FECCA /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		9F756A1A2192B56C001FECCA /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		9F756A1B2192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		9F8F281F219173C100C629EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F8F2822219173C100C629EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F8F2824219173C100C629EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D6C68621F76111009109E8 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F519DD021EF2122001D0F02 /* ShuftiPro.framework in Frameworks */,
+				C5D6C68721F76111009109E8 /* ShuftiPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		9F8F280C219173B100C629EE = {
 			isa = PBXGroup;
 			children = (
-				9F519DCF21EF2122001D0F02 /* ShuftiPro.framework */,
+				C5D6C68621F76111009109E8 /* ShuftiPro.framework */,
 				9F8F2817219173B100C629EE /* ShuftiPro Non OCR */,
 				9F756A182192B56C001FECCA /* TPKeyboardAvoiding */,
 				9F8F2816219173B100C629EE /* Products */,
