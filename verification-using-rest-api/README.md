@@ -516,3 +516,7 @@ If you have any questions/queries regarding implementation SDK please feel free 
 
 ## Copyright
 2016-17 © Shufti Pro Ltd.
+
+Date            | Description 
+--------------- | ------------
+12 Apr 2019    | Updated SDK swift version to swift 5).

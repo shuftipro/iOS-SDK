@@ -433,3 +433,4 @@ Date            | Description
 5 Nov 2018     | Added async parameter in sdk.
 15 Jan 2019    | Updated SDK with async uploading progress.
 22 Jan 2019    | Updated SDK with progress bar (in percentage).
+12 Apr 2019    | Updated SDK swift version to swift 5).
