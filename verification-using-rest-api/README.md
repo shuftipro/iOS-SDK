@@ -13,6 +13,13 @@ Supported architectures in SDK:
 - armv7 and arm64 for devices
 
 ## SDK Installation Guide
+### Installation through Cocoapods
+```sh
+pod 'ShuftiPro', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
+```
+> **Note:** Installation through cocoapods contains binaries for distribution that does not support app building on simulators
+
+### Manuall installation
 1. Copy “ShuftiPro.framework” into your project folder.
 2.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
 3.  Add “ShuftiPro.framework” in Embeded Binaries.
@@ -519,4 +526,5 @@ If you have any questions/queries regarding implementation SDK please feel free 
 
 Date            | Description 
 --------------- | ------------
-12 Apr 2019    | Updated SDK swift version to swift 5).
+18 May 2019    | Added support to install through cocoapods.
+12 Apr 2019    | Updated SDK swift version to swift 5.
