@@ -13,6 +13,13 @@ Supported architectures in SDK:
 - armv7 and arm64 for devices
 
 ## SDK Installation Guide
+### Installation through Cocoapods
+```sh
+pod 'ShuftiPro', :git => "https://github.com/shuftipro/https://github.com/shuftipro/ios-ocr-binary-pod.git"
+```
+> **Note:** Installation through cocoapods contains binaries for distribution that does not support app building on simulators
+
+### Manuall installation
 1. Copy “ShuftiPro.framework” into your project folder.
 2.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
 3.  Add “ShuftiPro.framework” in Embeded Binaries.
@@ -326,5 +333,6 @@ Date            | Description
 --------------- | ------------
 5 Nov 2018     | Added async parameter in sdk.
 15 Jan 2019    | Updated SDK with async uploading progress.
-22 Jan 2019    | Updated SDK with progress bar (in percentage).
-12 Apr 2019    | Updated SDK swift version to swift 5).
+22 Jan 2019    | Updated SDK with progress bar (in percentage.
+12 Apr 2019    | Updated SDK swift version to swift 5.
+18 May 2019    | Added support to install through cocoapods.
