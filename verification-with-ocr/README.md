@@ -15,7 +15,7 @@ Supported architectures in SDK:
 ## SDK Installation Guide
 ### Installation through Cocoapods
 ```sh
-pod 'ShuftiPro', :git => "https://github.com/shuftipro/https://github.com/shuftipro/ios-ocr-binary-pod.git"
+pod 'ShuftiPro', :git => "https://github.com/shuftipro/ios-ocr-binary-pod.git"
 ```
 > **Note:** Installation through cocoapods contains binaries for distribution that does not support app building on simulators
 
