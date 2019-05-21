@@ -14,8 +14,13 @@ Supported architectures in SDK:
 
 ## SDK Installation Guide
 ### Installation through Cocoapods
+For Swift version 5
 ```sh
-pod 'ShuftiPro', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.0' :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
+```
+For Swift lower than version 5
+```sh
+pod 'ShuftiPro', :tag => '1.0.1' :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
 ```
 > **Note:** Installation through cocoapods contains binaries for distribution that does not support app building on simulators
 
@@ -442,3 +447,4 @@ Date            | Description
 22 Jan 2019    | Updated SDK with progress bar (in percentage.
 12 Apr 2019    | Updated SDK swift version to swift 5.
 18 May 2019    | Added support to install through cocoapods.
+21 May 2019    | Added support to install SDK  swift version 4 through cocoapods.
