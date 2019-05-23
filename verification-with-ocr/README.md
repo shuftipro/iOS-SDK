@@ -18,7 +18,7 @@ For Swift version 4 & 5
 ```sh
 pod 'ShuftiPro', :tag => '1.0.0', :git => "https://github.com/shuftipro/ios-ocr-binary-pod.git"
 ```
-For Swift lower than version 3
+For Swift version 3
 ```sh
 pod 'ShuftiPro', :tag => '1.0.2', :git => "https://github.com/shuftipro/ios-ocr-binary-pod.git"
 ```
