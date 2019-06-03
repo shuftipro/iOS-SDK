@@ -124,6 +124,7 @@ class ViewController: UIViewController {
             //
             let shufti = ShuftiPro(clientId: clientIdStr, secretKey: secretKeyStr, parentVC: self)
             shufti.async = "" //or "true"
+            shufti.verificationMode = "image" // default "video"
             shufti.verification(dataObject: dataDictionary){(result: Any) in
                 print("Got response from sdk: \(result)")
             }

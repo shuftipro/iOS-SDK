@@ -14,9 +14,9 @@ Supported architectures in SDK:
 
 ## SDK Installation Guide
 ### Installation through Cocoapods
-For Swift version 4 & 5
+For Swift version 4.2 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.0', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.3', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -97,6 +97,18 @@ instance.verification(dataObject: dataDictionary){(result: Any) in
         // Declined: Do something
     }
 }
+```
+
+## Asyncronous Feedback
+If async value is set to **true** you'll instantly get the user's control back so you don't have to wait for the verification results. When a request is completed you'll automatically get a callback.
+
+```sh
+instance.async = "true"
+```
+## Verification Mode
+This parameter specifies the types of proof that can be used for verification. If verificationMode value is set to **image** SDK will be capturing images. However by default it records videos as proofs for verification. 
+```sh
+instance.verificationMode = "image"
 ```
 
 
@@ -372,13 +384,6 @@ All verification services are optional. You can provide Shufti Pro a single serv
     Maximum: **100 chracters**
 
   Provide text in the string format which will be verified from a given proof.
- 
-## Asyncronous Feedback
-If async value is set to **true** you'll instantly get the user's control back so you don't have to wait for the verification results. When a request is completed you'll automatically get a callback.
-
-```sh
-instance.async = "true"
-```
 
 
 ## Response Status Codes 
@@ -449,3 +454,4 @@ Date            | Description
 18 May 2019    | Added support to install through cocoapods.
 21 May 2019    | Added support to install SDK  swift version 4 through cocoapods.
 23 May 2019    | Added support to install SDK  swift version 3 through cocoapods.
+3 June 2019    | Updated designs and added image capturing option.
