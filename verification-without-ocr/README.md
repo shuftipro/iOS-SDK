@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4.2 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.4', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.5', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -456,3 +456,4 @@ Date            | Description
 23 May 2019    | Added support to install SDK  swift version 3 through cocoapods.
 3 June 2019    | Updated designs and added image capturing option.
 24 June 2019   | Fixed UI orientation to prtrait mode.
+7 Sep 2019     | Updated SDK and demo app with new logos.

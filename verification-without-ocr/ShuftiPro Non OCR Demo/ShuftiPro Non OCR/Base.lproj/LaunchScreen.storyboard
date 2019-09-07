@@ -19,15 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="UoY-oZ-WCA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="50" y="318" width="314" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="WG5-q3-wtQ"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UoY-oZ-WCA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="IDy-7g-kvP"/>
-                            <constraint firstItem="UoY-oZ-WCA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f23-c1-4Ij"/>
-                            <constraint firstItem="UoY-oZ-WCA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="j0b-gf-RXX"/>
-                            <constraint firstItem="UoY-oZ-WCA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wDD-JN-ZyD"/>
+                            <constraint firstItem="UoY-oZ-WCA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6Xy-Cl-ghF"/>
+                            <constraint firstItem="UoY-oZ-WCA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="kb4-U0-WIz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UoY-oZ-WCA" secondAttribute="trailing" constant="50" id="wlf-qG-ecw"/>
+                            <constraint firstItem="UoY-oZ-WCA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zm3-KP-cbc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Splash" width="375.5" height="667.5"/>
+        <image name="Splash" width="133.33332824707031" height="66.666664123535156"/>
     </resources>
 </document>
