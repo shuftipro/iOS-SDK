@@ -12,8 +12,8 @@
 		9FF6AF872158B5C800A9AB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF852158B5C800A9AB49 /* Main.storyboard */; };
 		9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */; };
 		9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */; };
-		C5DDC42C2323B48A00318E69 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DDC42B2323B48A00318E69 /* ShuftiPro.framework */; };
-		C5DDC42D2323B48A00318E69 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5DDC42B2323B48A00318E69 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C598B60B235DF7650046F650 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C598B60A235DF7650046F650 /* ShuftiPro.framework */; };
+		C598B60C235DF7650046F650 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C598B60A235DF7650046F650 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C5DDC42D2323B48A00318E69 /* ShuftiPro.framework in Embed Frameworks */,
+				C598B60C235DF7650046F650 /* ShuftiPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +38,7 @@
 		9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF6AF8B2158B5CB00A9AB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF6AF8D2158B5CB00A9AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5DDC42B2323B48A00318E69 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
+		C598B60A235DF7650046F650 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5DDC42C2323B48A00318E69 /* ShuftiPro.framework in Frameworks */,
+				C598B60B235DF7650046F650 /* ShuftiPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +56,9 @@
 		9FF6AF752158B5C800A9AB49 = {
 			isa = PBXGroup;
 			children = (
-				C5DDC42B2323B48A00318E69 /* ShuftiPro.framework */,
 				9FF6AF802158B5C800A9AB49 /* Shufti Pro Demo */,
 				9FF6AF7F2158B5C800A9AB49 /* Products */,
+				C598B609235DF7650046F650 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +81,14 @@
 				9FF6AF8D2158B5CB00A9AB49 /* Info.plist */,
 			);
 			path = "Shufti Pro Demo";
+			sourceTree = "<group>";
+		};
+		C598B609235DF7650046F650 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C598B60A235DF7650046F650 /* ShuftiPro.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
