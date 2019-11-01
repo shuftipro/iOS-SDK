@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.2', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.3', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -499,7 +499,7 @@ Events are sent in responses which show the status of request. These events are 
 
 
 Event               | description     | HTTP Response | Callback Response
-------------------------|-----------------|---------------|------------------
+------------------------|-----------------|---------------|---------------
 request.pending         | Request parameters are valid and verification url is generated in case of on-site verification.|Yes|Yes
 request.invalid         | Request parameters provided in request are invalid.|Yes|Yes
 request.cancelled       | Request is cancelled by the user. This event occurs when end-user disagrees to terms and conditions before starting verifications.|Yes|Yes
@@ -531,6 +531,7 @@ If you have any questions/queries regarding implementation SDK please feel free 
 
 Date            | Description 
 --------------- | ------------
+1 Nov 2019     | Updated SDK swift version to swift 5.1.2.
 21 Oct 2019    | Updated SDK swift version to swift 5.1.
 12 Apr 2019    | Updated SDK swift version to swift 5.
 18 May 2019    | Added support to install through cocoapods.
