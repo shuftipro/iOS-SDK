@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4.2 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.8', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.9', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -460,3 +460,4 @@ Date            | Description
 21 Oct 2019    | Updated SDK swift version to swift 5.1.
 1 Nov 2019     | Updated SDK swift version to swift 5.1.2.
 5 Nov 2019     | Fixed cache issues.
+5 Dec 2019     | Added image/video preview
