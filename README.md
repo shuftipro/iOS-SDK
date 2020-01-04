@@ -19,4 +19,5 @@ Consult [This Document](verification-with-ocr) for the Verification with OCR.
 	
 * ### Without OCR
 In verification without OCR, merchant gives us the data in keys as well as all the proofs required then Shufti Pro just have to verify the data. No customer interaction takes place in this kind of verification.
+
 Consult [This Document](verification-without-ocr) for the Verification without OCR.
