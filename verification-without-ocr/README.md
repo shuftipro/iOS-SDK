@@ -460,4 +460,4 @@ Date            | Description
 21 Oct 2019    | Updated SDK swift version to swift 5.1.
 1 Nov 2019     | Updated SDK swift version to swift 5.1.2.
 5 Nov 2019     | Fixed cache issues.
-5 Dec 2019     | Added image/video preview
+5 Dec 2019     | Added image/video preview.
