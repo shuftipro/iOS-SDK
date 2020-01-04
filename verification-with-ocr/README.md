@@ -120,7 +120,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
 * ## country
 
-  Required: **Yes**  
+  Required: **No**  
   Type: **string**  
   Length: **2 characters**
 
