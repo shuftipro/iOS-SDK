@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,20 +13,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shufti_Pro_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPU-Dp-GF4">
-                                <rect key="frame" x="0.0" y="20" width="320" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsG-A1-xiD">
-                                        <rect key="frame" x="111.5" y="30" width="97" height="20"/>
+                                        <rect key="frame" x="335.5" y="30" width="97" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bG-1i-05e">
-                                        <rect key="frame" x="150" y="50" width="20" height="0.0"/>
+                                        <rect key="frame" x="374" y="50" width="20" height="0.0"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="DTa-hx-8hV"/>
@@ -36,7 +34,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Method of Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umq-47-gwd">
-                                        <rect key="frame" x="62" y="50" width="196" height="24"/>
+                                        <rect key="frame" x="286" y="50" width="196" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -53,7 +51,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZtK-eR-nUg">
-                                <rect key="frame" x="25" y="170" width="270" height="56"/>
+                                <rect key="frame" x="25" y="398" width="718" height="56"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gq-sc-79P">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="56"/>
@@ -72,19 +70,19 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Face Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBz-qB-jxo">
-                                        <rect key="frame" x="80" y="19.5" width="111" height="18"/>
+                                        <rect key="frame" x="80" y="19" width="111" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unChecked" translatesAutoresizingMaskIntoConstraints="NO" id="XFu-v6-bcS">
-                                        <rect key="frame" x="240" y="-0.5" width="20" height="56"/>
+                                        <rect key="frame" x="688" y="0.0" width="20" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="dvj-za-SEf"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZc-qW-zDg">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="718" height="56"/>
                                         <connections>
                                             <action selector="faceVerifyBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a5L-Jh-ZyJ"/>
                                         </connections>
@@ -108,7 +106,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APG-cT-JT6">
-                                <rect key="frame" x="25" y="256" width="270" height="56"/>
+                                <rect key="frame" x="25" y="484" width="718" height="56"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8I-vt-iWm">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="56"/>
@@ -127,19 +125,19 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fox-IW-o3C">
-                                        <rect key="frame" x="80" y="19.5" width="147.5" height="18"/>
+                                        <rect key="frame" x="80" y="19" width="147.5" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unChecked" translatesAutoresizingMaskIntoConstraints="NO" id="Swi-J2-cgw">
-                                        <rect key="frame" x="240" y="-0.5" width="20" height="56"/>
+                                        <rect key="frame" x="688" y="0.0" width="20" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="Hor-gQ-Snf"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xob-Xz-m6T">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="718" height="56"/>
                                         <connections>
                                             <action selector="documentVerifyBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="46t-oW-kH7"/>
                                         </connections>
@@ -163,7 +161,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMt-M4-tsL">
-                                <rect key="frame" x="25" y="342" width="270" height="56"/>
+                                <rect key="frame" x="25" y="570" width="718" height="56"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzP-cB-CYD">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="56"/>
@@ -182,19 +180,19 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IT6-8g-4qQ">
-                                        <rect key="frame" x="80" y="19.5" width="133.5" height="18"/>
+                                        <rect key="frame" x="80" y="19" width="133.5" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unChecked" translatesAutoresizingMaskIntoConstraints="NO" id="I88-Wo-6wL">
-                                        <rect key="frame" x="240" y="-0.5" width="20" height="56"/>
+                                        <rect key="frame" x="688" y="0.0" width="20" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="S4g-IN-sTE"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF4-wm-AqG">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="718" height="56"/>
                                         <connections>
                                             <action selector="addressVerifyBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsK-Ez-W5J"/>
                                         </connections>
@@ -218,7 +216,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSr-DX-wK7">
-                                <rect key="frame" x="0.0" y="503" width="320" height="65"/>
+                                <rect key="frame" x="0.0" y="959" width="768" height="65"/>
                                 <color key="backgroundColor" red="0.7686274509803922" green="0.20000000000000001" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="HR7-qf-1wr"/>
