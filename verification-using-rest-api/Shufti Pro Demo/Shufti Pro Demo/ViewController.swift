@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     let clientIdStr = "" // your client id here
     let secretKeyStr = "" // your secret key here
+    let accessTokenStr = "" // your access token here
     
     @IBOutlet weak var faceVerificationUIView: UIView!
     @IBOutlet weak var documentVerificationUIView: UIView!
@@ -124,7 +125,8 @@ class ViewController: UIViewController {
                 ]
             }
             
-            let shufti = ShuftiPro(clientId: clientIdStr, secretKey: secretKeyStr, parentVC: self)
+            let shufti = ShuftiPro(clientId: clientIdStr, secretKey: secretKeyStr, parentVC: self) // using with clientId and secretKey
+            //let shufti = ShuftiPro(accessToken: accessTokenStr, parentVC: self) // using with access token
             shufti.verification(dataObject: dataDictionary){(result: Any) in
                 print("Got response from sdk: \(result)")
             }

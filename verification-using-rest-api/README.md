@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.3', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.4', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -38,11 +38,17 @@ See the sample project provided to learn the most common use. Make sure to build
 ```sh
 import ShuftiPro
 ```
-Make an instance 
+Make an instance <br>
+Instance can be made in two ways. First is by using **clientId** and **secretKey**, other one is by providing **accessToken**.<br>
+You can read more about **accessToken** [here](https://api.shuftipro.com/api/docs/#access-token)
 ```sh
+//using clientId and secretKey
 let instance = Shuftipro(clientId: "your-clientId",
                                secretKey: "your-secretKey",
                                parentVC: your viewController from where you want to open ShuftiPro)
+//or using accessToken
+let instance = Shuftipro(accessToken: "your-accessToken",
+                               parentVC: your viewController from where you want to open ShuftiPro)                           
 ```
 ## Sample request
 ```sh
@@ -537,3 +543,4 @@ Date            | Description
 18 May 2019    | Added support to install through cocoapods.
 21 May 2019    | Added support to install SDK  swift version 4 through cocoapods.
 23 May 2019    | Added support to install SDK  swift version 3 through cocoapods.
+31 Mar 2020    | Added Access Token

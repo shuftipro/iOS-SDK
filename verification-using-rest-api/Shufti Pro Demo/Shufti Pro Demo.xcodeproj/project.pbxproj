@@ -12,18 +12,18 @@
 		9FF6AF872158B5C800A9AB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF852158B5C800A9AB49 /* Main.storyboard */; };
 		9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */; };
 		9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */; };
-		C52D5AE6236C551E0039AB17 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C598B600235DEAD10046F650 /* ShuftiPro.framework */; };
-		C52D5AE7236C551E0039AB17 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C598B600235DEAD10046F650 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5004B762433A96C0042CD6E /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C598B600235DEAD10046F650 /* ShuftiPro.framework */; };
+		C5004B772433A96C0042CD6E /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C598B600235DEAD10046F650 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C52D5AE8236C551E0039AB17 /* Embed Frameworks */ = {
+		C5004B782433A96C0042CD6E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C52D5AE7236C551E0039AB17 /* ShuftiPro.framework in Embed Frameworks */,
+				C5004B772433A96C0042CD6E /* ShuftiPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C52D5AE6236C551E0039AB17 /* ShuftiPro.framework in Frameworks */,
+				C5004B762433A96C0042CD6E /* ShuftiPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 				9FF6AF7A2158B5C800A9AB49 /* Sources */,
 				9FF6AF7B2158B5C800A9AB49 /* Frameworks */,
 				9FF6AF7C2158B5C800A9AB49 /* Resources */,
-				C52D5AE8236C551E0039AB17 /* Embed Frameworks */,
+				C5004B782433A96C0042CD6E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,7 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J9H5JP8KLQ;
+				DEVELOPMENT_TEAM = SY9GC8368B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -332,7 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J9H5JP8KLQ;
+				DEVELOPMENT_TEAM = SY9GC8368B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
