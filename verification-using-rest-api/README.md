@@ -77,6 +77,7 @@ let dataDictionary: [String: Any] = [
                  "document_number": "",
                  "expiry_date": "",
                  "issue_date": "",
+                 "fetch_enhanced_data": "1"
              ],
              "address": [
                  "proof": "",
@@ -278,6 +279,16 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   Leave empty to perform data extraction from the proof which will be uploaded by end-users. Provide a valid date. Please note that the date should be after today. 
   Example 2025-12-31
+  
+  * <h3>fetch_enhanced_data</h3>
+
+  Required: **No**  
+  Type: **string**  
+  Accepted value: **1**
+
+  Provide 1 for enabling enhanced data extraction for the document. Shufti Pro provides its customers with the facility of extracting enhanced data features using OCR technology. Now, instead of extracting just personal information input fields, Shufti Pro can fetch all the additional information comprising more than 100 data points from the official ID documents supporting 150 languages. For example height, place_of_birth, nationality, marital_status, weight, etc.(additional charges apply)
+Extrated data will be returned in object under the key additional_data in case of verification.accepted or verification.declined.
+For Details on additional_data object go to [Additional Data](https://api.shuftipro.com/api/docs/#additional-data)
 
 <!-- -------------------------------------------------------------------------------- -->
 * ## address
@@ -544,3 +555,4 @@ Date            | Description
 21 May 2019    | Added support to install SDK  swift version 4 through cocoapods.
 23 May 2019    | Added support to install SDK  swift version 3 through cocoapods.
 31 Mar 2020    | Added Access Token
+4 Apr 2020     | Updated request data (Added key fetch_enhanced_data)

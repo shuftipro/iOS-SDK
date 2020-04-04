@@ -104,6 +104,7 @@ class ViewController: UIViewController {
                     "document_number": documentNoTextField.text as! String,
                     "expiry_date": expiryDateTextField.text as! String,
                     "issue_date": issueDateTextField.text as! String,
+                    "fetch_enhanced_data": "1"
                 ]
             }
             if addressVerification == true {

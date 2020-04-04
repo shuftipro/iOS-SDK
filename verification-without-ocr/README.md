@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4.2 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.11', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.12', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -74,6 +74,7 @@ let dataDictionary: [String: Any] = [
                 "document_number": "2323-5629-5465-9990",
                 "expiry_date": "2025-10-10",
                 "issue_date": "2015-10-10",
+		"fetch_enhanced_data": "1"
             ],
             "address": [
                 "full_address": "3339 Maryland Avenue, Largo, Florida",
@@ -278,6 +279,16 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
 	Provide a valid date. Please note that the date should be after today. 
 	Example 2025-12-31
+	
+	* <h3>fetch_enhanced_data</h3>
+
+        Required: **No**  
+        Type: **string**  
+        Accepted value: **1**
+
+        Provide 1 for enabling enhanced data extraction for the document. Shufti Pro provides its customers with the facility of extracting enhanced data features using OCR technology. Now, instead of extracting just personal information input fields, Shufti Pro can fetch all the additional information comprising more than 100 data points from the official ID documents supporting 150 languages. For example height, place_of_birth, nationality, marital_status, weight, etc.(additional charges apply)
+        Extrated data will be returned in object under the key additional_data in case of verification.accepted or verification.declined.
+        For Details on additional_data object go to [Additional Data](https://api.shuftipro.com/api/docs/#additional-data)
 
 <!-- -------------------------------------------------------------------------------- -->
  
@@ -468,3 +479,4 @@ Date            | Description
 5 Nov 2019     | Fixed cache issues.
 5 Dec 2019     | Added image/video preview.
 31 Mar 2020    | Added Access Token
+4 Apr 2020     | Updated request data (Added key fetch_enhanced_data)

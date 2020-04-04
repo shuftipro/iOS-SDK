@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4.2 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.10', :git => "https://github.com/shuftipro/ios-ocr-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.12', :git => "https://github.com/shuftipro/ios-ocr-binary-pod.git"
 ```
 For Swift version 3
 ```sh
@@ -70,6 +70,7 @@ let dataDictionary: [String: Any] = [
                 "document_number": true,
                 "expiry_date": true,
                 "issue_date": true,
+                "fetch_enhanced_data": "1"
             ],
             "address": [
                 "full_address": true,
@@ -220,6 +221,16 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Type: **Boolean**  
 
   Set **true** to perform expiry date extraction from provided proofs.
+
+  * <h3>fetch_enhanced_data</h3>
+
+  Required: **No**  
+  Type: **string**  
+  Accepted value: **1**
+
+  Provide 1 for enabling enhanced data extraction for the document. Shufti Pro provides its customers with the facility of extracting enhanced data features using OCR technology. Now, instead of extracting just personal information input fields, Shufti Pro can fetch all the additional information comprising more than 100 data points from the official ID documents supporting 150 languages. For example height, place_of_birth, nationality, marital_status, weight, etc.(additional charges apply)
+Extrated data will be returned in object under the key additional_data in case of verification.accepted or verification.declined.
+For Details on additional_data object go to [Additional Data](https://api.shuftipro.com/api/docs/#additional-data)
  
 
 * ## address
@@ -361,3 +372,4 @@ Date            | Description
 5 Nov 2019     | Fixed cache issues.
 5 Dec 2019     | Added image/video preview
 31 Mar 2020    | Added Access Token
+4 Apr 2020     | Updated request data (Added key fetch_enhanced_data)

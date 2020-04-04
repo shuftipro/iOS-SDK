@@ -99,6 +99,7 @@ class ViewController: UIViewController {
                     "document_number": true,
                     "expiry_date": true,
                     "issue_date": true,
+                    "fetch_enhanced_data": true
                 ]
             }
             if addressVerification == true {
