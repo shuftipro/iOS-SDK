@@ -16,18 +16,19 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4.2 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.12', :git => "https://github.com/shuftipro/ios-ocr-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.14', :git => "https://github.com/shuftipro/ios-ocr-binary-pod.git"
 ```
 For Swift version 3
 ```sh
 pod 'ShuftiPro', :tag => '1.0.2', :git => "https://github.com/shuftipro/ios-ocr-binary-pod.git"
 ```
-> **Note:** Installation through cocoapods contains binaries for distribution that does not support app building on simulators
 
 ### Manuall installation
 1. Copy “ShuftiPro.framework” into your project folder.
-2.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
-3.  Add “ShuftiPro.framework” in Embeded Binaries.
+2. In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
+3. Add “ShuftiPro.framework” in Embeded Binaries.
+
+> **Note:** Use this [SDK](sdk/production) when you are in production mode or uploading app on Apple App Store.
 
 ## Permissions:
 Application Info.plist must contain an **Privacy - Camera Usage Description** key with a explanation to end-user about how the app uses this data.
@@ -373,3 +374,4 @@ Date            | Description
 5 Dec 2019     | Added image/video preview
 31 Mar 2020    | Added Access Token
 4 Apr 2020     | Updated request data (Added key fetch_enhanced_data)
+5 May 2020     | Updated binary bitcode

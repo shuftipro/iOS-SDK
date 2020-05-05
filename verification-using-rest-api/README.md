@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.4', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.5', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -556,3 +556,4 @@ Date            | Description
 23 May 2019    | Added support to install SDK  swift version 3 through cocoapods.
 31 Mar 2020    | Added Access Token
 4 Apr 2020     | Updated request data (Added key fetch_enhanced_data)
+5 May 2020     | Updated binary bitcode
