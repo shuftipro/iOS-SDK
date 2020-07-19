@@ -128,6 +128,7 @@ class ViewController: UIViewController {
             
             let shufti = ShuftiPro(clientId: clientIdStr, secretKey: secretKeyStr, parentVC: self) // using with clientId and secretKey
             //let shufti = ShuftiPro(accessToken: accessTokenStr, parentVC: self) // using with access token
+            //shufti.statusBarColor = ""
             shufti.verification(dataObject: dataDictionary){(result: Any) in
                 print("Got response from sdk: \(result)")
             }

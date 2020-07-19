@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.8', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.9', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -560,3 +560,4 @@ Date            | Description
 12 May 2020    | Updated SDK swift version to swift 5.2.2
 21 May 2020    | Minor UI Improvements
 10 Jun 2020    | Fixed issue to open privacy policy link
+19 Jul 2020    | Added option for status bar background color
