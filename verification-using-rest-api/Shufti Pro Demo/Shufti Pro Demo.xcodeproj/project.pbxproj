@@ -12,18 +12,18 @@
 		9FF6AF872158B5C800A9AB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF852158B5C800A9AB49 /* Main.storyboard */; };
 		9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */; };
 		9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */; };
-		C5B7462724C453D200EC1C92 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C598B600235DEAD10046F650 /* ShuftiPro.framework */; };
-		C5B7462824C453D200EC1C92 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C598B600235DEAD10046F650 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C59D36F324D35A7E00CED91C /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C598B600235DEAD10046F650 /* ShuftiPro.framework */; };
+		C59D36F424D35A7E00CED91C /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C598B600235DEAD10046F650 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C5B7462924C453D200EC1C92 /* Embed Frameworks */ = {
+		C59D36F524D35A7E00CED91C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C5B7462824C453D200EC1C92 /* ShuftiPro.framework in Embed Frameworks */,
+				C59D36F424D35A7E00CED91C /* ShuftiPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B7462724C453D200EC1C92 /* ShuftiPro.framework in Frameworks */,
+				C59D36F324D35A7E00CED91C /* ShuftiPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 				9FF6AF7A2158B5C800A9AB49 /* Sources */,
 				9FF6AF7B2158B5C800A9AB49 /* Frameworks */,
 				9FF6AF7C2158B5C800A9AB49 /* Resources */,
-				C5B7462924C453D200EC1C92 /* Embed Frameworks */,
+				C59D36F524D35A7E00CED91C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

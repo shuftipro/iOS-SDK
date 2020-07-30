@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.9', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.10', :git => "https://github.com/shuftipro/ios-verification-using-rest-api-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -105,6 +105,17 @@ instance.verification(dataObject: dataDictionary){(result: Any) in
     }
 }
 ```
+## TopBar color options
+SDK allows to customize an optional colors for **Status bar, Navbar and text color for Cancel button**. Accepted colors are hex code strings.
+
+```sh
+instance.async = "true"
+instance.statusBarColor = "#DCDCDC"
+instance.showNavBar = false //true
+instance.topBarTintColor = "#DCDCDC"
+instance.cancelButtonTextColor = "#0050aa"
+```
+
 # Verification Request
 
 Whenever a request for verification from a user is received, Shufti Pro’s intelligent system determines the nature of verification through parameters given below. These parameters enable Shufti Pro to:
@@ -561,3 +572,4 @@ Date            | Description
 21 May 2020    | Minor UI Improvements
 10 Jun 2020    | Fixed issue to open privacy policy link
 19 Jul 2020    | Added option for status bar background color
+31 Jul 2020    | Added cancel button and UI color changes options
