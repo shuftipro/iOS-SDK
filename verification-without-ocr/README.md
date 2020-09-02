@@ -16,7 +16,7 @@ Supported architectures in SDK:
 ### Installation through Cocoapods
 For Swift version 4.2 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.17', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
+pod 'ShuftiPro', :tag => '1.0.18', :git => "https://github.com/shuftipro/ios-non-ocr-binary-pod.git"
 ```
 For Swift 3
 ```sh
@@ -486,3 +486,4 @@ Date            | Description
 12 May 2020    | Updated SDK swift version to swift 5.2.2
 18 May 2020    | Minor UI fixes and implemented new waiting screen
 21 May 2020    | Minor UI Improvements
+2  Sep 2020    | Updated layouts for iPhone SE/5S
