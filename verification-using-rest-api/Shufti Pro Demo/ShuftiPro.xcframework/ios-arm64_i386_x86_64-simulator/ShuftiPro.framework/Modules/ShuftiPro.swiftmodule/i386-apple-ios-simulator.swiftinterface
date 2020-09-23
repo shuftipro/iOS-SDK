@@ -1,0 +1,21 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target i386-apple-ios8.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShuftiPro
+import AVFoundation
+import Foundation
+@_exported import ShuftiPro
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+@objc public class ShuftiPro : ObjectiveC.NSObject {
+  public var statusBarColor: Swift.String?
+  public var topBarTintColor: Swift.String?
+  public var cancelButtonTextColor: Swift.String?
+  public var showNavBar: Swift.Bool
+  @objc required public init(clientId cid: Swift.String, secretKey sk: Swift.String, parentVC pvc: UIKit.UIViewController)
+  @objc public init(accessToken xstkn: Swift.String, parentVC pvc: UIKit.UIViewController)
+  @objc public func verification(dataObject dataObjectObj: [Swift.String : Any], completion: @escaping (Any) -> ())
+  @objc deinit
+  @objc override dynamic public init()
+}
