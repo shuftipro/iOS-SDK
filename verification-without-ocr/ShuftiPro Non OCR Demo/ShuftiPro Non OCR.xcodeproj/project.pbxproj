@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C4EDEDD270EF515DD1DCA8 /* Pods_ShuftiPro_Non_OCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88B856BA4D568F066616890 /* Pods_ShuftiPro_Non_OCR.framework */; };
 		9F756A212192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1B2192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		9F756A222192B56C001FECCA /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1C2192B56C001FECCA /* TPKeyboardAvoidingTableView.m */; };
 		9F756A232192B56C001FECCA /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F756A1D2192B56C001FECCA /* TPKeyboardAvoidingScrollView.m */; };
@@ -16,18 +17,20 @@
 		9F8F281E219173B100C629EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F281C219173B100C629EE /* Main.storyboard */; };
 		9F8F2820219173C100C629EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F281F219173C100C629EE /* Assets.xcassets */; };
 		9F8F2823219173C100C629EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F2821219173C100C629EE /* LaunchScreen.storyboard */; };
-		C563DBCD251B71F3002CFE3A /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C563DBC8251B38B3002CFE3A /* ShuftiPro.xcframework */; };
-		C563DBCE251B71F3002CFE3A /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C563DBC8251B38B3002CFE3A /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A656BE04252C63110035BE42 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656BE03252C63110035BE42 /* SegmentView.swift */; };
+		A6AE9B3D25407C630000B2CF /* open-sans in Resources */ = {isa = PBXBuildFile; fileRef = A6AE9B3C25407C630000B2CF /* open-sans */; };
+		A6C13F052542B1C400FEDCBB /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C13F042542B1C400FEDCBB /* ShuftiPro.xcframework */; };
+		A6C13F062542B1C400FEDCBB /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6C13F042542B1C400FEDCBB /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C563DBCF251B71F3002CFE3A /* Embed Frameworks */ = {
+		A68CB78325341C870074FB42 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C563DBCE251B71F3002CFE3A /* ShuftiPro.xcframework in Embed Frameworks */,
+				A6C13F062542B1C400FEDCBB /* ShuftiPro.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,8 +53,12 @@
 		9F8F281F219173C100C629EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F8F2822219173C100C629EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F8F2824219173C100C629EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C563DBC8251B38B3002CFE3A /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
-		C598B60E235DF8A70046F650 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
+		A4B854AF2FCC84CD95B4FEAA /* Pods-ShuftiPro Non OCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuftiPro Non OCR.debug.xcconfig"; path = "Target Support Files/Pods-ShuftiPro Non OCR/Pods-ShuftiPro Non OCR.debug.xcconfig"; sourceTree = "<group>"; };
+		A656BE03252C63110035BE42 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
+		A6AE9B3C25407C630000B2CF /* open-sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "open-sans"; sourceTree = "<group>"; };
+		A6C13F042542B1C400FEDCBB /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
+		B88B856BA4D568F066616890 /* Pods_ShuftiPro_Non_OCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShuftiPro_Non_OCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02616B220C36F04993DCDB5 /* Pods-ShuftiPro Non OCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuftiPro Non OCR.release.xcconfig"; path = "Target Support Files/Pods-ShuftiPro Non OCR/Pods-ShuftiPro Non OCR.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C563DBCD251B71F3002CFE3A /* ShuftiPro.xcframework in Frameworks */,
+				A6C13F052542B1C400FEDCBB /* ShuftiPro.xcframework in Frameworks */,
+				12C4EDEDD270EF515DD1DCA8 /* Pods_ShuftiPro_Non_OCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +96,10 @@
 				9F756A182192B56C001FECCA /* TPKeyboardAvoiding */,
 				9F8F2816219173B100C629EE /* Products */,
 				C598B60D235DF8A70046F650 /* Frameworks */,
+				FB7A08E6301508FA93B98EBD /* Pods */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		9F8F2816219173B100C629EE /* Products */ = {
 			isa = PBXGroup;
@@ -102,12 +112,14 @@
 		9F8F2817219173B100C629EE /* ShuftiPro Non OCR */ = {
 			isa = PBXGroup;
 			children = (
+				A6AE9B3C25407C630000B2CF /* open-sans */,
 				9F8F2818219173B100C629EE /* AppDelegate.swift */,
 				9F8F281A219173B100C629EE /* ViewController.swift */,
 				9F8F281C219173B100C629EE /* Main.storyboard */,
 				9F8F281F219173C100C629EE /* Assets.xcassets */,
 				9F8F2821219173C100C629EE /* LaunchScreen.storyboard */,
 				9F8F2824219173C100C629EE /* Info.plist */,
+				A656BE03252C63110035BE42 /* SegmentView.swift */,
 			);
 			path = "ShuftiPro Non OCR";
 			sourceTree = "<group>";
@@ -115,10 +127,19 @@
 		C598B60D235DF8A70046F650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C563DBC8251B38B3002CFE3A /* ShuftiPro.xcframework */,
-				C598B60E235DF8A70046F650 /* ShuftiPro.framework */,
+				A6C13F042542B1C400FEDCBB /* ShuftiPro.xcframework */,
+				B88B856BA4D568F066616890 /* Pods_ShuftiPro_Non_OCR.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB7A08E6301508FA93B98EBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4B854AF2FCC84CD95B4FEAA /* Pods-ShuftiPro Non OCR.debug.xcconfig */,
+				E02616B220C36F04993DCDB5 /* Pods-ShuftiPro Non OCR.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,10 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F8F2827219173C100C629EE /* Build configuration list for PBXNativeTarget "ShuftiPro Non OCR" */;
 			buildPhases = (
+				57DDAD33F83E63967424E092 /* [CP] Check Pods Manifest.lock */,
 				9F8F2811219173B100C629EE /* Sources */,
 				9F8F2812219173B100C629EE /* Frameworks */,
 				9F8F2813219173B100C629EE /* Resources */,
-				C563DBCF251B71F3002CFE3A /* Embed Frameworks */,
+				FA0804868AA3DE0821C154A8 /* [CP] Embed Pods Frameworks */,
+				A68CB78325341C870074FB42 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,7 +172,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Programmers Force";
 				TargetAttributes = {
 					9F8F2814219173B100C629EE = {
@@ -181,12 +204,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8F2823219173C100C629EE /* LaunchScreen.storyboard in Resources */,
+				A6AE9B3D25407C630000B2CF /* open-sans in Resources */,
 				9F8F2820219173C100C629EE /* Assets.xcassets in Resources */,
 				9F8F281E219173B100C629EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57DDAD33F83E63967424E092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShuftiPro Non OCR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA0804868AA3DE0821C154A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShuftiPro Non OCR/Pods-ShuftiPro Non OCR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShuftiPro Non OCR/Pods-ShuftiPro Non OCR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShuftiPro Non OCR/Pods-ShuftiPro Non OCR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F8F2811219173B100C629EE /* Sources */ = {
@@ -197,6 +263,7 @@
 				9F756A232192B56C001FECCA /* TPKeyboardAvoidingScrollView.m in Sources */,
 				9F756A222192B56C001FECCA /* TPKeyboardAvoidingTableView.m in Sources */,
 				9F756A212192B56C001FECCA /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				A656BE04252C63110035BE42 /* SegmentView.swift in Sources */,
 				9F756A242192B56C001FECCA /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				9F8F2819219173B100C629EE /* AppDelegate.swift in Sources */,
 			);
@@ -250,6 +317,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -311,6 +379,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -342,21 +411,22 @@
 		};
 		9F8F2828219173C100C629EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B854AF2FCC84CD95B4FEAA /* Pods-ShuftiPro Non OCR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SY9GC8368B;
+				DEVELOPMENT_TEAM = 8ZN3LBU587;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "ShuftiPro Non OCR/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShuftiPro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shufti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,21 +435,22 @@
 		};
 		9F8F2829219173C100C629EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02616B220C36F04993DCDB5 /* Pods-ShuftiPro Non OCR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SY9GC8368B;
+				DEVELOPMENT_TEAM = 8ZN3LBU587;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "ShuftiPro Non OCR/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShuftiPro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shufti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

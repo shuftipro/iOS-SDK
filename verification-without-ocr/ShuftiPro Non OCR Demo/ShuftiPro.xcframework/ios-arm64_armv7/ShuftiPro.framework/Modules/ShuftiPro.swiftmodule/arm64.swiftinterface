@@ -5,12 +5,17 @@ import AVFoundation
 import AVKit
 import Foundation
 import ImageIO
+import MessageUI
 @_exported import ShuftiPro
 import Swift
 import SystemConfiguration
 import UIKit
+import WebKit
 @_hasMissingDesignatedInitializers public class Reachability {
   @objc deinit
+}
+extension UIFont {
+  public static let loadMyFonts: ()
 }
 extension UIImageView {
   public func loadGif(name: Swift.String)

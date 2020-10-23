@@ -14,16 +14,14 @@ class ViewController: UIViewController {
     let clientIdStr = "" // your client id here
     let secretKeyStr = "" // your secret key here
     let accessTokenStr = "" // your access token here
-    
-    @IBOutlet weak var faceVerificationUIView: UIView!
-    @IBOutlet weak var documentVerificationUIView: UIView!
-    @IBOutlet weak var addressVerificationUIView: UIView!
+
     
     @IBOutlet weak var faceCheckImg: UIImageView!
     
     @IBOutlet weak var documentCheckImg: UIImageView!
     
     @IBOutlet weak var addressCheckImg: UIImageView!
+
     
     var faceVerification = false
     var documentVerification = false
@@ -33,42 +31,39 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyDropShadows()
+
+        
     }
     
-    func applyDropShadows(){
-        setShadowOnView(view: faceVerificationUIView)
-        setShadowOnView(view: documentVerificationUIView)
-        setShadowOnView(view: addressVerificationUIView)
-    }
+
     
     @IBAction func faceVerifyBtnPressed(_ sender: Any) {
         if faceVerification == false {
             faceVerification = true
-            faceCheckImg.image = UIImage(named: "checked")
+            faceCheckImg.image = UIImage(named: "check_radio")
         } else {
             faceVerification = false
-            faceCheckImg.image = UIImage(named: "unChecked")
+            faceCheckImg.image = UIImage(named: "uncheck_radio")
         }
     }
     
     @IBAction func documentVerifyBtnPressed(_ sender: Any) {
         if documentVerification == false {
             documentVerification = true
-            documentCheckImg.image = UIImage(named: "checked")
+            documentCheckImg.image = UIImage(named: "check_radio")
         } else {
             documentVerification = false
-            documentCheckImg.image = UIImage(named: "unChecked")
+            documentCheckImg.image = UIImage(named: "uncheck_radio")
         }
     }
     
     @IBAction func addressVerifyBtnPressed(_ sender: Any) {
         if addressVerification == false {
             addressVerification = true
-            addressCheckImg.image = UIImage(named: "checked")
+            addressCheckImg.image = UIImage(named: "check_radio")
         } else {
             addressVerification = false
-            addressCheckImg.image = UIImage(named: "unChecked")
+            addressCheckImg.image = UIImage(named: "uncheck_radio")
         }
     }
     
@@ -148,16 +143,7 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    //function to set shadow on UIViews
-    //takes UIView as an argument to apply style on
-    func setShadowOnView(view: UIView) -> UIView {
-        view.layer.shadowColor = UIColor.gray.cgColor
-        view.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        view.layer.masksToBounds = false
-        view.layer.shadowRadius = 5.0
-        view.layer.shadowOpacity = 0.4
-        return view
-    }
+
     
 }
 

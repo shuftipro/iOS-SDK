@@ -12,18 +12,20 @@
 		9FF6AF872158B5C800A9AB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF852158B5C800A9AB49 /* Main.storyboard */; };
 		9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */; };
 		9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */; };
-		C563DBBF251A6D32002CFE3A /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C563DBBE251A6D32002CFE3A /* ShuftiPro.xcframework */; };
-		C563DBC0251A6D32002CFE3A /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C563DBBE251A6D32002CFE3A /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A677CFE22535BD6300803D6F /* extraction_Preloader.gif in Resources */ = {isa = PBXBuildFile; fileRef = A677CFE12535BD6300803D6F /* extraction_Preloader.gif */; };
+		A69A539E25303A9C001383E0 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A539D25303A9C001383E0 /* DesignableView.swift */; };
+		A6C141432543000500FEDCBB /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C141422543000500FEDCBB /* ShuftiPro.xcframework */; };
+		A6C141442543000500FEDCBB /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6C141422543000500FEDCBB /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C563DBC1251A6D32002CFE3A /* Embed Frameworks */ = {
+		A6943AEA253F146C00B55B31 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C563DBC0251A6D32002CFE3A /* ShuftiPro.xcframework in Embed Frameworks */,
+				A6C141442543000500FEDCBB /* ShuftiPro.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,8 +40,9 @@
 		9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF6AF8B2158B5CB00A9AB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF6AF8D2158B5CB00A9AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C563DBBE251A6D32002CFE3A /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
-		C598B600235DEAD10046F650 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
+		A677CFE12535BD6300803D6F /* extraction_Preloader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = extraction_Preloader.gif; sourceTree = "<group>"; };
+		A69A539D25303A9C001383E0 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		A6C141422543000500FEDCBB /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C563DBBF251A6D32002CFE3A /* ShuftiPro.xcframework in Frameworks */,
+				A6C141432543000500FEDCBB /* ShuftiPro.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +82,9 @@
 				9FF6AF852158B5C800A9AB49 /* Main.storyboard */,
 				9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */,
 				9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */,
+				A677CFE12535BD6300803D6F /* extraction_Preloader.gif */,
 				9FF6AF8D2158B5CB00A9AB49 /* Info.plist */,
+				A69A539D25303A9C001383E0 /* DesignableView.swift */,
 			);
 			path = "Shufti Pro Demo";
 			sourceTree = "<group>";
@@ -87,8 +92,7 @@
 		C598B5FF235DEAD10046F650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C563DBBE251A6D32002CFE3A /* ShuftiPro.xcframework */,
-				C598B600235DEAD10046F650 /* ShuftiPro.framework */,
+				A6C141422543000500FEDCBB /* ShuftiPro.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,7 +107,7 @@
 				9FF6AF7A2158B5C800A9AB49 /* Sources */,
 				9FF6AF7B2158B5C800A9AB49 /* Frameworks */,
 				9FF6AF7C2158B5C800A9AB49 /* Resources */,
-				C563DBC1251A6D32002CFE3A /* Embed Frameworks */,
+				A6943AEA253F146C00B55B31 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +158,7 @@
 			files = (
 				9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */,
 				9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */,
+				A677CFE22535BD6300803D6F /* extraction_Preloader.gif in Resources */,
 				9FF6AF872158B5C800A9AB49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +172,7 @@
 			files = (
 				9FF6AF842158B5C800A9AB49 /* ViewController.swift in Sources */,
 				9FF6AF822158B5C800A9AB49 /* AppDelegate.swift in Sources */,
+				A69A539E25303A9C001383E0 /* DesignableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,18 +317,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SY9GC8368B;
+				DEVELOPMENT_TEAM = A4LLCLZP3T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
 				);
 				INFOPLIST_FILE = "Shufti Pro Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Shufti-Pro-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ProgramersForce.pk.TestShuftiProFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,18 +341,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SY9GC8368B;
+				DEVELOPMENT_TEAM = A4LLCLZP3T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
 				);
 				INFOPLIST_FILE = "Shufti Pro Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Shufti-Pro-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ProgramersForce.pk.TestShuftiProFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
-//  Shufti Pro Demo
-//
+//  Shufti Pro Demo 
+//  OCR
 //  Created by Swift Developer on 9/24/18.
 //  Copyright © 2018 Programmers Force. All rights reserved.
 //
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        applyDropShadows()
+       // applyDropShadows()
     }
     
     func applyDropShadows(){
@@ -46,30 +46,30 @@ class ViewController: UIViewController {
     @IBAction func faceVerifyBtnPressed(_ sender: Any) {
         if faceVerification == false {
             faceVerification = true
-            faceCheckImg.image = UIImage(named: "checked")
+            faceCheckImg.image = UIImage(named: "check_radio")
         } else {
             faceVerification = false
-            faceCheckImg.image = UIImage(named: "unChecked")
+            faceCheckImg.image = UIImage(named: "uncheck_radio")
         }
     }
     
     @IBAction func documentVerifyBtnPressed(_ sender: Any) {
         if documentVerification == false {
             documentVerification = true
-            documentCheckImg.image = UIImage(named: "checked")
+            documentCheckImg.image = UIImage(named: "check_radio")
         } else {
             documentVerification = false
-            documentCheckImg.image = UIImage(named: "unChecked")
+            documentCheckImg.image = UIImage(named: "uncheck_radio")
         }
     }
     
     @IBAction func addressVerifyBtnPressed(_ sender: Any) {
         if addressVerification == false {
             addressVerification = true
-            addressCheckImg.image = UIImage(named: "checked")
+            addressCheckImg.image = UIImage(named: "check_radio")
         } else {
             addressVerification = false
-            addressCheckImg.image = UIImage(named: "unChecked")
+            addressCheckImg.image = UIImage(named: "uncheck_radio")
         }
     }
     
@@ -136,13 +136,14 @@ class ViewController: UIViewController {
     
     //function to set shadow on UIViews
     //takes UIView as an argument to apply style on
-    func setShadowOnView(view: UIView) -> UIView {
-        view.layer.shadowColor = UIColor.gray.cgColor
-        view.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        view.layer.masksToBounds = false
-        view.layer.shadowRadius = 5.0
-        view.layer.shadowOpacity = 0.4
-        return view
+    func setShadowOnView(view: UIView) {
+
+        view.layer.masksToBounds = true
+        view.layer.cornerRadius = 6.0
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.lightGray.cgColor
+
+       
     }
 
 

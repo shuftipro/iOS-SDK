@@ -12,18 +12,19 @@
 		9FF6AF872158B5C800A9AB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF852158B5C800A9AB49 /* Main.storyboard */; };
 		9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */; };
 		9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */; };
-		C563DBC5251B37E9002CFE3A /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C563DBC4251B37E9002CFE3A /* ShuftiPro.xcframework */; };
-		C563DBC6251B37E9002CFE3A /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C563DBC4251B37E9002CFE3A /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A69A538A253036AE001383E0 /* DesignsbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A5389253036AE001383E0 /* DesignsbleView.swift */; };
+		A6C13F002542AD5B00FEDCBB /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C13EFF2542AD5B00FEDCBB /* ShuftiPro.xcframework */; };
+		A6C13F012542AD5B00FEDCBB /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6C13EFF2542AD5B00FEDCBB /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C563DBC7251B37E9002CFE3A /* Embed Frameworks */ = {
+		A6BC299A2541989B008E5B8C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C563DBC6251B37E9002CFE3A /* ShuftiPro.xcframework in Embed Frameworks */,
+				A6C13F012542AD5B00FEDCBB /* ShuftiPro.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,8 +39,8 @@
 		9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF6AF8B2158B5CB00A9AB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF6AF8D2158B5CB00A9AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C563DBC4251B37E9002CFE3A /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
-		C598B60A235DF7650046F650 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
+		A69A5389253036AE001383E0 /* DesignsbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignsbleView.swift; sourceTree = "<group>"; };
+		A6C13EFF2542AD5B00FEDCBB /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C563DBC5251B37E9002CFE3A /* ShuftiPro.xcframework in Frameworks */,
+				A6C13F002542AD5B00FEDCBB /* ShuftiPro.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +81,7 @@
 				9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */,
 				9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */,
 				9FF6AF8D2158B5CB00A9AB49 /* Info.plist */,
+				A69A5389253036AE001383E0 /* DesignsbleView.swift */,
 			);
 			path = "Shufti Pro Demo";
 			sourceTree = "<group>";
@@ -87,8 +89,7 @@
 		C598B609235DF7650046F650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C563DBC4251B37E9002CFE3A /* ShuftiPro.xcframework */,
-				C598B60A235DF7650046F650 /* ShuftiPro.framework */,
+				A6C13EFF2542AD5B00FEDCBB /* ShuftiPro.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,7 +104,7 @@
 				9FF6AF7A2158B5C800A9AB49 /* Sources */,
 				9FF6AF7B2158B5C800A9AB49 /* Frameworks */,
 				9FF6AF7C2158B5C800A9AB49 /* Resources */,
-				C563DBC7251B37E9002CFE3A /* Embed Frameworks */,
+				A6BC299A2541989B008E5B8C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,7 +122,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Programmers Force";
 				TargetAttributes = {
 					9FF6AF7D2158B5C800A9AB49 = {
@@ -167,6 +168,7 @@
 			files = (
 				9FF6AF842158B5C800A9AB49 /* ViewController.swift in Sources */,
 				9FF6AF822158B5C800A9AB49 /* AppDelegate.swift in Sources */,
+				A69A538A253036AE001383E0 /* DesignsbleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +220,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -243,7 +246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -278,6 +281,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -297,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -311,18 +315,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SY9GC8368B;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = A4LLCLZP3T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Shufti Pro Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.programmersforce.Shufti-Pro-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shufti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,18 +339,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SY9GC8368B;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = A4LLCLZP3T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Shufti Pro Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.programmersforce.Shufti-Pro-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shufti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

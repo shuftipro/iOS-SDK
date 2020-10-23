@@ -9,7 +9,7 @@
 import UIKit
 import ShuftiPro
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     
     let clientIdStr = "" // your client id here
     let secretKeyStr = "" // your secret key here
@@ -18,8 +18,17 @@ class ViewController: UIViewController {
     var faceVerification = false
     var documentVerification = false
     var addressVerification = false
+    var concentVerification = false
     
     @IBOutlet weak var faceCheckImage: UIImageView!
+    @IBOutlet weak var documentCheckImage: UIImageView!
+    @IBOutlet weak var addressCheckImage: UIImageView!
+    @IBOutlet weak var concentCheckImage: UIImageView!
+    @IBOutlet weak var expandDocumentImage: UIImageView!
+    @IBOutlet weak var expandAddressImage: UIImageView!
+    @IBOutlet weak var expandConcentImage: UIImageView!
+
+
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -30,15 +39,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var issueDateTextField: UITextField!
     @IBOutlet weak var expiryDateTextField: UITextField!
     
-    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var addressTextField: UITextView!
+    @IBOutlet weak var concentTextField: UITextField!
     
-    @IBOutlet weak var faceVerificationCheckUIView: UIView!
-    @IBOutlet weak var documentRowUIView1: UIView!
-    @IBOutlet weak var documentRowUIView2: UIView!
-    
-    @IBOutlet weak var documentRowUIView3: UIView!
-    
-    @IBOutlet weak var addressRowUIView1: UIView!
+    @IBOutlet weak var concentUIView: UIView!
+    @IBOutlet weak var addressUIView: UIView!
+    @IBOutlet weak var documentUIView: UIView!
     
     
     var dataDictionary = Dictionary<String, Any>()
@@ -47,20 +53,168 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        applyShadow()
+        imageTapGestures()
+        datePickerGestures()
+    }
+    func imageTapGestures() {
+        let documentTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(documentImageTapped(tapGestureRecognizer:)))
+         documentCheckImage.isUserInteractionEnabled = true
+        documentCheckImage.addGestureRecognizer(documentTapGestureRecognizer)
+        
+        let addressTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(addressImageTapped(tapGestureRecognizer:)))
+         addressCheckImage.isUserInteractionEnabled = true
+        addressCheckImage.addGestureRecognizer(addressTapGestureRecognizer)
+        
+        let concentTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(concentImageTapped(tapGestureRecognizer:)))
+         concentCheckImage.isUserInteractionEnabled = true
+        concentCheckImage.addGestureRecognizer(concentTapGestureRecognizer)
+    }
+    func datePickerGestures() {
+        dobTextField.addInputViewDatePicker(target: self, selector: #selector(doneDobPressed))
+        issueDateTextField.addInputViewDatePicker(target: self, selector: #selector(doneIssueDatePressed))
+        expiryDateTextField.addInputViewDatePicker(target: self, selector: #selector(doneExpiryDatePressed))
+
+    }
+    @objc func documentImageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        if firstNameTextField.text != "" || lastNameTextField.text != "" || dobTextField.text != "" || documentNoTextField.text != "" || issueDateTextField.text != "" || expiryDateTextField.text != "" {
+        if documentCheckImage.image ==  #imageLiteral(resourceName: "uncheck_radio") {
+            documentCheckImage.image = #imageLiteral(resourceName: "check_radio")
+            documentVerification = true
+        }else if documentCheckImage.image == #imageLiteral(resourceName: "check_radio"){
+            documentCheckImage.image =  #imageLiteral(resourceName: "uncheck_radio")
+            documentVerification = false
+            firstNameTextField.text = ""
+            lastNameTextField.text = ""
+            dobTextField.text = ""
+            documentNoTextField.text = ""
+            issueDateTextField.text = ""
+            expiryDateTextField.text = ""
+            
+        }
+        }
+    }
+    @objc func addressImageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        if addressTextField.text != "" {
+         
+         if addressCheckImage.image ==  #imageLiteral(resourceName: "uncheck_radio") {
+             addressCheckImage.image = #imageLiteral(resourceName: "check_radio")
+             self.addressVerification = true
+         }else if addressCheckImage.image == #imageLiteral(resourceName: "check_radio"){
+             addressCheckImage.image =  #imageLiteral(resourceName: "uncheck_radio")
+             self.addressVerification = false
+             addressTextField.text = ""
+         }
+     }
+
+    }
+    @objc func concentImageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        if concentTextField.text != "" {
+        if concentCheckImage.image ==  #imageLiteral(resourceName: "uncheck_radio") {
+            concentCheckImage.image = #imageLiteral(resourceName: "check_radio")
+            self.concentVerification = true
+        }else if concentCheckImage.image == #imageLiteral(resourceName: "check_radio"){
+            concentCheckImage.image =  #imageLiteral(resourceName: "uncheck_radio")
+            self.concentVerification = false
+            concentTextField.text = ""
+        }
+        }
+    }
+    //MARK:- Date Picker
+
+    @objc func doneDobPressed() {
+       if let  datePicker = self.dobTextField.inputView as? UIDatePicker {
+           let dateFormatter = DateFormatter()
+           dateFormatter.dateFormat = "yyyy-MM-dd"
+        //   dateFormatter.dateStyle = .medium
+           self.dobTextField.text = dateFormatter.string(from: datePicker.date)
+          // self.expiryDate = dateFormatter.string(from: datePicker.date)
+            //print("expiry date :\(expiryDate)")
+       }
+       self.dobTextField.resignFirstResponder()
     }
     
-    
+    @objc func doneIssueDatePressed() {
+       if let  datePicker = self.issueDateTextField.inputView as? UIDatePicker {
+           let dateFormatter = DateFormatter()
+           dateFormatter.dateFormat = "yyyy-MM-dd"
+        //   dateFormatter.dateStyle = .medium
+           self.issueDateTextField.text = dateFormatter.string(from: datePicker.date)
+          // self.expiryDate = dateFormatter.string(from: datePicker.date)
+            //print("expiry date :\(expiryDate)")
+       }
+       self.issueDateTextField.resignFirstResponder()
+    }
+    @objc func doneExpiryDatePressed() {
+       if let  datePicker = self.expiryDateTextField.inputView as? UIDatePicker {
+           let dateFormatter = DateFormatter()
+           dateFormatter.dateFormat = "yyyy-MM-dd"
+        //   dateFormatter.dateStyle = .medium
+           self.expiryDateTextField.text = dateFormatter.string(from: datePicker.date)
+          // self.expiryDate = dateFormatter.string(from: datePicker.date)
+            //print("expiry date :\(expiryDate)")
+       }
+       self.expiryDateTextField.resignFirstResponder()
+    }
     @IBAction func faceVerificationBtnPressed(_ sender: Any) {
         if faceVerification == false {
             faceVerification = true
-            faceCheckImage.image = UIImage(named: "checked")
+            faceCheckImage.image = UIImage(named: "check_radio")
         } else {
             faceVerification = false
-            faceCheckImage.image = UIImage(named: "unChecked")
+            faceCheckImage.image = UIImage(named: "uncheck_radio")
         }
     }
-    
+    @IBAction func documentVerificationBtnPressed(_ sender: Any) {
+        if documentVerification == false {
+            documentVerification = true
+            expandDocumentImage.image = UIImage(named: "un-expand")
+            documentUIView.isHidden = false
+        } else {
+            documentVerification = false
+            expandDocumentImage.image = UIImage(named: "expand")
+            documentUIView.isHidden = true
+        }
+        if firstNameTextField.text != "" || lastNameTextField.text != "" || dobTextField.text != "" || documentNoTextField.text != "" || issueDateTextField.text != "" || expiryDateTextField.text != "" {
+            documentCheckImage.image = #imageLiteral(resourceName: "check_radio")
+        }else {
+            documentCheckImage.image = #imageLiteral(resourceName: "uncheck_radio")
+        }
+    }
+    @IBAction func addressVerificationBtnPressed(_ sender: Any) {
+        if addressVerification == false {
+            addressVerification = true
+            expandAddressImage.image = UIImage(named: "un-expand")
+            addressUIView.isHidden = false
+        } else {
+            addressVerification = false
+            expandAddressImage.image = UIImage(named: "expand")
+            addressUIView.isHidden = true
+        }
+        if addressTextField.text != "" {
+            addressCheckImage.image = #imageLiteral(resourceName: "check_radio")
+        }else {
+            addressCheckImage.image = #imageLiteral(resourceName: "uncheck_radio")
+        }
+    }
+    @IBAction func concentVerificationBtnPressed(_ sender: Any) {
+        if concentVerification == false {
+            concentVerification = true
+            expandConcentImage.image = UIImage(named: "un-expand")
+            concentUIView.isHidden = false
+        } else {
+            concentVerification = false
+            expandConcentImage.image = UIImage(named: "expand")
+            concentUIView.isHidden = true
+        }
+        if  concentTextField.text != "" {
+            concentCheckImage.image = #imageLiteral(resourceName: "check_radio")
+        }else {
+            concentCheckImage.image = #imageLiteral(resourceName: "uncheck_radio")
+        }
+    }
     func chkVerifications(){
         if firstNameTextField.text != "" || lastNameTextField.text != "" || dobTextField.text != "" || documentNoTextField.text != "" || issueDateTextField.text != "" || expiryDateTextField.text != "" {
             documentVerification = true
@@ -72,11 +226,16 @@ class ViewController: UIViewController {
         } else {
             addressVerification = false
         }
+        if concentTextField.text != "" {
+            concentVerification = true
+        }else {
+            concentVerification = false
+        }
     }
     
     func createJsonObj() {
         chkVerifications()
-        if faceVerification == true || documentVerification == true || addressVerification == true {
+        if faceVerification == true || documentVerification == true || addressVerification == true || concentVerification == true {
             dataDictionary = [
                 "reference": "SDK-iOS-\(UIDevice.current.identifierForVendor!.uuidString)\(NSDate())",
                 "country": "GB",
@@ -123,6 +282,14 @@ class ViewController: UIViewController {
                     ]
                 ]
             }
+            if concentVerification == true {
+                dataDictionary["consent"] = [
+                    "text": concentTextField.text as! String,
+                    "supported_types": [
+                        "printed"
+                    ]
+                ]
+            }
             
             let shufti = ShuftiPro(clientId: clientIdStr, secretKey: secretKeyStr, parentVC: self)
             //let shufti = ShuftiPro(accessToken: accessToken, parentVC: self) //To use with Access Token
@@ -137,6 +304,8 @@ class ViewController: UIViewController {
         }
     }
     
+
+
     
     @IBAction func proceedBtnPressed(_ sender: Any) {
         createJsonObj()
@@ -152,23 +321,35 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
-    func applyShadow() {
-        setShadowOnView(view: faceVerificationCheckUIView)
-        setShadowOnView(view: documentRowUIView1)
-        setShadowOnView(view: documentRowUIView2)
-        setShadowOnView(view: documentRowUIView3)
-        setShadowOnView(view: addressRowUIView1)
-    }
-    
-    func setShadowOnView(view: UIView) -> UIView {
-        view.layer.shadowColor = UIColor.gray.cgColor
-        view.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        view.layer.masksToBounds = false
-        view.layer.shadowRadius = 5.0
-        view.layer.shadowOpacity = 0.4
-        return view
-    }
 
 
 }
 
+extension UITextField {
+
+    //Date Picker
+    func addInputViewDatePicker(target: Any, selector: Selector) {
+
+       let screenWidth = UIScreen.main.bounds.width
+
+       //Add DatePicker as inputView
+       let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 216))
+       datePicker.datePickerMode = .date
+       self.inputView = datePicker
+
+       //Add Tool Bar as input AccessoryView
+       let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+       let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+       let doneBarButton = UIBarButtonItem(title: "Done", style: .plain, target: target, action: selector)
+        let cancelBarButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelPressed))
+
+       toolBar.setItems([cancelBarButton, flexibleSpace, doneBarButton], animated: false)
+
+       self.inputAccessoryView = toolBar
+    }
+
+      @objc func cancelPressed() {
+        self.resignFirstResponder()
+      }
+}
