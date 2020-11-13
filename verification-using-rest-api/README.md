@@ -77,7 +77,8 @@ let dataDictionary: [String: Any] = [
                  "document_number": "",
                  "expiry_date": "",
                  "issue_date": "",
-                 "fetch_enhanced_data": "1"
+                 "fetch_enhanced_data": "1",
+                 "backside_proof_required": "1"
              ],
              "address": [
                  "proof": "",
@@ -300,6 +301,16 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Provide 1 for enabling enhanced data extraction for the document. Shufti Pro provides its customers with the facility of extracting enhanced data features using OCR technology. Now, instead of extracting just personal information input fields, Shufti Pro can fetch all the additional information comprising more than 100 data points from the official ID documents supporting 150 languages. For example height, place_of_birth, nationality, marital_status, weight, etc.(additional charges apply)
 Extrated data will be returned in object under the key additional_data in case of verification.accepted or verification.declined.
 For Details on additional_data object go to [Additional Data](https://api.shuftipro.com/api/docs/#additional-data)
+
+
+  * <h3>backside_proof_required</h3>
+
+  Required: **No**  
+  Type: **string**  
+  Accepted value: **0,1** <br>
+  Default Value: **"0"**
+  
+  If the value of this parameter is set to 1, Shufti Pro will require the end-user to capture/upload both sides of the document to verify the identity. Enabling this parameter will also activate the front and back sides document match feature, which will verify if captured/uploaded front and back sides belong to the same document.  
 
 <!-- -------------------------------------------------------------------------------- -->
 * ## address
