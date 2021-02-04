@@ -13,8 +13,8 @@
 		9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */; };
 		9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */; };
 		A69A538A253036AE001383E0 /* DesignsbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A5389253036AE001383E0 /* DesignsbleView.swift */; };
-		A6A15E6125B81EDE00BC11EB /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A15E5F25B81ED800BC11EB /* ShuftiPro.xcframework */; };
-		A6A15E6225B81EDE00BC11EB /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6A15E5F25B81ED800BC11EB /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C37C266925CBD320004F430C /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37C266725CBD31B004F430C /* ShuftiPro.xcframework */; };
+		C37C266A25CBD320004F430C /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C37C266725CBD31B004F430C /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A6A15E6225B81EDE00BC11EB /* ShuftiPro.xcframework in Embed Frameworks */,
+				C37C266A25CBD320004F430C /* ShuftiPro.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +40,7 @@
 		9FF6AF8B2158B5CB00A9AB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF6AF8D2158B5CB00A9AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69A5389253036AE001383E0 /* DesignsbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignsbleView.swift; sourceTree = "<group>"; };
-		A6A15E5F25B81ED800BC11EB /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
+		C37C266725CBD31B004F430C /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6A15E6125B81EDE00BC11EB /* ShuftiPro.xcframework in Frameworks */,
+				C37C266925CBD320004F430C /* ShuftiPro.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +58,9 @@
 		9FF6AF752158B5C800A9AB49 = {
 			isa = PBXGroup;
 			children = (
+				C37C266725CBD31B004F430C /* ShuftiPro.xcframework */,
 				9FF6AF802158B5C800A9AB49 /* Shufti Pro Demo */,
 				9FF6AF7F2158B5C800A9AB49 /* Products */,
-				C598B609235DF7650046F650 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,14 +84,6 @@
 				A69A5389253036AE001383E0 /* DesignsbleView.swift */,
 			);
 			path = "Shufti Pro Demo";
-			sourceTree = "<group>";
-		};
-		C598B609235DF7650046F650 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A6A15E5F25B81ED800BC11EB /* ShuftiPro.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +312,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
 				);
 				INFOPLIST_FILE = "Shufti Pro Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -344,6 +340,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
+					"$(PROJECT_DIR)/Shufti\\ Pro\\ Demo",
 				);
 				INFOPLIST_FILE = "Shufti Pro Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

@@ -50,7 +50,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="continuedBtnPressed:" destination="vZB-Xf-19i" eventType="touchUpInside" id="d6k-ga-xb4"/>
+                                            <action selector="continueBtnPressed:" destination="vZB-Xf-19i" eventType="touchUpInside" id="nUt-N0-KqN"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gWz-ZE-dlx">
@@ -131,7 +131,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4Q-22-q6y">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <connections>
-                                                                    <action selector="faceVerifyBtnPressed:" destination="vZB-Xf-19i" eventType="touchUpInside" id="nZ4-ej-qjC"/>
+                                                                    <action selector="faceVerificationBtn:" destination="vZB-Xf-19i" eventType="touchUpInside" id="vP4-PF-Qmp"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -197,7 +197,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWw-jR-5wA">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <connections>
-                                                                    <action selector="documentVerifyBtnPressed:" destination="vZB-Xf-19i" eventType="touchUpInside" id="Jsu-vb-hwp"/>
+                                                                    <action selector="docVerificationBtn:" destination="vZB-Xf-19i" eventType="touchUpInside" id="4CL-1n-Bpn"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -264,7 +264,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcl-Df-lcc">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <connections>
-                                                                    <action selector="documentTwoVerifyBtnPressed:" destination="vZB-Xf-19i" eventType="touchUpInside" id="MtN-Dx-QqE"/>
+                                                                    <action selector="docTwoVerificationBtn:" destination="vZB-Xf-19i" eventType="touchUpInside" id="Fgx-hp-Fx4"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -331,7 +331,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lu-CK-zWx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <connections>
-                                                                    <action selector="addressVerifyBtnPressed:" destination="vZB-Xf-19i" eventType="touchUpInside" id="hFT-TP-XOz"/>
+                                                                    <action selector="addressVerificationbtn:" destination="vZB-Xf-19i" eventType="touchUpInside" id="33C-Z1-hVp"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -398,7 +398,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn8-Ic-Afw">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <connections>
-                                                                    <action selector="consentVerifyBtnPressed:" destination="vZB-Xf-19i" eventType="touchUpInside" id="bLR-Fx-xBw"/>
+                                                                    <action selector="consentVerificationBtn:" destination="vZB-Xf-19i" eventType="touchUpInside" id="Umc-BI-OMo"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -465,7 +465,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe8-MW-2PN">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <connections>
-                                                                    <action selector="twoFactorVerifyBtnPressed:" destination="vZB-Xf-19i" eventType="touchUpInside" id="F0Y-Bo-QfR"/>
+                                                                    <action selector="twoFactorVerificationBtn:" destination="vZB-Xf-19i" eventType="touchUpInside" id="bcf-2U-b52"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -532,7 +532,7 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvf-bB-SQe">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <connections>
-                                                                    <action selector="backgroundChecksBtnPressed:" destination="vZB-Xf-19i" eventType="touchUpInside" id="Gdg-ul-NKO"/>
+                                                                    <action selector="backgroundChecksBtn:" destination="vZB-Xf-19i" eventType="touchUpInside" id="D8D-AQ-4Ib"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -608,7 +608,7 @@
                         <outlet property="backgroundCheckImg" destination="wnc-4v-wfk" id="CfQ-qo-FtB"/>
                         <outlet property="consentCheckImg" destination="IZY-b9-IjH" id="EYP-Ru-LjH"/>
                         <outlet property="documentCheckImg" destination="UdH-be-XaE" id="i32-8O-vyF"/>
-                        <outlet property="documentTwoCheckImg" destination="vme-W3-plb" id="m4t-LK-uZQ"/>
+                        <outlet property="documentTwoCheckImg" destination="vme-W3-plb" id="IDM-2S-t5Q"/>
                         <outlet property="faceCheckImg" destination="J4u-9W-C3s" id="jY3-Qw-NEz"/>
                         <outlet property="twoFactorCheckImg" destination="eba-Th-hZW" id="CVA-yv-ckr"/>
                     </connections>

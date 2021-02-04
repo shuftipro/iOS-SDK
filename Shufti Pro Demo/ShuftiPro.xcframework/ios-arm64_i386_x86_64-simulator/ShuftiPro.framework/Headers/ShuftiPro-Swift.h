@@ -227,7 +227,6 @@ SWIFT_CLASS("_TtC9ShuftiPro7CallApi")
 @class UIImageView;
 @class AVCaptureFileOutput;
 @class AVCaptureConnection;
-@protocol UIViewControllerTransitionCoordinator;
 @class NSBundle;
 @class NSCoder;
 
@@ -260,7 +259,6 @@ SWIFT_CLASS("_TtC9ShuftiPro8CameraVc")
 - (IBAction)usItBtnPressed:(id _Nonnull)sender;
 - (void)switchCamera;
 - (void)captureOutput:(AVCaptureFileOutput * _Nonnull)output didFinishRecordingToOutputFileAtURL:(NSURL * _Nonnull)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> * _Nonnull)connections error:(NSError * _Nullable)error;
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)cameraErrorMessageWithCamErrMsg:(NSString * _Nonnull)camErrMsg;
 - (void)zoomIn;
 - (void)zoomOut;
@@ -747,7 +745,6 @@ SWIFT_CLASS("_TtC9ShuftiPro7CallApi")
 @class UIImageView;
 @class AVCaptureFileOutput;
 @class AVCaptureConnection;
-@protocol UIViewControllerTransitionCoordinator;
 @class NSBundle;
 @class NSCoder;
 
@@ -780,7 +777,6 @@ SWIFT_CLASS("_TtC9ShuftiPro8CameraVc")
 - (IBAction)usItBtnPressed:(id _Nonnull)sender;
 - (void)switchCamera;
 - (void)captureOutput:(AVCaptureFileOutput * _Nonnull)output didFinishRecordingToOutputFileAtURL:(NSURL * _Nonnull)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> * _Nonnull)connections error:(NSError * _Nullable)error;
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)cameraErrorMessageWithCamErrMsg:(NSString * _Nonnull)camErrMsg;
 - (void)zoomIn;
 - (void)zoomOut;
@@ -1267,7 +1263,6 @@ SWIFT_CLASS("_TtC9ShuftiPro7CallApi")
 @class UIImageView;
 @class AVCaptureFileOutput;
 @class AVCaptureConnection;
-@protocol UIViewControllerTransitionCoordinator;
 @class NSBundle;
 @class NSCoder;
 
@@ -1300,7 +1295,6 @@ SWIFT_CLASS("_TtC9ShuftiPro8CameraVc")
 - (IBAction)usItBtnPressed:(id _Nonnull)sender;
 - (void)switchCamera;
 - (void)captureOutput:(AVCaptureFileOutput * _Nonnull)output didFinishRecordingToOutputFileAtURL:(NSURL * _Nonnull)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> * _Nonnull)connections error:(NSError * _Nullable)error;
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)cameraErrorMessageWithCamErrMsg:(NSString * _Nonnull)camErrMsg;
 - (void)zoomIn;
 - (void)zoomOut;
