@@ -394,6 +394,7 @@ SWIFT_CLASS("_TtC9ShuftiPro8ResultVc")
 - (void)viewWillDisappear:(BOOL)animated;
 - (IBAction)resultsProceedBtnPressed:(id _Nonnull)sender;
 - (void)authenticate;
+- (void)checkRequestStatusApi;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -912,6 +913,7 @@ SWIFT_CLASS("_TtC9ShuftiPro8ResultVc")
 - (void)viewWillDisappear:(BOOL)animated;
 - (IBAction)resultsProceedBtnPressed:(id _Nonnull)sender;
 - (void)authenticate;
+- (void)checkRequestStatusApi;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1430,6 +1432,7 @@ SWIFT_CLASS("_TtC9ShuftiPro8ResultVc")
 - (void)viewWillDisappear:(BOOL)animated;
 - (IBAction)resultsProceedBtnPressed:(id _Nonnull)sender;
 - (void)authenticate;
+- (void)checkRequestStatusApi;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
