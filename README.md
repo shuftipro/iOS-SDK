@@ -44,7 +44,7 @@ Supported architectures in SDK:
 </array>
 ```
 * ### In your Project target add under Signing and Capabilities section tap on Capabilities and add Near Field communication Tag Reading.
-For more guidance watch this guided image. [here](nfcGuide.PNG)
+For more guidance watch this guided image. [here](nfcGuide.png)
 
 
 ## SDK Installation Guide
