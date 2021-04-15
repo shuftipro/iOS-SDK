@@ -11,9 +11,11 @@ import ShuftiPro
 
 class ViewController: UIViewController {
 
-    let clientIdStr = "" // your client id here
-    let secretKeyStr = "" // your secret key here
+    let clientIdStr = "xxx" // your client id here
+    let secretKeyStr = "xxx" // your secret key here
     let accessToken = "" // your accessToken here
+    var referenceKey = ""
+    var showRatingScreen = false
     var authKeys = Dictionary<String, String>()
     var configs = Dictionary<String, Any>()
 
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
 
 
 
-
+    
     var faceVerification = false
     var documentVerification = false
     var documentTwoVerification = false
@@ -37,7 +39,7 @@ class ViewController: UIViewController {
     var backgroundVerification = false
 
 
-
+    
     @IBOutlet weak var allowOnlineBtn: UIButton!
     @IBOutlet weak var allowOfflineBtn: UIButton!
     @IBOutlet weak var showPrivacyBtn: UIButton!
@@ -48,20 +50,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var bgServiceBtn: UIButton!
 
 
-
-
+    
+    
+    
     var dataDictionary = Dictionary<String, Any>()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
 
     }
-
+    
 
     override func viewDidAppear(_ animated: Bool) {
-
+        
         faceVerification = false
         faceCheckImg.image = UIImage(named: "uncheck_radio")
         addressVerification = false
@@ -76,12 +79,12 @@ class ViewController: UIViewController {
         twoFactorCheckImg.image = UIImage(named: "uncheck_radio")
         backgroundVerification = false
         backgroundCheckImg.image = UIImage(named: "uncheck_radio")
-
+        
     }
 
 
-    @IBAction func faceVerificationBtn(_ sender: Any) {
-
+    // Orignal button
+    @IBAction func faceVerifyBtnPressed(_ sender: Any) {
         if faceVerification == false {
             faceVerification = true
             faceCheckImg.image = UIImage(named: "check_radio")
@@ -89,10 +92,9 @@ class ViewController: UIViewController {
             faceVerification = false
             faceCheckImg.image = UIImage(named: "uncheck_radio")
         }
-
     }
-    @IBAction func docVerificationBtn(_ sender: Any) {
-
+    
+    @IBAction func documentVerifyBtnPressed(_ sender: Any) {
         if documentVerification == false {
             documentVerification = true
             documentCheckImg.image = UIImage(named: "check_radio")
@@ -101,9 +103,7 @@ class ViewController: UIViewController {
             documentCheckImg.image = UIImage(named: "uncheck_radio")
         }
     }
-
-    @IBAction func docTwoVerificationBtn(_ sender: Any) {
-
+    @IBAction func documentTwoVerifyBtnPressed(_ sender: Any) {
         if documentTwoVerification == false {
             documentTwoVerification = true
             documentTwoCheckImg.image = UIImage(named: "check_radio")
@@ -111,23 +111,8 @@ class ViewController: UIViewController {
             documentTwoVerification = false
             documentTwoCheckImg.image = UIImage(named: "uncheck_radio")
         }
-
     }
-
-    @IBAction func consentVerificationBtn(_ sender: Any) {
-
-        if concentVerification == false {
-            concentVerification = true
-            consentCheckImg.image = UIImage(named: "check_radio")
-
-        } else {
-            concentVerification = false
-            consentCheckImg.image = UIImage(named: "uncheck_radio")
-
-        }
-    }
-    @IBAction func addressVerificationbtn(_ sender: Any) {
-
+    @IBAction func addressVerifyBtnPressed(_ sender: Any) {
         if addressVerification == false {
             addressVerification = true
             addressCheckImg.image = UIImage(named: "check_radio")
@@ -136,38 +121,48 @@ class ViewController: UIViewController {
             addressCheckImg.image = UIImage(named: "uncheck_radio")
         }
     }
+    @IBAction func consentVerifyBtnPressed(_ sender: Any) {
+        if concentVerification == false {
+            concentVerification = true
+            consentCheckImg.image = UIImage(named: "check_radio")
+                        
+        } else {
+            concentVerification = false
+            consentCheckImg.image = UIImage(named: "uncheck_radio")
 
-    @IBAction func twoFactorVerificationBtn(_ sender: Any) {
-
+        }
+    }
+    @IBAction func twoFactorVerifyBtnPressed(_ sender: Any) {
         if twoFactorVerification == false {
             twoFactorVerification = true
             twoFactorCheckImg.image = UIImage(named: "check_radio")
-        }else {
+                        
+        } else {
             twoFactorVerification = false
             twoFactorCheckImg.image = UIImage(named: "uncheck_radio")
+
         }
-
-
     }
-    @IBAction func backgroundChecksBtn(_ sender: Any) {
-
-
+    
+    @IBAction func backgroundChecksBtnPressed(_ sender: Any) {
         if backgroundVerification == false {
             backgroundVerification = true
             backgroundCheckImg.image = UIImage(named: "check_radio")
-        }else {
+                        
+        } else {
             backgroundVerification = false
             backgroundCheckImg.image = UIImage(named: "uncheck_radio")
+
         }
     }
+    @IBAction func continuedBtnPressed(_ sender: Any) {
+        
+        showRatingScreen = true
 
-    @IBAction func continueBtnPressed(_ sender: Any) {
-
-
-        if faceVerification == true || documentVerification == true || documentTwoVerification == true || addressVerification == true || concentVerification == true || backgroundVerification == true{
-            let referenceKey = "SDK-iOS-\(UIDevice.current.identifierForVendor!.uuidString)\(NSDate())"
-
-
+        if faceVerification == true || documentVerification == true || documentTwoVerification == true || addressVerification == true || concentVerification == true || twoFactorVerification == true || backgroundVerification == true{
+            referenceKey = "SDK-iOS-\(UIDevice.current.identifierForVendor!.uuidString)\(NSDate())"
+            
+        
 
             dataDictionary = [
                 "reference": referenceKey,
@@ -175,14 +170,13 @@ class ViewController: UIViewController {
                 "language": "EN",
                 "email": "ad@example.com",
                 "callback_url": "http://www.example.com",
+                "show_results": "1",
                 "redirect_url" : "https://www.mydummy.shuftipro.com/",
+                "show_privacy_policy": "1",
+                "show_consent": "1",
                 "verification_Mode" : "image",
-                "show_consent" : "1",
-                "show_privacy_policy" : "0",
-                "show_results" : "0",
-                "phone" : "0",
-                "background_checks": "0",
-
+                
+                
             ]
             //MARK:- Ocr
 
@@ -191,8 +185,8 @@ class ViewController: UIViewController {
                     "proof": ""
                 ]
             }
-            if documentVerification == true  {
-
+            if documentVerification == true {
+                
                 dataDictionary["document"] = [
                     "supported_types": [
                         "passport",
@@ -207,12 +201,14 @@ class ViewController: UIViewController {
                               "middle_name": "",
                               "last_name" : ""
                     ],
-                    "backside_proof_required": "0",
+                    "backside_proof_required": "1",
                     "dob": "",
                     "document_number": "",
                     "expiry_date": "",
                     "issue_date": "",
                     "fetch_enhanced_data": "",
+                    "nfc_verification" : "true",
+
                 ]
             }
 
@@ -224,6 +220,7 @@ class ViewController: UIViewController {
                         "driving_license",
                         "credit_or_debit_card"
                     ],
+                    "proof": "",
                     "additional_proof" :"",
 
                     "name": ["first_name": "",
@@ -236,15 +233,19 @@ class ViewController: UIViewController {
                     "expiry_date": "",
                     "issue_date": "",
                     "fetch_enhanced_data": "",
+                    "nfc_verification" : "false",
 
+                    
                 ]
             }
-
+        
+            
             if addressVerification == true {
                 dataDictionary["address"] = [
                     "full_address": "",
                     "name": "",
                     "backside_proof_required": "0",
+                    "nfc_verification" : "false",
 
                     "supported_types": [
                         "id_card",
@@ -253,7 +254,7 @@ class ViewController: UIViewController {
                     ],
                 ]
             }
-
+            
             if concentVerification == true {
                 dataDictionary["consent"] = [
                     "proof": "",
@@ -263,35 +264,39 @@ class ViewController: UIViewController {
                   ],
                 ]
             }
+            if twoFactorVerification == true {
+                dataDictionary["phone"] = ""
 
+            }
+            if backgroundVerification == true {
+                dataDictionary["background_checks"] = ""
 
+            }
 
-
-
-            configs = [
-                "openWebView" : "false",
-                "async" : "false"
-
-            ]
 
             authKeys = [
                 "auth_type" : "basic_auth",
                 "client_id" : clientIdStr,
                 "secret_key": secretKeyStr
             ]
-
-
+            
+            configs = [
+                "openWebView" : "false",
+                "async" : "false"
+            ]
+            
             let shufti = ShuftiPro()
 
-            shufti.shuftiProVerification(requestObject: dataDictionary, authKeys: authKeys, parentVC: self, configs: configs) { (result) in
+            shufti.shuftiProVerification(requestObject: dataDictionary, authKeys: authKeys, parentVC: self, configs: configs) {(result) in
                  print("Got response from sdk: \(result)")
-
+        
             }
         } else {
             customAlertView(titleTxt: "", messageTxt: "Please choose method of verification.")
         }
     }
 
+    
     //function to show alert view
     func customAlertView(titleTxt: String, messageTxt: String) {
         let alertController = UIAlertController(title: titleTxt, message: messageTxt, preferredStyle: .alert)
@@ -299,7 +304,6 @@ class ViewController: UIViewController {
         alertController.addAction(defaultAction)
         self.present(alertController, animated: true, completion: nil)
     }
+ 
 }
-
-
 

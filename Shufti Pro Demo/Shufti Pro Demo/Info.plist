@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NFCReaderUsageDescription</key>
+	<string>Read the NFC chip of ePassports</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -45,5 +47,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+    <array>
+        <string>00000000000000</string>
+        <string>A0000002471001</string>
+    </array>
 </dict>
 </plist>
