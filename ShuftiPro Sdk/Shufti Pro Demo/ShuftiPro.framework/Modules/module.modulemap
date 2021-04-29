@@ -1,0 +1,11 @@
+framework module ShuftiPro {
+  umbrella header "ShuftiPro.h"
+
+  export *
+  module * { export * }
+}
+
+module ShuftiPro.Swift {
+    header "ShuftiPro-Swift.h"
+    requires objc
+}

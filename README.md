@@ -27,48 +27,37 @@ Shufti Pro’s API supports verification with and without OCR.
 # Basic Setup
 ## General Requirements
 Followings are minimum requirements for SDK:
-- iOS 13.0 and higher
+- iOS 10.0 and higher
 - Internet connection
 
 Supported architectures in SDK:
 - armv7 and arm64 for devices
 
 ## Permissions:
-* ### Application Info.plist must contain an **Privacy - Camera Usage Description** , **Privacy - Microphone Usage Description**  and  **Privacy - NFC Scan Usage Description**key with a explanation to end-user about how the app uses this data.
-* ### And Open your Info.plist file as Source Code add these lines inside dict tag.
-```
-<key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
-<array>
-    <string>00000000000000</string>
-    <string>A0000002471001</string>
-</array>
-```
-* ### In your Project target add under Signing and Capabilities section tap on Capabilities and add Near Field communication Tag Reading.
-For more guidance watch this guided image. [here](nfcGuide.png)
-
+Application Info.plist must contain an **Privacy - Camera Usage Description** and **Privacy - Microphone Usage Description** key with a explanation to end-user about how the app uses this data.
 
 ## SDK Installation Guide
-1. Add these dependencies into your project's pod file.
+>### Installation through Cocoapods
+   
+ For Swift version 4 & 5
+```sh
+pod 'ShuftiPro', :tag => '1.0.3', :git => "https://github.com/shuftipro/iOS-binary-pod"
 ```
-    pod 'NFCPassportReader', git:'https://github.com/AndyQ/NFCPassportReader.git'
-    pod 'GoogleMLKit/TextRecognition'
-```
-2. Copy “ShuftiPro.framework” into your project folder.
-3.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
-4.  Add “ShuftiPro.framework” in Embeded Binaries.
-5. Make sure your in your xcode project build settings "Validate Workspace" is set to "Yes"
 
+>### Manuall installation
+1. Copy “ShuftiPro.framework” into your project folder.
+2.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
+3.  Add “ShuftiPro.framework” in Embeded Binaries.
 
 ## Verification
-In order to get verified, customers will have themselves verified through their mobile phones. They will do it through the merchant's mobile application. Merchant will collect the information and send us the data for verification. The Merchant shall provide us with the proofs(Videos). We will not collect them directly from the user.
-  
-* ### With OCR
-In verification with OCR, it means that the merchant has not provided us proofs (images/videos) and also no data in some keys. In this verification Shufti Pro will perform extraction of data from those proofs and finally verify the data. 
-Consult [This Document](verification-with-ocr) for the Verification with OCR. 
-  
-* ### Without OCR
-In verification without OCR, merchant gives us the data in keys as well as all the proofs required then Shufti Pro just have to verify the data. No customer interaction takes place in this kind of verification.
+In order to get verified, customers will have themselves verified through their mobile phones. They will do it through the merchant's mobile application. Merchant will collect the information and send data to Shufti Pro for verification. The Merchant shall provide the proofs(Images/Videos). Shufti Pro will not collect them directly from the user.
 
+* ### With OCR
+In verification with OCR, it means that the merchant has not provided us proofs (images/videos) and also no data in some or all datapoints (Name, DOB etc.). In this verification Shufti Pro will perform extraction of data from those proofs and finally verify the data.
+Consult [This Document](verification-with-ocr) for the Verification with OCR.
+
+* ### Without OCR
+In verification without OCR, merchant gives us the data in all datapoints (Name, DOB etc.) but the proofs are provide by the user then Shufti Pro just have to verify the data. No direct customer interaction takes place in this kind of verification.
 Consult [This Document](verification-without-ocr) for the Verification without OCR.
 
 * ### Verification through Hybrid view
@@ -119,7 +108,6 @@ let requestObject: [String: Any] = [
                  "document_number": "",
                  "expiry_date": "",
                  "issue_date": "",
-                 "nfc_verification": "false",
                  "fetch_enhanced_data": "1"
              ],
             "document_two": [
@@ -142,7 +130,6 @@ let requestObject: [String: Any] = [
                  "document_number": "",
                  "expiry_date": "",
                  "issue_date": "",
-                 "nfc_verification": "false",
                  "fetch_enhanced_data": "1"
              ],
              "address": [
@@ -154,7 +141,6 @@ let requestObject: [String: Any] = [
                      "middle_name": "",
                      "fuzzy_match": ""
                  ],
-                 "nfc_verification": "false",
                  "supported_types": [
                      "id_card",
                      "utility_bill",
@@ -208,7 +194,6 @@ let requestObject: [String: Any] = [
                  "document_number": "2323-5629-5465-9990",
                  "expiry_date": "2025-10-10",
                  "issue_date": "2015-10-10",
-                 "nfc_verification": "false",
                  "fetch_enhanced_data": "1"
              ],
 
@@ -232,7 +217,6 @@ let requestObject: [String: Any] = [
                  "document_number": "2323-5629-5465-9990",
                  "expiry_date": "2025-10-10",
                  "issue_date": "2015-10-10",
-                 "nfc_verification": "false",
                  "fetch_enhanced_data": "1"
              ],
              "address": [
@@ -244,7 +228,6 @@ let requestObject: [String: Any] = [
                      "middle_name": "Doe",
                      "fuzzy_match": ""
                  ],
-                 "nfc_verification": "false",
                  "supported_types": [
                      "id_card",
                      "utility_bill",
@@ -283,8 +266,7 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
 ```sh
   let configs = [
                 "openWebView" : "false",
-                "aysnc" : "false",
-                "captureEnabled" : "false",
+                "aysnc" : "false"
   ]
 ```
 
@@ -336,7 +318,6 @@ In this object, we add extra configuration of verification that the user wants.
   Accepted Values: **, "true", "false"**
 
    If async value is set to true you'll instantly get the user's control back so you don't have to wait for the verification results. When a request is completed you'll automatically get a callback. 
-   
 * ## openWebView
 
   Required: **No**  
@@ -345,14 +326,6 @@ In this object, we add extra configuration of verification that the user wants.
 
   This boolean type of parameter is used to identify if you want to perform verification in its hybrid view.
   If open_webview is true, it means that the user wants verification in **hybrid view**. If false, then the user wants verification with **OCR or Without OCR**. The value is false by default.
-  
-  * ## captureEnabled
-
-      Required: **No**  
-      Type: **boolean** <br>
-    Accepted Values: **true**, **false**    
-
-      This boolean type of parameter is used to identify whether the user wants to open native camera in Iframe or not. A true value means user wants to open native otherwise not. 
 
 
 
@@ -395,7 +368,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Minimum: **6 characters**  
   Maximum: **128 characters**
 
-  This field represents email of the end-user. If it is missing in a request, than Shufti Pro will ask the user for its email in an on-site request.
+  This field represents email of the end-user. This is an optional field.
 
 * ## callback_url
 
@@ -456,6 +429,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Accepted Values: **"0", "1"**
 
   This service key corresponds to Phone Verification service of Shufti Pro. A customized code is sent to end-user on their phone number, that is sent back by end-user to verify their identity.   
+  
 
 <!-- -------------------------------------------------------------------------------- -->
 * ## Face
@@ -589,14 +563,6 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Leave empty to perform data extraction from the proof which will be uploaded by end-users. Provide a valid date. Please note that the date should be after today. 
   Example 2025-12-31
   
-  * <h3>nfc_verification</h3>
-
-  Required: **No**  
-  Type: **boolean**  
-  Accepted values:  **true**, **false**  
-
-Near Field Communication (NFC) is a set of short-range wireless technologies. NFC allows sharing small payloads of data between an NFC tag and an NFC-supported device. NFC Chips found in modern passports and similar identity documents contain additional encrypted information about the owner. This information is very useful in verifying the originality of a document. NFC technology helps make the verification process simple, quicker and more secure. This also provides the user with contactless and input less verification. ShuftiPros's NFC verification feature detects MRZ from the document to authenticate NFC chip and retrieve data from it, so the authenticity and originality of the provided document could be verified, if set to TRUE. nfc_verification parameter should be added into the service object(document, document_two, address) for which you want to perform nfc verification. Nfc verification is allowed only on e-id cards, e-passports, e-credit/ e-debit cards and e-driving licences under document, document_two and address service only. The nfc service is not available in hybrid webview for now.
-  
   * <h3>fetch_enhanced_data</h3>
 
   Required: **No**  
@@ -645,14 +611,6 @@ For Details on additional_data object go to [Additional Data](https://api.shufti
 
   **Example 1** [ "utility_bill" ]  
   **Example 2** [ "id_card", "bank_statement" ]
-
-* <h3>nfc_verification</h3>
-
-Required: **No**  
-Type: **boolean**  
-Accepted values:  **true**, **false**  
-
-Near Field Communication (NFC) is a set of short-range wireless technologies. NFC allows sharing small payloads of data between an NFC tag and an NFC-supported device. NFC Chips found in modern passports and similar identity documents contain additional encrypted information about the owner. This information is very useful in verifying the originality of a document. NFC technology helps make the verification process simple, quicker and more secure. This also provides the user with contactless and input less verification. ShuftiPros's NFC verification feature detects MRZ from the document to authenticate NFC chip and retrieve data from it, so the authenticity and originality of the provided document could be verified, if set to TRUE. nfc_verification parameter should be added into the service object(document, document_two, address) for which you want to perform nfc verification. Nfc verification is allowed only on e-id cards, e-passports, e-credit/ e-debit cards and e-driving licences under document, document_two and address service only. The nfc service is not available in hybrid webview for now.
 
   * <h3>full_address</h3>
 
@@ -734,6 +692,15 @@ Near Field Communication (NFC) is a set of short-range wireless technologies. NF
 
   **Example 1**  ["printed"]  
   **Example 2**  ["printed", "handwritten"]
+
+    * <h3>with_face</h3>
+
+  Required: **No**  
+  Type: **string**  
+  Accepted Value: **0,1**
+  Default Value: **1**
+
+  This parameter is applicable if supported_type is handwritten and default value is 1. If value of with_face is 1 then hand written note will be accepted only with face which means your customer must need to show his/her face along with the consent on a paper. If value of with_face is 0 then hand written note is accepted with or without face.
 
   * <h3>text</h3>
 
@@ -923,23 +890,20 @@ Shufti Pro provides the users with a number of test documents. Customers may use
 ## Contact
 If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com).
 
+
+
+## Contact
+If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com).
+
 ## Copyright
 2017- 21 © Shufti Pro Ltd.
 
+## Revision History
+
 Date            | Description 
 --------------- | ------------
-12 Apr 2019    | Updated SDK swift version to swift 5.
-18 May 2019    | Added support to install through cocoapods.
-21 May 2019    | Added support to install SDK  swift version 4 through cocoapods.
-23 May 2019    | Added support to install SDK  swift version 3 through cocoapods.
-21 Oct 2019    | Updated SDK swift version to swift 5.1
-1 Nov 2019     | Updated SDK swift version to swift 5.1.2
-31 Mar 2020    | Added Access Token
-4 Apr 2020     | Updated request data (Added key fetch_enhanced_data)
-5 May 2020     | Updated binary bitcode
-12 May 2020    | Updated SDK swift version to swift 5.2.2
-21 May 2020    | Minor UI Improvements
-10 Jun 2020    | Fixed issue to open privacy policy link
-19 Jul 2020    | Added option for status bar background color
-31 Jul 2020    | Added cancel button and UI color changes options
-23 Sep 2020    | Added swift 5.3 compiled binaries
+20 Jan 2021    | Added all verifications(verification with OCR, without OCR and restful API) in one sdk.
+4  Feb 2021    | Updated binaries with increased request timeout.
+26 Mar 2021    | Bugs fixes and UI improvements. 
+29 Mar 2021    | Issue fixes in consent screen.
+29 Apr 2021    | Reduce sdk size.
