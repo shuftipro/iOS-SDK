@@ -1,8 +1,10 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShuftiPro
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShuftiPro
 import AVFoundation
 import AVKit
+import Accelerate
+import CoreGraphics
 import Foundation
 import ImageIO
 import MessageUI
@@ -10,6 +12,7 @@ import MessageUI
 import Swift
 import SystemConfiguration
 import UIKit
+import VideoToolbox
 import WebKit
 @_hasMissingDesignatedInitializers public class Reachability {
   @objc deinit
@@ -36,4 +39,10 @@ extension UIImage {
   @objc public func shuftiProVerification(requestObject dataObjectObj: [Swift.String : Any], authKeys: [Swift.String : Swift.String], parentVC pvc: UIKit.UIViewController, configs: [Swift.String : Any]?, completion: @escaping (Any) -> ())
   @objc deinit
   @objc override dynamic public init()
+}
+extension UIImage {
+  convenience public init?(pixelBuffer: CoreVideo.CVPixelBuffer)
+  public func scaledImage(with size: CoreGraphics.CGSize) -> UIKit.UIImage?
+}
+public enum Constant {
 }

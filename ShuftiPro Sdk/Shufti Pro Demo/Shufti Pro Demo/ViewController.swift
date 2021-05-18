@@ -171,7 +171,7 @@ class ViewController: UIViewController {
 
             dataDictionary = [
                 "reference": referenceKey,
-                "country": "PK",
+                "country": "",
                 "language": "EN",
                 "email": "ad@example.com",
                 "callback_url": "http://www.example.com",
