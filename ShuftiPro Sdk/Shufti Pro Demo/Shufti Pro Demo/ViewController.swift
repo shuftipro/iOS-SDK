@@ -206,7 +206,7 @@ class ViewController: UIViewController {
                               "middle_name": "",
                               "last_name" : ""
                     ],
-                    "backside_proof_required": "0",
+                    "backside_proof_required": "1",
                     "dob": "",
                     "document_number": "",
                     "expiry_date": "",

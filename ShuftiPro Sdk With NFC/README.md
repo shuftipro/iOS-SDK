@@ -944,4 +944,6 @@ Date            | Description
 31 Jul 2020    | Added cancel button and UI color changes options
 23 Sep 2020    | Added swift 5.3 compiled binaries
 29 Apr 2021    | Added e-kyc support 
+27 May 2021    | Content updated
+
 

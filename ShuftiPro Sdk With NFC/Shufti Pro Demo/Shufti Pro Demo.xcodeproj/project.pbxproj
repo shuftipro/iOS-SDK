@@ -13,19 +13,19 @@
 		9FF6AF872158B5C800A9AB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF852158B5C800A9AB49 /* Main.storyboard */; };
 		9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */; };
 		9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */; };
-		A676AE162639691F00700CD8 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A676AE14263968DC00700CD8 /* ShuftiPro.framework */; };
-		A676AE172639691F00700CD8 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A676AE14263968DC00700CD8 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A646330D265F8ACC006BE8A0 /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64632FB265F8A7C006BE8A0 /* ShuftiPro.framework */; };
+		A646330E265F8ACC006BE8A0 /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A64632FB265F8A7C006BE8A0 /* ShuftiPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A69A538A253036AE001383E0 /* DesignsbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A5389253036AE001383E0 /* DesignsbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A6120BDE2626FBFE000F04B8 /* Embed Frameworks */ = {
+		A646308B265F66A7006BE8A0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A676AE172639691F00700CD8 /* ShuftiPro.framework in Embed Frameworks */,
+				A646330E265F8ACC006BE8A0 /* ShuftiPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,8 +43,9 @@
 		9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF6AF8B2158B5CB00A9AB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF6AF8D2158B5CB00A9AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6024A4B265E405F008B214A /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShuftiPro.framework; path = ../sdk/ShuftiPro.framework; sourceTree = "<group>"; };
 		A6120C532626FFB5000F04B8 /* Shufti Pro Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Shufti Pro Demo.entitlements"; sourceTree = "<group>"; };
-		A676AE14263968DC00700CD8 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
+		A64632FB265F8A7C006BE8A0 /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
 		A69A5389253036AE001383E0 /* DesignsbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignsbleView.swift; sourceTree = "<group>"; };
 		A6A15E5F25B81ED800BC11EB /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,7 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5051E5CBDA3A8B3B203C1CED /* Pods_Shufti_Pro_Demo.framework in Frameworks */,
-				A676AE162639691F00700CD8 /* ShuftiPro.framework in Frameworks */,
+				A646330D265F8ACC006BE8A0 /* ShuftiPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +75,7 @@
 		9FF6AF752158B5C800A9AB49 = {
 			isa = PBXGroup;
 			children = (
-				A676AE14263968DC00700CD8 /* ShuftiPro.framework */,
+				A64632FB265F8A7C006BE8A0 /* ShuftiPro.framework */,
 				9FF6AF802158B5C800A9AB49 /* Shufti Pro Demo */,
 				9FF6AF7F2158B5C800A9AB49 /* Products */,
 				C598B609235DF7650046F650 /* Frameworks */,
@@ -108,6 +109,7 @@
 		C598B609235DF7650046F650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6024A4B265E405F008B214A /* ShuftiPro.framework */,
 				A6A15E5F25B81ED800BC11EB /* ShuftiPro.xcframework */,
 				60B615825F0EA91DA1B16938 /* Pods_Shufti_Pro_Demo.framework */,
 			);
@@ -125,7 +127,7 @@
 				9FF6AF7A2158B5C800A9AB49 /* Sources */,
 				9FF6AF7B2158B5C800A9AB49 /* Frameworks */,
 				9FF6AF7C2158B5C800A9AB49 /* Resources */,
-				A6120BDE2626FBFE000F04B8 /* Embed Frameworks */,
+				A646308B265F66A7006BE8A0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,7 +378,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ProgramersForce.pk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shufti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,7 +406,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ProgramersForce.pk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shufti;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

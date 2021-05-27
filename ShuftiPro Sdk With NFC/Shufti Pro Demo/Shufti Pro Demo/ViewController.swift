@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     let clientIdStr = "xxx-xxx-xxx" // your client id here
     let secretKeyStr = "xxx-xxx-xxx" // your secret key here
-    let accessToken = "" // your accessToken here
+    let accessToken = "xxx-xxx-xxx" // your accessToken here
     var referenceKey = ""
     var showRatingScreen = false
     var authKeys = Dictionary<String, String>()
@@ -27,8 +27,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var twoFactorCheckImg: UIImageView!
     @IBOutlet weak var backgroundCheckImg: UIImageView!
 
-
-
+//NFC SubList Views
+    @IBOutlet weak var docNfcView: DesignableView!
+    @IBOutlet weak var docTwoNfcView: DesignableView!
+    @IBOutlet weak var AddressNfcView: DesignableView!
+    
+//Allow NFC Verification check boxes
+    @IBOutlet weak var docNfcCheckImg: UIImageView!
+    @IBOutlet weak var docTwoNfcCheckImg: UIImageView!
+    @IBOutlet weak var addressNfcCheckImg: UIImageView!
+    
+//Allow NFC Verification Buttons
+    @IBOutlet weak var allowAddressNfcBtn: UIButton!
+    @IBOutlet weak var allowDocTwoNfcBtn: UIButton!
+    @IBOutlet weak var allowDocNfcBtn: UIButton!
+    
     
     var faceVerification = false
     var documentVerification = false
@@ -37,9 +50,16 @@ class ViewController: UIViewController {
     var concentVerification = false
     var twoFactorVerification = false
     var backgroundVerification = false
-
-
     
+    var documentNFCVerification = false
+    var documentTwoNFCVerification = false
+    var addressNFCVerification = false
+
+
+    @IBOutlet weak var docNfcSwitchBtn: UISwitch!
+    
+    @IBOutlet weak var docTwoNfcSwitchBtn: UISwitch!
+    @IBOutlet weak var addressNfcSwitchBtn: UISwitch!
     @IBOutlet weak var allowOnlineBtn: UIButton!
     @IBOutlet weak var allowOfflineBtn: UIButton!
     @IBOutlet weak var showPrivacyBtn: UIButton!
@@ -59,6 +79,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
+        
+        docNfcSwitchBtn.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
+        docTwoNfcSwitchBtn.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
+        addressNfcSwitchBtn.transform = CGAffineTransform(scaleX: 0.75, y: 0.75)
 
     }
     
@@ -80,9 +104,67 @@ class ViewController: UIViewController {
         backgroundVerification = false
         backgroundCheckImg.image = UIImage(named: "uncheck_radio")
         
+        
+        
+        docNfcView.isHidden = true
+        docTwoNfcView.isHidden = true
+        AddressNfcView.isHidden = true
+        
+        
+        documentNFCVerification = false
+        docNfcSwitchBtn.isOn = false
+    
+       
+        documentTwoNFCVerification = false
+        docTwoNfcSwitchBtn.isOn = false
+        
+        addressNFCVerification = false
+        addressNfcSwitchBtn.isOn = false
+        
+        
+        
     }
+    
+    
+    @IBAction func docNfcBtnPressed(_ sender: Any) {
+        
+        if documentNFCVerification == false {
+            documentNFCVerification = true
+            docNfcSwitchBtn.isOn = true
+        } else {
+            documentNFCVerification = false
+            docNfcSwitchBtn.isOn = false
+        }
+        
+    }
+    
+    
+    
+    @IBAction func docTwoNfcBtnPressed(_ sender: Any) {
+        
+        if documentTwoNFCVerification == false {
+            documentTwoNFCVerification = true
+            docTwoNfcSwitchBtn.isOn = true
+        } else {
+            documentTwoNFCVerification = false
+            docTwoNfcSwitchBtn.isOn = false
+        }
 
+    }
+    
+    @IBAction func addressNfcBtnPressed(_ sender: Any) {
+        
+        if addressNFCVerification == false {
+            addressNFCVerification = true
+            addressNfcSwitchBtn.isOn = true
+        } else {
+            addressNFCVerification = false
+            addressNfcSwitchBtn.isOn = false
+        }
 
+    }
+    
+    
     // Orignal button
     @IBAction func faceVerifyBtnPressed(_ sender: Any) {
         if faceVerification == false {
@@ -97,34 +179,68 @@ class ViewController: UIViewController {
     @IBAction func documentVerifyBtnPressed(_ sender: Any) {
         if documentVerification == false {
             documentVerification = true
+            
+            //Closing Subviews
+            docNfcView.isHidden = false
+            docTwoNfcView.isHidden = true
+            
+            AddressNfcView.isHidden = true
+            
             documentCheckImg.image = UIImage(named: "check_radio")
         } else {
             documentVerification = false
             documentCheckImg.image = UIImage(named: "uncheck_radio")
+            
+            docNfcSwitchBtn.isOn = false
+            docNfcView.isHidden = true
         }
     }
     @IBAction func documentTwoVerifyBtnPressed(_ sender: Any) {
         if documentTwoVerification == false {
             documentTwoVerification = true
+            
+            //Closing Subviews
+            docTwoNfcView.isHidden = false
+            docNfcView.isHidden = true
+            
+            AddressNfcView.isHidden = true
+            
             documentTwoCheckImg.image = UIImage(named: "check_radio")
         } else {
             documentTwoVerification = false
             documentTwoCheckImg.image = UIImage(named: "uncheck_radio")
+            
+            docTwoNfcSwitchBtn.isOn = false
+            docTwoNfcView.isHidden = true
         }
     }
     @IBAction func addressVerifyBtnPressed(_ sender: Any) {
         if addressVerification == false {
             addressVerification = true
+            
+            //Closing Subviews
+            docNfcView.isHidden = true
+            docTwoNfcView.isHidden = true
+            
+            AddressNfcView.isHidden = false
+            
             addressCheckImg.image = UIImage(named: "check_radio")
         } else {
             addressVerification = false
             addressCheckImg.image = UIImage(named: "uncheck_radio")
+            addressNfcSwitchBtn.isOn = false
+            AddressNfcView.isHidden = true
         }
     }
     @IBAction func consentVerifyBtnPressed(_ sender: Any) {
         if concentVerification == false {
             concentVerification = true
             consentCheckImg.image = UIImage(named: "check_radio")
+            
+            //Closing Subviews
+            docNfcView.isHidden = true
+            docTwoNfcView.isHidden = true
+            AddressNfcView.isHidden = true
                         
         } else {
             concentVerification = false
@@ -136,6 +252,11 @@ class ViewController: UIViewController {
         if twoFactorVerification == false {
             twoFactorVerification = true
             twoFactorCheckImg.image = UIImage(named: "check_radio")
+            
+            //Closing Subviews
+            docNfcView.isHidden = true
+            docTwoNfcView.isHidden = true
+            AddressNfcView.isHidden = true
                         
         } else {
             twoFactorVerification = false
@@ -148,6 +269,12 @@ class ViewController: UIViewController {
         if backgroundVerification == false {
             backgroundVerification = true
             backgroundCheckImg.image = UIImage(named: "check_radio")
+            
+            
+            //Closing Subviews
+            docNfcView.isHidden = true
+            docTwoNfcView.isHidden = true
+            AddressNfcView.isHidden = true
                         
         } else {
             backgroundVerification = false
@@ -166,7 +293,7 @@ class ViewController: UIViewController {
 
             dataDictionary = [
                 "reference": referenceKey,
-                "country": "PK",
+                "country": "",
                 "language": "EN",
                 "email": "ad@example.com",
                 "callback_url": "http://www.example.com",
@@ -174,7 +301,7 @@ class ViewController: UIViewController {
                 "redirect_url" : "https://www.mydummy.shuftipro.com/",
                 "show_privacy_policy": "1",
                 "show_consent": "1",
-                "verification_Mode" : "video",
+                "verification_Mode" : "image",
                 
                 
             ]
@@ -185,7 +312,7 @@ class ViewController: UIViewController {
                     "proof": ""
                 ]
             }
-            if documentVerification == true {
+            if documentVerification == true && documentNFCVerification  == true {
                 
                 dataDictionary["document"] = [
                     "supported_types": [
@@ -201,7 +328,7 @@ class ViewController: UIViewController {
                               "middle_name": "",
                               "last_name" : ""
                     ],
-                    "backside_proof_required": "1",
+                    "backside_proof_required": "0",
                     "dob": "",
                     "document_number": "",
                     "expiry_date": "",
@@ -211,8 +338,62 @@ class ViewController: UIViewController {
 
                 ]
             }
+            
+            if documentVerification == true && documentNFCVerification  == false {
+                
+                dataDictionary["document"] = [
+                    "supported_types": [
+                        "passport",
+                        "id_card",
+                        "driving_license",
+                        "credit_or_debit_card"
+                    ],
+                    "proof": "",
+                    "additional_proof" :"",
 
-            if documentTwoVerification == true  {
+                    "name": ["first_name": "",
+                              "middle_name": "",
+                              "last_name" : ""
+                    ],
+                    "backside_proof_required": "0",
+                    "dob": "",
+                    "document_number": "",
+                    "expiry_date": "",
+                    "issue_date": "",
+                    "fetch_enhanced_data": "",
+                    "nfc_verification" : "false",
+
+                ]
+            }
+
+            if documentTwoVerification == true && documentTwoNFCVerification == true {
+                dataDictionary["document_two"] = [
+                    "supported_types": [
+                        "passport",
+                        "id_card",
+                        "driving_license",
+                        "credit_or_debit_card"
+                    ],
+                    "proof": "",
+                    "additional_proof" :"",
+
+                    "name": ["first_name": "",
+                              "middle_name": "",
+                              "last_name" : ""
+                    ],
+                    "backside_proof_required": "0",
+                    "dob": "",
+                    "document_number": "",
+                    "expiry_date": "",
+                    "issue_date": "",
+                    "fetch_enhanced_data": "",
+                    "nfc_verification" : "true",
+
+                    
+                ]
+            }
+            
+            if documentTwoVerification == true && documentTwoNFCVerification == false {
                 dataDictionary["document_two"] = [
                     "supported_types": [
                         "passport",
@@ -240,7 +421,22 @@ class ViewController: UIViewController {
             }
         
             
-            if addressVerification == true {
+            if addressVerification == true && addressNFCVerification == true {
+                dataDictionary["address"] = [
+                    "full_address": "",
+                    "name": "",
+                    "backside_proof_required": "0",
+                    "nfc_verification" : "true",
+
+                    "supported_types": [
+                        "id_card",
+                        "utility_bill",
+                        "bank_statement"
+                    ],
+                ]
+            }
+            
+            if addressVerification == true && addressNFCVerification == false {
                 dataDictionary["address"] = [
                     "full_address": "",
                     "name": "",

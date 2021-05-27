@@ -41,7 +41,7 @@ Application Info.plist must contain an **Privacy - Camera Usage Description** an
    
  For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.0.4', :git => "https://github.com/shuftipro/iOS-binary-pod"
+pod 'ShuftiPro', :tag => '1.0.5', :git => "https://github.com/shuftipro/iOS-binary-pod"
 ```
 
 >### Manuall installation
@@ -908,3 +908,5 @@ Date            | Description
 29 Mar 2021    | Issue fixes in consent screen.
 29 Apr 2021    | Reduce sdk size.
 18 May 2021 | Improve user experience.
+27 May 2021 | Content updated.
+

@@ -527,7 +527,9 @@ SWIFT_CLASS("_TtC9ShuftiPro16SupportedTypesVc")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLbl;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified supportedTypesUIView;
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified supportedTypesTableview;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified supportedTypeSubHeading;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (IBAction)backBtnPreesed:(id _Nonnull)sender;
