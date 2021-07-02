@@ -13,7 +13,7 @@ Shufti Pro’s API supports verification with and without OCR.
 * [Verifications](#verification)
 * [Integration](#Integration)
 * [JSON Object](#Json-Object-With-Ocr)
-* [AuthKey Object Parameters ](#AuthKey-Object-Parameters)
+* [Auth Key Object Parameters ](#Auth-Key-Object-Parameters)
 * [Config Object Parameters ](#Config-Object-Parameters)
 * [Sample Request](#Sample-Request)
 * [JSON Object Parameters](#Request-Parameters)
@@ -34,7 +34,7 @@ Supported architectures in SDK:
 - armv7 and arm64 for devices
 
 ## Permissions:
-* ### Application Info.plist must contain an **Privacy - Camera Usage Description** , **Privacy - Microphone Usage Description**  and  **Privacy - NFC Scan Usage Description**key with a explanation to end-user about how the app uses this data.
+* ### Application Info.plist must contain an **Privacy - Camera Usage Description** , **Privacy - Microphone Usage Description**  and  **Privacy - NFC Scan Usage Description** key with a explanation to end-user about how the app uses this data.
 * ### And Open your Info.plist file as Source Code add these lines inside dict tag.
 ```
 <key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
@@ -64,12 +64,11 @@ In order to get verified, customers will have themselves verified through their 
   
 * ### With OCR
 In verification with OCR, it means that the merchant has not provided us proofs (images/videos) and also no data in some keys. In this verification Shufti Pro will perform extraction of data from those proofs and finally verify the data. 
-Consult [This Document](verification-with-ocr) for the Verification with OCR. 
+
   
 * ### Without OCR
 In verification without OCR, merchant gives us the data in keys as well as all the proofs required then Shufti Pro just have to verify the data. No customer interaction takes place in this kind of verification.
 
-Consult [This Document](verification-without-ocr) for the Verification without OCR.
 
 * ### Verification through Hybrid view
 If you opt for mobile verification with Shufti Pro’s hybrid view, a web-view built upon HTML 5 will be displayed to the end-user. All data points and fields are adequately defined in the hybrid view. The format for sending verification data will be a JSON object, similar to other mobile verification formats (OCR and Non-OCR). If your send true in [openWebView](#openwebview) parameter then verification through hybrid view will be started else verification with OCR or without OCR (based upon JSON object) will be triggered.
@@ -320,7 +319,7 @@ Whenever a request for verification from a user is received, Shufti Pro’s inte
 2. Check authenticity of client’s credentials
 3. Read client’s data
 4. Decide what information is being sent to perform that verification 
-# AuthKey Object Parameters
+# Auth Key Object Parameters
 In this object, we add authorization Key in verification request.
 * ## Basic Auth
    Shufti Pro provides Authorization to clients through the Basic Auth header. Your Client ID will serve as your Username while the Secret Key will serve as your Password. The API will require this header for every request.
@@ -378,7 +377,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Type: **string**  
   Length: **2 characters**
 
-  Send the 2 characters long [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) country code of where your customer is from. Please consult [Supported Countries](https://github.com/shuftipro/RESTful-API-v1.3/blob/master/off-site_without_ocr/countries.md) for country codes.
+  Send the 2 characters long [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) country code of where your customer is from. Please consult [Supported Countries](https://api.shuftipro.com/api/docs/#supported-countries) for country codes.
 
 * ## language
 
@@ -386,7 +385,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Type: **string**  
   Length: **2 characters**
 
-  Send the 2 characters long language code of your preferred language to display the verification screens accordingly. Please consult [Supported Languages](https://github.com/shuftipro/RESTful-API-v1.3/blob/master/off-site_without_ocr/languages.md) for language codes. Default language english will be selected if this key is missing in the request.
+  Send the 2 characters long language code of your preferred language to display the verification screens accordingly. Please consult [Supported Languages](https://api.shuftipro.com/api/docs/#supported-languages) for language codes. Default language english will be selected if this key is missing in the request.
 
 * ## email
 
@@ -428,7 +427,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Type: **string** <Br>
   Accepted Values: **"0",   "1"**
   
-  This key specifies that is verification result show to user or not.If show_results is "0" than verification result  not show to user and send to merchant.If show_results is "1" than verification result show to user.
+  This key specifies that is verification result show to user or not. If show_results is "0" than verification result  not show to user and send to merchant. If show_results is "1" than verification result show to user.
 
 * ## show_consent
 
@@ -446,7 +445,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Type: **string**  
   Accepted Values: **"0", "1"**
 
-   It is a verification process that will require you to send us the full Name of end-user in addition to the date of birth. Shufti Pro will perform AML based background checks based on this information. Please note that the name and dob keys will be extracted from document service if these keys are empty. 
+   It is a verification process that will require you to send us the full name of end-user in addition to the date of birth. Shufti Pro will perform AML based background checks based on this information. Please note that the name and dob keys will be extracted from document service if these keys are empty. 
 
  
 * ## phone
@@ -463,7 +462,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
   The easiest of all verifications is done by authenticating the face of the users. In case of on-site verification, end-user will have to show their face in front of a webcam or camera of their phone that essentially makes it a selfie verification.
 
 <!-- -------------------------------------------------------------------------------- -->
-* ## Document or Document 2
+* ## Document or Document Two
 
   Shufti Pro provides document verification through various types of documents. The supported formats are passports, ID Cards, driving licenses and debit/credit cards. You can opt for more than 1 document type as well. In that case, Shufti Pro will give an option to end-users to verify their data from any of the given document types.  
     * <h3>proof</h3>
@@ -876,7 +875,7 @@ The Shufti Pro Verification API will send a JSON response if a status request is
 * <h3>event</h3>
 
     The request event shows the status of user’s request, and is different for every response. For more information, click
-    [here](status_codes.md)
+    [here](https://api.shuftipro.com/api/docs/#status-response)
 
 <aside class="notice">
 Note: <b>request.invalid</b> response with <b>HTTP status code 400</b> means the request is invalid.
@@ -945,5 +944,6 @@ Date            | Description
 23 Sep 2020    | Added swift 5.3 compiled binaries
 29 Apr 2021    | Added e-kyc support 
 27 May 2021    | Content updated
+02 Jul 2021 | Bugs fixes and UI improvements.
 
 

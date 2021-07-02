@@ -12,8 +12,11 @@
 		9FF6AF872158B5C800A9AB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF852158B5C800A9AB49 /* Main.storyboard */; };
 		9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */; };
 		9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6AF8A2158B5CB00A9AB49 /* LaunchScreen.storyboard */; };
-		A64631DA265F7DDC006BE8A0 /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64631D8265F7DD9006BE8A0 /* ShuftiPro.xcframework */; };
-		A64631DB265F7DDC006BE8A0 /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A64631D8265F7DD9006BE8A0 /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A60F01DD268D9C3F0003153E /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A60F01D9268D9C3F0003153E /* OpenSans-Semibold.ttf */; };
+		A60F01DE268D9C3F0003153E /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A60F01DA268D9C3F0003153E /* OpenSans-ExtraBold.ttf */; };
+		A60F01DF268D9C3F0003153E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A60F01DB268D9C3F0003153E /* OpenSans-Bold.ttf */; };
+		A60F01E0268D9C3F0003153E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A60F01DC268D9C3F0003153E /* OpenSans-Regular.ttf */; };
+		A654050D268DEF5D00CFC5F1 /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A654050C268DEF5D00CFC5F1 /* ShuftiPro.xcframework */; };
 		A69A538A253036AE001383E0 /* DesignsbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A5389253036AE001383E0 /* DesignsbleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A64631DB265F7DDC006BE8A0 /* ShuftiPro.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +41,11 @@
 		9FF6AF882158B5CB00A9AB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FF6AF8B2158B5CB00A9AB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF6AF8D2158B5CB00A9AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A64631D8265F7DD9006BE8A0 /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
+		A60F01D9268D9C3F0003153E /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		A60F01DA268D9C3F0003153E /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A60F01DB268D9C3F0003153E /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		A60F01DC268D9C3F0003153E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		A654050C268DEF5D00CFC5F1 /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
 		A69A5389253036AE001383E0 /* DesignsbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignsbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64631DA265F7DDC006BE8A0 /* ShuftiPro.xcframework in Frameworks */,
+				A654050D268DEF5D00CFC5F1 /* ShuftiPro.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +64,6 @@
 		9FF6AF752158B5C800A9AB49 = {
 			isa = PBXGroup;
 			children = (
-				A64631D8265F7DD9006BE8A0 /* ShuftiPro.xcframework */,
 				9FF6AF802158B5C800A9AB49 /* Shufti Pro Demo */,
 				9FF6AF7F2158B5C800A9AB49 /* Products */,
 				A678DB8F26538BE600990B46 /* Frameworks */,
@@ -76,6 +81,7 @@
 		9FF6AF802158B5C800A9AB49 /* Shufti Pro Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A60F01D8268D9C3F0003153E /* Fonts */,
 				9FF6AF812158B5C800A9AB49 /* AppDelegate.swift */,
 				9FF6AF832158B5C800A9AB49 /* ViewController.swift */,
 				9FF6AF852158B5C800A9AB49 /* Main.storyboard */,
@@ -87,9 +93,21 @@
 			path = "Shufti Pro Demo";
 			sourceTree = "<group>";
 		};
+		A60F01D8268D9C3F0003153E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A60F01D9268D9C3F0003153E /* OpenSans-Semibold.ttf */,
+				A60F01DA268D9C3F0003153E /* OpenSans-ExtraBold.ttf */,
+				A60F01DB268D9C3F0003153E /* OpenSans-Bold.ttf */,
+				A60F01DC268D9C3F0003153E /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = SOURCE_ROOT;
+		};
 		A678DB8F26538BE600990B46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A654050C268DEF5D00CFC5F1 /* ShuftiPro.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,9 +171,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60F01DD268D9C3F0003153E /* OpenSans-Semibold.ttf in Resources */,
 				9FF6AF8C2158B5CB00A9AB49 /* LaunchScreen.storyboard in Resources */,
+				A60F01DF268D9C3F0003153E /* OpenSans-Bold.ttf in Resources */,
+				A60F01E0268D9C3F0003153E /* OpenSans-Regular.ttf in Resources */,
 				9FF6AF892158B5CB00A9AB49 /* Assets.xcassets in Resources */,
 				9FF6AF872158B5C800A9AB49 /* Main.storyboard in Resources */,
+				A60F01DE268D9C3F0003153E /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SY9GC8368B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -344,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SY9GC8368B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
