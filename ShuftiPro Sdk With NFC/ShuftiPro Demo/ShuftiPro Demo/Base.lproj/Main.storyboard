@@ -17,7 +17,7 @@
         <!--View Controller-->
         <scene sceneID="0ur-Gl-6Mn">
             <objects>
-                <viewController storyboardIdentifier="Main" id="vwL-9N-qbx" customClass="ViewController" customModule="Shufti_Pro_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="vwL-9N-qbx" customClass="ViewController" customModule="ShuftiPro_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K5p-9g-aFk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                 <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5f-hF-TNj">
-                                <rect key="frame" x="0.0" y="751" width="414" height="111"/>
+                                <rect key="frame" x="0.0" y="785" width="414" height="111"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhY-uX-ZCK">
                                         <rect key="frame" x="16" y="0.0" width="382" height="50"/>
@@ -80,10 +80,10 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6d-Eu-b2Z">
-                                <rect key="frame" x="0.0" y="94.5" width="414" height="656.5"/>
+                                <rect key="frame" x="0.0" y="94.5" width="414" height="690.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFx-TS-1ie">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="784.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your Method of Verification" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNQ-Uy-ty5">
                                                 <rect key="frame" x="31" y="60" width="352" height="52.5"/>
@@ -92,9 +92,9 @@
                                                 <color key="highlightedColor" systemColor="opaqueSeparatorColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fxM-tt-Ar4">
-                                                <rect key="frame" x="22" y="162.5" width="370" height="629.5"/>
+                                                <rect key="frame" x="22" y="162.5" width="370" height="572"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bh1-y8-9W0" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bh1-y8-9W0" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uw-Y5-LvV">
@@ -164,7 +164,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cDL-4o-kIc">
                                                         <rect key="frame" x="0.0" y="86" width="370" height="56"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC5-gL-z6t" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC5-gL-z6t" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNC-sU-l8V">
@@ -231,7 +231,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8G-Bf-QOj" userLabel="DocNfcSubList" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
+                                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8G-Bf-QOj" userLabel="DocNfcSubList" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Allow NFC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mv3-eB-5C7">
@@ -284,7 +284,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Oly-4T-n5v">
                                                         <rect key="frame" x="0.0" y="172" width="370" height="56"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZh-d4-jnE" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZh-d4-jnE" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTx-7K-1hl">
@@ -351,7 +351,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4O-AF-vvP" userLabel="DocTwoNfcSubList" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
+                                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4O-AF-vvP" userLabel="DocTwoNfcSubList" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow NFC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpR-qL-HmO">
@@ -400,9 +400,9 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CxB-a2-ldC">
-                                                        <rect key="frame" x="0.0" y="258" width="370" height="113.5"/>
+                                                        <rect key="frame" x="0.0" y="258" width="370" height="56"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPZ-vE-VOX" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPZ-vE-VOX" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="56"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIk-sS-E9H">
@@ -469,24 +469,24 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA3-7S-P3C" userLabel="AddressNfcSubList" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="56" width="370" height="57.5"/>
+                                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WA3-7S-P3C" userLabel="AddressNfcSubList" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="370" height="20"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Allow NFC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar2-DA-dla">
-                                                                        <rect key="frame" x="15" y="8" width="75" height="18"/>
+                                                                        <rect key="frame" x="15" y="8" width="75" height="0.0"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5f-HS-5eW">
-                                                                        <rect key="frame" x="306" y="13.5" width="51" height="31"/>
+                                                                        <rect key="frame" x="306" y="-5.5" width="51" height="31"/>
                                                                         <color key="onTintColor" systemColor="linkColor"/>
                                                                         <connections>
                                                                             <action selector="addressNfcBtnPressed:" destination="vwL-9N-qbx" eventType="valueChanged" id="JTT-ZH-Lxg"/>
                                                                         </connections>
                                                                     </switch>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable/Disable NFC for Verfication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhu-4r-EzT">
-                                                                        <rect key="frame" x="15" y="30" width="250" height="19.5"/>
+                                                                        <rect key="frame" x="15" y="12" width="250" height="0.0"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -517,8 +517,8 @@
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-VI-omP" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="401.5" width="370" height="56"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-VI-omP" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="344" width="370" height="56"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6y-vJ-dg0">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="56"/>
@@ -584,8 +584,8 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCx-HU-Mkf" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="487.5" width="370" height="56"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCx-HU-Mkf" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="430" width="370" height="56"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7R-A0-esq">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="56"/>
@@ -651,8 +651,8 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qry-q0-MSc" customClass="DesignableView" customModule="Shufti_Pro_Demo" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="573.5" width="370" height="56"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qry-q0-MSc" customClass="DesignableView" customModule="ShuftiPro_Demo" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="516" width="370" height="56"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2t-6Y-9NU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="70" height="56"/>
@@ -746,7 +746,6 @@
                         <viewLayoutGuide key="safeArea" id="epW-ps-3FK"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="g5f-hF-TNj" firstAttribute="bottom" secondItem="epW-ps-3FK" secondAttribute="bottom" id="0b6-X9-ibS"/>
                             <constraint firstItem="9Do-7g-8Nz" firstAttribute="top" secondItem="epW-ps-3FK" secondAttribute="top" constant="30" id="0hM-fS-3tH"/>
                             <constraint firstItem="g5f-hF-TNj" firstAttribute="top" secondItem="j6d-Eu-b2Z" secondAttribute="bottom" id="1zX-qz-cQ8"/>
                             <constraint firstItem="9Do-7g-8Nz" firstAttribute="centerX" secondItem="K5p-9g-aFk" secondAttribute="centerX" id="4jO-Yu-9uL"/>
@@ -754,6 +753,7 @@
                             <constraint firstItem="j6d-Eu-b2Z" firstAttribute="leading" secondItem="epW-ps-3FK" secondAttribute="leading" id="Po0-Kz-0WR"/>
                             <constraint firstItem="g5f-hF-TNj" firstAttribute="leading" secondItem="epW-ps-3FK" secondAttribute="leading" id="YEy-oK-g0P"/>
                             <constraint firstItem="epW-ps-3FK" firstAttribute="trailing" secondItem="j6d-Eu-b2Z" secondAttribute="trailing" id="lLq-S9-ZOW"/>
+                            <constraint firstAttribute="bottom" secondItem="g5f-hF-TNj" secondAttribute="bottom" id="svL-Ru-oCE"/>
                             <constraint firstItem="j6d-Eu-b2Z" firstAttribute="top" secondItem="9Do-7g-8Nz" secondAttribute="bottom" id="yPc-gW-rcM"/>
                         </constraints>
                     </view>

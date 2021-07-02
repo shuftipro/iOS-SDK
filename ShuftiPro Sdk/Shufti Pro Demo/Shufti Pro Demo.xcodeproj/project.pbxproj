@@ -16,8 +16,9 @@
 		A60F01DE268D9C3F0003153E /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A60F01DA268D9C3F0003153E /* OpenSans-ExtraBold.ttf */; };
 		A60F01DF268D9C3F0003153E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A60F01DB268D9C3F0003153E /* OpenSans-Bold.ttf */; };
 		A60F01E0268D9C3F0003153E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A60F01DC268D9C3F0003153E /* OpenSans-Regular.ttf */; };
-		A654050D268DEF5D00CFC5F1 /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A654050C268DEF5D00CFC5F1 /* ShuftiPro.xcframework */; };
 		A69A538A253036AE001383E0 /* DesignsbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A5389253036AE001383E0 /* DesignsbleView.swift */; };
+		A6DCBBD9268F56D400701526 /* ShuftiPro.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DCBBD7268F565C00701526 /* ShuftiPro.xcframework */; };
+		A6DCBBDA268F56D400701526 /* ShuftiPro.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6DCBBD7268F565C00701526 /* ShuftiPro.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A6DCBBDA268F56D400701526 /* ShuftiPro.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,8 +47,8 @@
 		A60F01DA268D9C3F0003153E /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		A60F01DB268D9C3F0003153E /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		A60F01DC268D9C3F0003153E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		A654050C268DEF5D00CFC5F1 /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
 		A69A5389253036AE001383E0 /* DesignsbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignsbleView.swift; sourceTree = "<group>"; };
+		A6DCBBD7268F565C00701526 /* ShuftiPro.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ShuftiPro.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A654050D268DEF5D00CFC5F1 /* ShuftiPro.xcframework in Frameworks */,
+				A6DCBBD9268F56D400701526 /* ShuftiPro.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +109,7 @@
 		A678DB8F26538BE600990B46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A654050C268DEF5D00CFC5F1 /* ShuftiPro.xcframework */,
+				A6DCBBD7268F565C00701526 /* ShuftiPro.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

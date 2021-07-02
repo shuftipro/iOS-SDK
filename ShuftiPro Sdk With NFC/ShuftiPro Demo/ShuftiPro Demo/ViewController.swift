@@ -10,9 +10,9 @@ import UIKit
 import ShuftiPro
 
 class ViewController: UIViewController {
-
-    let clientIdStr = "xxx-xxx-xxx" // your client id here
-    let secretKeyStr = "xxx-xxx-xxx" // your secret key here
+    
+    let clientIdStr = "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3" // your client id here
+    let secretKeyStr = "zwa3CZLMGYLoRMW6y87tjb2absbM4WBe" // your secret key here
     let accessToken = "xxx-xxx-xxx" // your accessToken here
     var referenceKey = ""
     var showRatingScreen = false
