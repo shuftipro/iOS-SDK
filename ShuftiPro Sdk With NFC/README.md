@@ -34,7 +34,7 @@ Supported architectures in SDK:
 - armv7 and arm64 for devices
 
 ## Permissions:
-* ### Application Info.plist must contain an **Privacy - Camera Usage Description** , **Privacy - Microphone Usage Description**  and  **Privacy - NFC Scan Usage Description** key with a explanation to end-user about how the app uses this data.
+* ### Application Info.plist must contain an **Privacy - Camera Usage Description** , **Privacy - Microphone Usage Description**  and  **Privacy - NFC Scan Usage Description**key with a explanation to end-user about how the app uses this data.
 * ### And Open your Info.plist file as Source Code add these lines inside dict tag.
 ```
 <key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
@@ -325,7 +325,7 @@ In this object, we add authorization Key in verification request.
    Shufti Pro provides Authorization to clients through the Basic Auth header. Your Client ID will serve as your Username while the Secret Key will serve as your Password. The API will require this header for every request.
 
 * ## Access Token
-   Shufti Pro provides Bearer Access Token Authorization method. The client can generate temporary access token using new access token endpoint. The shared token will be used to authorize API requests. The token shared with the client will be valid for 10 minutes and can be used once only.
+   Shufti Pro provides Bearer Access Token Authorization method. The client can generate temporary [access token](https://api.shuftipro.com/api/docs/?_ga=2.165834294.908983928.1607423250-1279517864.1604641664#access-token-request) using new access token endpoint. The shared token will be used to authorize API requests. The token shared with the client will be valid for 10 minutes and can be used once only.
 
 # Config Object Parameters
 In this object, we add extra configuration of verification that the user wants.
@@ -944,6 +944,6 @@ Date            | Description
 23 Sep 2020    | Added swift 5.3 compiled binaries
 29 Apr 2021    | Added e-kyc support 
 27 May 2021    | Content updated
-02 Jul 2021 | Bugs fixes and UI improvements.
+07 Jul 2021    | ReadMe update
 
 
