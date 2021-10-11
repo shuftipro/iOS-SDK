@@ -282,8 +282,7 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
 ```sh
   let configs = [
                 "openWebView" : "false",
-                "aysnc" : "false",
-                "captureEnabled" : "false",
+                "aysnc" : "false"
   ]
 ```
 
@@ -344,14 +343,6 @@ In this object, we add extra configuration of verification that the user wants.
 
   This boolean type of parameter is used to identify if you want to perform verification in its hybrid view.
   If open_webview is true, it means that the user wants verification in **hybrid view**. If false, then the user wants verification with **OCR or Without OCR**. The value is false by default.
-  
-  * ## captureEnabled
-
-      Required: **No**  
-      Type: **boolean** <br>
-    Accepted Values: **true**, **false**    
-
-      This boolean type of parameter is used to identify whether the user wants to open native camera in Iframe or not. A true value means user wants to open native otherwise not. 
 
 
 
@@ -483,19 +474,23 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   Provide valid BASE64 encoded string. Leave empty for an on-site verification.
 
+
+    * <h3>backside_proof_required</h3>
+
+  Required: **No**  
+  Type: **string** <br>
+  Accepted values: **0,** **1** <br>
+  Default value: **0**
+
+  The 0 value means that the user has the option to skip backside proof of the document provided. 1 means that the user must capture the backside image of           document. In case of passport, 0 value means that the user would not be asked to provide backside proof, and in case of 1 value the user would have choice to       capture or skip the backside proof.
+
+
   * <h3>supported_types</h3>
 
   Required: **Yes**  
   Type: **Array**
 
   You can provide any one, two or more types of documents to verify the identity of user. For example, if you opt for both passport and driving license, then your user will be given an opportunity to verify data from either of these two documents. All supported types are listed below.
-    * <h3>backside_proof_required</h3>
-
-  Required: **No**  <br>
-  Type: **string** <br>
-  Accepted value: **"1", "0"**
-
-  If the value of this parameter is set to 1, Shufti Pro will require the end-user to capture/upload both sides of the document to verify the identity.
 
   Supported Types      |
   ---------------------|
@@ -559,6 +554,15 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   Leave empty to perform data extraction from uploaded proofs. Provide a valid date. Please note that the date should be before today. 
   Example 1990-12-31
+
+  * <h3>gender</h3>
+
+  Required: **No**  
+  Type: **string**  
+  Accepted values: **M,F,O,m,f,o**
+
+  Leave empty to perform data extraction from uploaded proofs. Provide the gender which is given on the document.
+  Example M
 
   * <h3>document_number</h3>
 
