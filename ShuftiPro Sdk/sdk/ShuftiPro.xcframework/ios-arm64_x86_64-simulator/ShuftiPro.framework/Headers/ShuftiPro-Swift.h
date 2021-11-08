@@ -296,6 +296,7 @@ SWIFT_CLASS("_TtC9ShuftiPro17CustomAppDelegate")
 @interface CustomAppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+- (UIInterfaceOrientationMask)application:(UIApplication * _Nonnull)application supportedInterfaceOrientationsForWindow:(UIWindow * _Nullable)window SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application handleEventsForBackgroundURLSession:(NSString * _Nonnull)handleEventsForBackgroundURLSessionidentifier completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -362,18 +363,18 @@ SWIFT_CLASS("_TtC9ShuftiPro12NFCScannerVc")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIWebView;
 @class UIActivityIndicatorView;
+@class WKNavigation;
 
 SWIFT_CLASS("_TtC9ShuftiPro22PrivacyPolicyWebviewVc")
-@interface PrivacyPolicyWebviewVc : UIViewController <UIWebViewDelegate, WKNavigationDelegate>
-@property (nonatomic, weak) IBOutlet UIWebView * _Null_unspecified privacyPolicyWebView;
+@interface PrivacyPolicyWebviewVc : UIViewController <UIScrollViewDelegate, UIWebViewDelegate, WKNavigationDelegate, WKUIDelegate>
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified activity;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified privacyPolicyView;
 - (void)viewDidLoad;
 - (IBAction)cancelWebViewBtnWithSender:(id _Null_unspecified)sender;
-- (void)webViewDidStartLoad:(UIWebView * _Nonnull)webView;
-- (void)webViewDidFinishLoad:(UIWebView * _Nonnull)webView;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didCommitNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -513,14 +514,13 @@ SWIFT_CLASS("_TtC9ShuftiPro16SupportedTypesVc")
 
 @class UINavigationBar;
 @class UIBarButtonItem;
-@class WKNavigation;
 
 SWIFT_CLASS("_TtC9ShuftiPro17WebViewController")
 @interface WebViewController : UIViewController <WKNavigationDelegate>
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified containerView;
 @property (nonatomic, weak) IBOutlet UIVisualEffectView * _Null_unspecified loadingView;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified activity;
-@property (nonatomic, weak) IBOutlet WKWebView * _Null_unspecified loadingIndicatorImageView;
+@property (nonatomic, weak) IBOutlet WKWebView * _Null_unspecified loadingIndicatorWebView;
 @property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navBar;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified navBarCancelBtn;
 - (void)viewWillAppear:(BOOL)animated;
@@ -845,6 +845,7 @@ SWIFT_CLASS("_TtC9ShuftiPro17CustomAppDelegate")
 @interface CustomAppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+- (UIInterfaceOrientationMask)application:(UIApplication * _Nonnull)application supportedInterfaceOrientationsForWindow:(UIWindow * _Nullable)window SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application handleEventsForBackgroundURLSession:(NSString * _Nonnull)handleEventsForBackgroundURLSessionidentifier completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -911,18 +912,18 @@ SWIFT_CLASS("_TtC9ShuftiPro12NFCScannerVc")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIWebView;
 @class UIActivityIndicatorView;
+@class WKNavigation;
 
 SWIFT_CLASS("_TtC9ShuftiPro22PrivacyPolicyWebviewVc")
-@interface PrivacyPolicyWebviewVc : UIViewController <UIWebViewDelegate, WKNavigationDelegate>
-@property (nonatomic, weak) IBOutlet UIWebView * _Null_unspecified privacyPolicyWebView;
+@interface PrivacyPolicyWebviewVc : UIViewController <UIScrollViewDelegate, UIWebViewDelegate, WKNavigationDelegate, WKUIDelegate>
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified activity;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified privacyPolicyView;
 - (void)viewDidLoad;
 - (IBAction)cancelWebViewBtnWithSender:(id _Null_unspecified)sender;
-- (void)webViewDidStartLoad:(UIWebView * _Nonnull)webView;
-- (void)webViewDidFinishLoad:(UIWebView * _Nonnull)webView;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didCommitNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1062,14 +1063,13 @@ SWIFT_CLASS("_TtC9ShuftiPro16SupportedTypesVc")
 
 @class UINavigationBar;
 @class UIBarButtonItem;
-@class WKNavigation;
 
 SWIFT_CLASS("_TtC9ShuftiPro17WebViewController")
 @interface WebViewController : UIViewController <WKNavigationDelegate>
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified containerView;
 @property (nonatomic, weak) IBOutlet UIVisualEffectView * _Null_unspecified loadingView;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified activity;
-@property (nonatomic, weak) IBOutlet WKWebView * _Null_unspecified loadingIndicatorImageView;
+@property (nonatomic, weak) IBOutlet WKWebView * _Null_unspecified loadingIndicatorWebView;
 @property (nonatomic, weak) IBOutlet UINavigationBar * _Null_unspecified navBar;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified navBarCancelBtn;
 - (void)viewWillAppear:(BOOL)animated;

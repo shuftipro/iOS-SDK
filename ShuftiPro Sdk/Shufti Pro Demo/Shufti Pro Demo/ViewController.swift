@@ -10,9 +10,9 @@ import UIKit
 import ShuftiPro
 
 class ViewController: UIViewController {
-//
+
     let clientIdStr = "xxx-xxx-xxx" // your client id here
-    let secretKeyStr = "xxx-xxx-xxx"
+    let secretKeyStr = "xxx-xxx-xxx" // your secret key here
     let accessToken = "xxx-xxx-xxx" // your accessToken here
     var authKeys = Dictionary<String, String>()
     var configs = Dictionary<String, Any>()
@@ -262,6 +262,10 @@ class ViewController: UIViewController {
                   ],
                 ]
             }
+            if backgroundVerification == true {
+                dataDictionary["background_checks"] = ""
+            }
+            
             configs = [
                 "openWebView" : "false",
                 "async" : "false"
