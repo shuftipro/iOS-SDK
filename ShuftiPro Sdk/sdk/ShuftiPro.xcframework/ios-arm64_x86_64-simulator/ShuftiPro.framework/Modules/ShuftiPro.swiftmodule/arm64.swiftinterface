@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShuftiPro
 import AVFoundation
 import AVKit
@@ -14,15 +14,16 @@ import SystemConfiguration
 import UIKit
 import VideoToolbox
 import WebKit
+import _Concurrency
 @_hasMissingDesignatedInitializers public class Reachability {
   @objc deinit
 }
-extension UIImageView {
-  public func loadGif(name: Swift.String)
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func loadGif(name: Swift.String)
   @available(iOS 9.0, *)
-  public func loadGif(asset: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func loadGif(asset: Swift.String)
 }
-extension UIImage {
+extension UIKit.UIImage {
   public class func gif(data: Foundation.Data) -> UIKit.UIImage?
   public class func gif(url: Swift.String) -> UIKit.UIImage?
   public class func gif(name: Swift.String) -> UIKit.UIImage?
@@ -36,16 +37,16 @@ extension UIImage {
   public var topBarTintColor: Swift.String?
   public var cancelButtonTextColor: Swift.String?
   public var showNavBar: Swift.Bool
-  @objc public func shuftiProVerification(requestObject dataObjectObj: [Swift.String : Any], authKeys: [Swift.String : Swift.String], parentVC pvc: UIKit.UIViewController, configs: [Swift.String : Any]?, completion: @escaping (Any) -> ())
+  @objc public func shuftiProVerification(requestObject dataObjectObj: [Swift.String : Any], authKeys: [Swift.String : Swift.String], parentVC pvc: UIKit.UIViewController, configs: [Swift.String : Any]?, completion: @escaping (_ result: Any) -> ())
   @objc override dynamic public init()
   @objc deinit
 }
-extension UIImage {
+extension UIKit.UIImage {
   convenience public init?(pixelBuffer: CoreVideo.CVPixelBuffer)
   public func scaledImage(with size: CoreGraphics.CGSize) -> UIKit.UIImage?
 }
 public enum Constant {
 }
-extension UIDevice {
-  public static let modelName: Swift.String
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }

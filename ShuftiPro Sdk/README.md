@@ -41,7 +41,7 @@ Application Info.plist must contain an **Privacy - Camera Usage Description** an
    
  For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.1.0', :git => "https://github.com/shuftipro/iOS-binary-pod"
+pod 'ShuftiPro', :tag => '1.1.1', :git => "https://github.com/shuftipro/iOS-binary-pod"
 ```
 
 >### Manuall installation
@@ -921,6 +921,8 @@ Date            | Description
 27 May 2021 | Content updated.
 07 Jul 2021 | ReadMe updated.
 08 Nov 2021 | Remove request timeout time and added support of WKWebview.
+01 Dec 2021 | Bugs fixes and UI improvements. 
+
 
 
 
