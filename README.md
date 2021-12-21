@@ -80,7 +80,7 @@ let requestObject: [String: Any] = [
             "show_results" = "",
             "show_consent" = "",
             "show_privacy_policy" = "",
-            "verification_mode": "",
+            "verification_Mode": "",
             "background_checks" = "",
 
             "face": ["proof": ""
@@ -166,7 +166,7 @@ let requestObject: [String: Any] = [
             "show_results" = "",
             "show_consent" = "",
             "show_privacy_policy" = "",
-            "verification_mode": "",
+            "verification_Mode": "",
             "background_checks" = "",
 
             "face": ["proof": ""
@@ -345,7 +345,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
 * ## country
 
-  Required: **Yes**  
+  Required: **No**  
   Type: **string**  
   Length: **2 characters**
 
@@ -377,11 +377,11 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   During a verification request, we make several server to server calls to keep you updated about the verification state. This way you can update the request status at your end even if the customer is lost midway through the process.
 
-* ## verification_mode
+* ## verification_Mode
 
   Required: **No**  
   Type: **string**  
-  Accepted Values: **any, image_only, video_only**
+  Accepted Values: **image_only, video_only**
 
   Verification mode defines what types of proofs are allowed for a verification. In case of 'video_only' user will upload videos and images if verification mode is 'image_only'. 
 
@@ -408,25 +408,6 @@ All verification services are optional. You can provide Shufti Pro a single serv
   Accepted Values: **"0",   "1"**
   
   This parameter displays a screen to collect consent from end-user before the verification process starts. If the value is set 1, the screen will be displayed to end-user. If the value is set 0, the consent screen will not be displayed.
-
-
- 
-* ## background_checks
-
-  Required: **No**  
-  Type: **string**  
-  Accepted Values: **"0", "1"**
-
-   It is a verification process that will require you to send us the full Name of end-user in addition to the date of birth. Shufti Pro will perform AML based background checks based on this information. Please note that the name and dob keys will be extracted from document service if these keys are empty. 
-
- 
-* ## phone
-
-  Required: **No**  
-  Type: **string**  
-  Accepted Values: **"0", "1"**
-
-  This service key corresponds to Phone Verification service of Shufti Pro. A customized code is sent to end-user on their phone number, that is sent back by end-user to verify their identity.   
   
 
 <!-- -------------------------------------------------------------------------------- -->
@@ -468,7 +449,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   * <h3>supported_types</h3>
 
-  Required: **Yes**  
+  Required: **No**  
   Type: **Array**
 
   You can provide any one, two or more types of documents to verify the identity of user. For example, if you opt for both passport and driving license, then your user will be given an opportunity to verify data from either of these two documents. All supported types are listed below.
@@ -602,7 +583,7 @@ For Details on additional_data object go to [Additional Data](https://api.shufti
 
   * <h3>supported_types</h3>
 
-  Required: **Yes**  
+  Required: **No**  
   Type: **Array**
 
   Provide any one, two or more document types in supported_types parameter in Address verification service. For example, if you choose id_card and utility_bill, then the user will be able to verify data using either of these two documents. Following is the list of supported types for address verification.
@@ -690,7 +671,7 @@ For Details on additional_data object go to [Additional Data](https://api.shufti
   
   * <h3>supported_types</h3>
 
-  Required: **Yes**  
+  Required: **No**  
   Type: **array**
 
   Text provided in the consent verification can be verified by handwritten documents or printed documents.
