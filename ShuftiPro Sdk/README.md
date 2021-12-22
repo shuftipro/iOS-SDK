@@ -870,7 +870,7 @@ tax_bill |
 
 ## Test IDs
 Shufti Pro provides the users with a number of test documents. Customers may use these to test the demo, instead of presenting their actual information. <br><br>
-
+Note: These test IDs only be usefull in Iframe SDK.
 
 [![](https://raw.githubusercontent.com/shuftipro/integration-guide/master/assets/realFace.jpg?v=1)](https://raw.githubusercontent.com/shuftipro/integration-guide/master/assets/realFace.jpg?v=1) 
 
