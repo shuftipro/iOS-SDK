@@ -41,7 +41,7 @@ Application Info.plist must contain an **Privacy - Camera Usage Description** an
    
  For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.1.1', :git => "https://github.com/shuftipro/iOS-binary-pod"
+pod 'ShuftiPro', :tag => '1.1.2', :git => "https://github.com/shuftipro/iOS-binary-pod"
 ```
 
 >### Manuall installation
