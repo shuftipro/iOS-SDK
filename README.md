@@ -10,6 +10,7 @@ Shufti Pro’s API supports verification with and without OCR.
 * [General Requirements](#general-requirements)
 * [Permissions](#permissions)
 * [SDK Installation Guide](#sdk-installation-guide)
+* [SDK Version](#sdk-version)
 * [Verifications](#verification)
 * [Integration](#Integration)
 * [JSON Object](#Json-Object-With-Ocr)
@@ -48,6 +49,9 @@ pod 'ShuftiPro', :tag => '1.1.1', :git => "https://github.com/shuftipro/iOS-bina
 1. Copy “ShuftiPro.framework” into your project folder.
 2.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
 3.  Add “ShuftiPro.framework” in Embeded Binaries.
+
+## SDK Version:
+Currently our updated SDK version is 1.0.9
 
 ## Verification
 In order to get verified, customers will have themselves verified through their mobile phones. They will do it through the merchant's mobile application. Merchant will collect the information and send data to Shufti Pro for verification. The Merchant shall provide the proofs(Images/Videos). Shufti Pro will not collect them directly from the user.
