@@ -51,7 +51,7 @@ pod 'ShuftiPro', :tag => '1.1.3', :git => "https://github.com/shuftipro/iOS-bina
 3.  Add “ShuftiPro.framework” in Embeded Binaries.
 
 ## SDK Version:
-Currently our updated SDK version is 1.0.9
+Currently our updated SDK version is 1.1.3
 
 ## Verification
 In order to get verified, customers will have themselves verified through their mobile phones. They will do it through the merchant's mobile application. Merchant will collect the information and send data to Shufti Pro for verification. The Merchant shall provide the proofs(Images/Videos). Shufti Pro will not collect them directly from the user.
