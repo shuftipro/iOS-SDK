@@ -290,7 +290,6 @@ SWIFT_CLASS("_TtC9ShuftiPro14ConfirmPhotoVc")
 SWIFT_CLASS("_TtC9ShuftiPro17CustomAppDelegate")
 @interface CustomAppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
-- (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (UIInterfaceOrientationMask)application:(UIApplication * _Nonnull)application supportedInterfaceOrientationsForWindow:(UIWindow * _Nullable)window SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application handleEventsForBackgroundURLSession:(NSString * _Nonnull)handleEventsForBackgroundURLSessionidentifier completionHandler:(void (^ _Nonnull)(void))completionHandler;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;

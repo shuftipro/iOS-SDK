@@ -42,7 +42,7 @@ Application Info.plist must contain an **Privacy - Camera Usage Description** an
    
  For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.1.3', :git => "https://github.com/shuftipro/iOS-binary-pod"
+pod 'ShuftiPro', :tag => '1.1.4', :git => "https://github.com/shuftipro/iOS-binary-pod"
 ```
 
 >### Manuall installation
@@ -84,7 +84,7 @@ let requestObject: [String: Any] = [
             "show_results" : "",
             "show_consent" : "",
             "show_privacy_policy" : "",
-            "verification_Mode": "",
+            "verification_mode": "",
             "background_checks" : "",
 
             "face": ["proof": ""
@@ -170,7 +170,7 @@ let requestObject: [String: Any] = [
             "show_results" : "",
             "show_consent" : "",
             "show_privacy_policy" : "",
-            "verification_Mode": "",
+            "verification_mode": "",
             "background_checks" : "",
 
             "face": ["proof": ""
@@ -252,7 +252,7 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
 
  let authKeys = [
                 "auth_type" : "basic_auth",
-                "client_id" : "xxxxx-xxxxx-xxxxx",
+                "client_Id" : "xxxxx-xxxxx-xxxxx",
                 "secret_key": "xxxxx-xxxxx-xxxxx"
 
   ]
@@ -267,7 +267,7 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
 ## Configs
 ```sh
   let configs = [
-                "openWebView" : "false",
+                "open_webview" : "false",
                 "aysnc" : "false"
   ]
 ```
@@ -320,7 +320,7 @@ In this object, we add extra configuration of verification that the user wants.
   Accepted Values: **, "true", "false"**
 
    If async value is set to true you'll instantly get the user's control back so you don't have to wait for the verification results. When a request is completed you'll automatically get a callback. 
-* ## openWebView
+* ## open_webview
 
   Required: **No**  
   Type: **string**  
@@ -381,7 +381,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   During a verification request, we make several server to server calls to keep you updated about the verification state. This way you can update the request status at your end even if the customer is lost midway through the process.
 
-* ## verification_Mode
+* ## verification_mode
 
   Required: **No**  
   Type: **string**  

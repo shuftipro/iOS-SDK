@@ -176,7 +176,7 @@ class ViewController: UIViewController {
                 "email": "ad@example.com",
                 "callback_url": "http://www.example.com",
                 "redirect_url" : "https://www.mydummy.shuftipro.com/",
-                "verification_Mode" : "image",
+                "verification_mode" : "image",
                 "show_consent" : "1",
                 "show_privacy_policy" : "1",
                 "show_results" : "1",
@@ -267,14 +267,14 @@ class ViewController: UIViewController {
             }
             
             configs = [
-                "openWebView" : "false",
+                "open_webview" : "false",
                 "async" : "false"
 
             ]
 
             authKeys = [
                 "auth_type" : "basic_auth",
-                "client_id" : clientIdStr,
+                "client_Id" : clientIdStr,
                 "secret_key": secretKeyStr
             ]
 
