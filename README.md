@@ -48,7 +48,7 @@ Application Info.plist must contain an **Privacy - Camera Usage Description** an
    
  For Swift version 4 & 5
 ```sh
-pod 'ShuftiPro', :tag => '1.1.4', :git => "https://github.com/shuftipro/iOS-binary-pod"
+pod 'ShuftiPro', :tag => '1.1.6', :git => "https://github.com/shuftipro/iOS-binary-pod"
 ```
 
 >### Manuall installation
@@ -57,7 +57,7 @@ pod 'ShuftiPro', :tag => '1.1.4', :git => "https://github.com/shuftipro/iOS-bina
 3.  Add “ShuftiPro.framework” in Embeded Binaries.
 
 ## SDK Version:
-Currently our updated SDK version is 1.1.3
+Currently our updated SDK version is 1.1.6
 
 ## Verification
 In order to get verified, customers will have themselves verified through their mobile phones. They will do it through the merchant's mobile application. Merchant will collect the information and send data to Shufti Pro for verification. The Merchant shall provide the proofs(Images/Videos). Shufti Pro will not collect them directly from the user.
