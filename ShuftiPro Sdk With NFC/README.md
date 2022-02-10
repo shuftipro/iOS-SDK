@@ -270,7 +270,7 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
 
  let authKeys = [
                 "auth_type" : "basic_auth",
-                "client_id" : "xxxxx-xxxxx-xxxxx",
+                "client_Id" : "xxxxx-xxxxx-xxxxx",
                 "secret_key": "xxxxx-xxxxx-xxxxx"
 
   ]

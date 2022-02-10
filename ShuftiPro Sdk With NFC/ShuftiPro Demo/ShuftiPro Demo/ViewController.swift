@@ -465,7 +465,7 @@ class ViewController: UIViewController {
 
             authKeys = [
                 "auth_type" : "basic_auth",
-                "client_id" : clientIdStr,
+                "client_Id" : clientIdStr,
                 "secret_key": secretKeyStr
             ]
             
