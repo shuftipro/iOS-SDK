@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ShuftiPro
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShuftiPro
 import AVFoundation
 import AVKit
 import Accelerate
@@ -674,13 +674,13 @@ public struct ResponseAPDU {
   @objc deinit
 }
 extension UIKit.UIImage {
-  public convenience init?(pixelBuffer: CoreVideo.CVPixelBuffer)
+  convenience public init?(pixelBuffer: CoreVideo.CVPixelBuffer)
   public func scaledImage(with size: CoreGraphics.CGSize) -> UIKit.UIImage?
 }
 public enum Constant {
 }
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static var modelName: Swift.String
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
 }
 @available(iOS 13, macOS 10.15, *)
 public enum NFCViewDisplayMessage {
@@ -739,20 +739,20 @@ public enum PACEMappingType {
 }
 @_hasMissingDesignatedInitializers @available(iOS 13, macOS 10.15, *)
 public class PACEInfo : ShuftiPro.SecurityInfo {
-  public static var PARAM_ID_GFP_1024_160: Swift.Int
-  public static var PARAM_ID_GFP_2048_224: Swift.Int
-  public static var PARAM_ID_GFP_2048_256: Swift.Int
-  public static var PARAM_ID_ECP_NIST_P192_R1: Swift.Int
-  public static var PARAM_ID_ECP_BRAINPOOL_P192_R1: Swift.Int
-  public static var PARAM_ID_ECP_NIST_P224_R1: Swift.Int
-  public static var PARAM_ID_ECP_BRAINPOOL_P224_R1: Swift.Int
-  public static var PARAM_ID_ECP_NIST_P256_R1: Swift.Int
-  public static var PARAM_ID_ECP_BRAINPOOL_P256_R1: Swift.Int
-  public static var PARAM_ID_ECP_BRAINPOOL_P320_R1: Swift.Int
-  public static var PARAM_ID_ECP_NIST_P384_R1: Swift.Int
-  public static var PARAM_ID_ECP_BRAINPOOL_P384_R1: Swift.Int
-  public static var PARAM_ID_ECP_BRAINPOOL_P512_R1: Swift.Int
-  public static var PARAM_ID_ECP_NIST_P521_R1: Swift.Int
+  public static let PARAM_ID_GFP_1024_160: Swift.Int
+  public static let PARAM_ID_GFP_2048_224: Swift.Int
+  public static let PARAM_ID_GFP_2048_256: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P192_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P192_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P224_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P224_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P256_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P256_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P320_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P384_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P384_R1: Swift.Int
+  public static let PARAM_ID_ECP_BRAINPOOL_P512_R1: Swift.Int
+  public static let PARAM_ID_ECP_NIST_P521_R1: Swift.Int
   override public func getObjectIdentifier() -> Swift.String
   override public func getProtocolOIDString() -> Swift.String
   public func getVersion() -> Swift.Int
@@ -814,3 +814,34 @@ public class X509Wrapper {
   public func getSubjectName() -> Swift.String?
   @objc deinit
 }
+extension ShuftiPro.LogLevel : Swift.Equatable {}
+extension ShuftiPro.LogLevel : Swift.Hashable {}
+extension ShuftiPro.LogLevel : Swift.RawRepresentable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.DataGroupId : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.DataGroupId : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.DataGroupId : Swift.RawRepresentable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.DocTypeEnum : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.DocTypeEnum : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.DocTypeEnum : Swift.RawRepresentable {}
+extension ShuftiPro.PassportAuthenticationStatus : Swift.Equatable {}
+extension ShuftiPro.PassportAuthenticationStatus : Swift.Hashable {}
+extension ShuftiPro.SecureMessagingSupportedAlgorithms : Swift.Equatable {}
+extension ShuftiPro.SecureMessagingSupportedAlgorithms : Swift.Hashable {}
+extension ShuftiPro.PACEMappingType : Swift.Equatable {}
+extension ShuftiPro.PACEMappingType : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.CertificateType : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.CertificateType : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.CertificateItem : Swift.Equatable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.CertificateItem : Swift.Hashable {}
+@available(iOS 13, macOS 10.15, *)
+extension ShuftiPro.CertificateItem : Swift.RawRepresentable {}

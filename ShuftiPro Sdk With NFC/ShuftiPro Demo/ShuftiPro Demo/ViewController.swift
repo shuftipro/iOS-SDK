@@ -305,7 +305,7 @@ class ViewController: UIViewController {
                     "proof": ""
                 ]
             }
-            if documentVerification == true && documentNFCVerification  == true {
+            if documentVerification == true  {
                 
                 dataDictionary["document"] = [
                     "supported_types": [
@@ -327,39 +327,14 @@ class ViewController: UIViewController {
                     "expiry_date": "",
                     "issue_date": "",
                     "fetch_enhanced_data": "",
-                    "nfc_verification" : "true",
+                    "nfc_verification" : "\(documentNFCVerification)",
 
                 ]
             }
             
-            if documentVerification == true && documentNFCVerification  == false {
-                
-                dataDictionary["document"] = [
-                    "supported_types": [
-                        "passport",
-                        "id_card",
-                        "driving_license",
-                        "credit_or_debit_card"
-                    ],
-                    "proof": "",
-                    "additional_proof" :"",
 
-                    "name": ["first_name": "",
-                              "middle_name": "",
-                              "last_name" : ""
-                    ],
-                    "backside_proof_required": "0",
-                    "dob": "",
-                    "document_number": "",
-                    "expiry_date": "",
-                    "issue_date": "",
-                    "fetch_enhanced_data": "",
-                    "nfc_verification" : "false",
 
-                ]
-            }
-
-            if documentTwoVerification == true && documentTwoNFCVerification == true {
+            if documentTwoVerification == true  {
                 dataDictionary["document_two"] = [
                     "supported_types": [
                         "passport",
@@ -380,46 +355,19 @@ class ViewController: UIViewController {
                     "expiry_date": "",
                     "issue_date": "",
                     "fetch_enhanced_data": "",
-                    "nfc_verification" : "true",
-
-                    
-                ]
-            }
-            
-            if documentTwoVerification == true && documentTwoNFCVerification == false {
-                dataDictionary["document_two"] = [
-                    "supported_types": [
-                        "passport",
-                        "id_card",
-                        "driving_license",
-                        "credit_or_debit_card"
-                    ],
-                    "proof": "",
-                    "additional_proof" :"",
-
-                    "name": ["first_name": "",
-                              "middle_name": "",
-                              "last_name" : ""
-                    ],
-                    "backside_proof_required": "0",
-                    "dob": "",
-                    "document_number": "",
-                    "expiry_date": "",
-                    "issue_date": "",
-                    "fetch_enhanced_data": "",
-                    "nfc_verification" : "false",
+                    "nfc_verification" : "\(documentTwoNFCVerification)",
 
                     
                 ]
             }
         
             
-            if addressVerification == true && addressNFCVerification == true {
+            if addressVerification == true{
                 dataDictionary["address"] = [
                     "full_address": "",
                     "name": "",
                     "backside_proof_required": "0",
-                    "nfc_verification" : "true",
+                    "nfc_verification" : "\(addressNFCVerification)",
 
                     "supported_types": [
                         "id_card",
@@ -429,20 +377,6 @@ class ViewController: UIViewController {
                 ]
             }
             
-            if addressVerification == true && addressNFCVerification == false {
-                dataDictionary["address"] = [
-                    "full_address": "",
-                    "name": "",
-                    "backside_proof_required": "0",
-                    "nfc_verification" : "false",
-
-                    "supported_types": [
-                        "id_card",
-                        "utility_bill",
-                        "bank_statement"
-                    ],
-                ]
-            }
             
             if concentVerification == true {
                 dataDictionary["consent"] = [
