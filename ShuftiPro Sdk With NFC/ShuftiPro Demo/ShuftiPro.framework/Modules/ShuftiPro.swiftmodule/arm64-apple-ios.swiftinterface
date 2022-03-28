@@ -41,7 +41,7 @@ public class PassportReader : ObjectiveC.NSObject {
   public init(logLevel: ShuftiPro.LogLevel = .info, masterListURL: Foundation.URL? = nil)
   public func setMasterListURL(_ masterListURL: Foundation.URL)
   public func overrideNFCDataAmountToRead(amount: Swift.Int)
-  public func readPassport(mrzKey: Swift.String, tags: [ShuftiPro.DataGroupId] = [], skipSecureElements: Swift.Bool = true, customDisplayMessage: ((ShuftiPro.NFCViewDisplayMessage) -> Swift.String?)? = nil, completed: @escaping (ShuftiPro.NFCPassportModel?, ShuftiPro.NFCPassportReaderError?) -> ())
+  public func readPassport(mrzKey: Swift.String, tags: [ShuftiPro.DataGroupId] = [], skipSecureElements: Swift.Bool = true, skipCA: Swift.Bool = false, skipPACE: Swift.Bool = false, customDisplayMessage: ((ShuftiPro.NFCViewDisplayMessage) -> Swift.String?)? = nil, completed: @escaping (ShuftiPro.NFCPassportModel?, ShuftiPro.NFCPassportReaderError?) -> ())
   @objc deinit
 }
 @available(iOS 13, *)
