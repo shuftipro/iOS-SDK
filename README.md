@@ -891,13 +891,8 @@ Note: These test IDs only be usefull in Iframe SDK.
 ## Contact
 If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com).
 
-
-
-## Contact
-If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com).
-
 ## Copyright
-2017- 21 © Shufti Pro Ltd.
+2017- 22 © Shufti Pro Ltd.
 
 ## Revision History
 
