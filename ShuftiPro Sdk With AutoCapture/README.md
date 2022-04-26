@@ -949,28 +949,10 @@ Shufti Pro provides the users with a number of test documents. Customers may use
 If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com).
 
 ## Copyright
-2017- 21 © Shufti Pro Ltd.
+2017- 22 © Shufti Pro Ltd.
 
 Date            | Description 
 --------------- | ------------
-12 Apr 2019    | Updated SDK swift version to swift 5.
-18 May 2019    | Added support to install through cocoapods.
-21 May 2019    | Added support to install SDK  swift version 4 through cocoapods.
-23 May 2019    | Added support to install SDK  swift version 3 through cocoapods.
-21 Oct 2019    | Updated SDK swift version to swift 5.1
-1 Nov 2019     | Updated SDK swift version to swift 5.1.2
-31 Mar 2020    | Added Access Token
-4 Apr 2020     | Updated request data (Added key fetch_enhanced_data)
-5 May 2020     | Updated binary bitcode
-12 May 2020    | Updated SDK swift version to swift 5.2.2
-21 May 2020    | Minor UI Improvements
-10 Jun 2020    | Fixed issue to open privacy policy link
-19 Jul 2020    | Added option for status bar background color
-31 Jul 2020    | Added cancel button and UI color changes options
-23 Sep 2020    | Added swift 5.3 compiled binaries
-29 Apr 2021    | Added e-kyc support 
-27 May 2021    | Content updated
-07 Jul 2021    | ReadMe update
-20 Dec 2021    | Improve User Experience
+26 Apr 2022     | Live AutoCapture SDK
 
 
