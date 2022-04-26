@@ -6,7 +6,6 @@ target 'ShuftiPro Demo' do
   use_frameworks!
 
   # Pods for ShuftiPro Demo
-  pod 'NFCPassportReader',:tag => '1.1.7', git:'https://github.com/AndyQ/NFCPassportReader.git'
   pod 'GoogleMLKit/TextRecognition'
   pod 'TensorFlowLiteSwift'
 
