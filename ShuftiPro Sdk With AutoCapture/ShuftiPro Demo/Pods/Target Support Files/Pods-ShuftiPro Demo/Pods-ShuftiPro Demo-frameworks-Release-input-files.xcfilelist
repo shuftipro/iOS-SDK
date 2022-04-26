@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/NFCPassportReader/NFCPassportReader.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL
