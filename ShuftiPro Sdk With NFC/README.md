@@ -98,8 +98,12 @@ let requestObject: [String: Any] = [
             "show_privacy_policy" : "",
             "verification_Mode": "",
             "background_checks" : "",
+            "allow_online" : "1",
+            "allow_offline" : "1"
 
-            "face": ["proof": ""
+            "face": ["proof": "",
+                     "allow_online" : "1",
+                     "allow_offline" : "1"
             ],
 
             "document": [
@@ -123,7 +127,9 @@ let requestObject: [String: Any] = [
                  "expiry_date": "",
                  "issue_date": "",
                  "nfc_verification": "false",
-                 "fetch_enhanced_data": "1"
+                 "fetch_enhanced_data": "1",
+                  "allow_online" : "1",
+                  "allow_offline" : "1"
              ],
             "document_two": [
                  "proof": "",
@@ -146,7 +152,9 @@ let requestObject: [String: Any] = [
                  "expiry_date": "",
                  "issue_date": "",
                  "nfc_verification": "false",
-                 "fetch_enhanced_data": "1"
+                 "fetch_enhanced_data": "1",
+                  "allow_online" : "1",
+                  "allow_offline" : "1"
              ],
              "address": [
                  "proof": "",
@@ -163,6 +171,8 @@ let requestObject: [String: Any] = [
                      "utility_bill",
                      "bank_statement"
                  ],
+                  "allow_online" : "1",
+                  "allow_offline" : "1"
              ],
              "consent":[
                "proof" : "",
@@ -170,6 +180,8 @@ let requestObject: [String: Any] = [
                "supported_types" :[
                  "printed"
                ]
+                "allow_online" : "1",
+                "allow_offline" : "1"
              ]
         ]
 ```
@@ -187,8 +199,12 @@ let requestObject: [String: Any] = [
             "show_privacy_policy" : "",
             "verification_Mode": "",
             "background_checks" : "",
+            "allow_online" : "1",
+            "allow_offline" : "1"
 
-            "face": ["proof": ""
+            "face": ["proof": "",
+                     "allow_online" : "1",
+                     "allow_offline" : "1"
             ],
 
             "document": [
@@ -212,7 +228,9 @@ let requestObject: [String: Any] = [
                  "expiry_date": "2025-10-10",
                  "issue_date": "2015-10-10",
                  "nfc_verification": "false",
-                 "fetch_enhanced_data": "1"
+                 "fetch_enhanced_data": "1",
+                  "allow_online" : "1",
+                  "allow_offline" : "1"
              ],
 
                 "document_two": [
@@ -236,7 +254,9 @@ let requestObject: [String: Any] = [
                  "expiry_date": "2025-10-10",
                  "issue_date": "2015-10-10",
                  "nfc_verification": "false",
-                 "fetch_enhanced_data": "1"
+                 "fetch_enhanced_data": "1",
+                  "allow_online" : "1",
+                  "allow_offline" : "1"
              ],
              "address": [
                  "proof": "",
@@ -253,13 +273,17 @@ let requestObject: [String: Any] = [
                      "utility_bill",
                      "bank_statement"
                  ],
+                  "allow_online" : "1",
+                  "allow_offline" : "1"
              ],
              "consent":[
                "proof" : "",
                "text" : "This is a customized text",
                "supported_types" :[
                  "printed"
-               ]
+               ],
+                "allow_online" : "1",
+                "allow_offline" : "1"
              ]
         ]
 ```
@@ -432,7 +456,21 @@ All verification services are optional. You can provide Shufti Pro a single serv
   
   This parameter displays a screen to collect consent from end-user before the verification process starts. If the value is set 1, the screen will be displayed to end-user. If the value is set 0, the consent screen will not be displayed.
  
+* ## allow_online
+    
+    Required: **No**  
+    Type: **string**  
+    Accepted Values: **0**, **1**
+    
+  This key specifies if the proof needs to be captured. The 1 value means that the user must capture the proof for verification. This parameter also has priority over allow_offline parameter if both are set to 0.
 
+* ## allow_offline
+    
+    Required: **No**  
+    Type: **string**  
+    Accepted Values: **0**, **1**
+    
+  This key specifies if the proof needs to be uploaded. The 1 value means that the user must upload the proof for verification.
 <!-- -------------------------------------------------------------------------------- -->
 * ## Face
 
@@ -934,5 +972,6 @@ Date            | Description
 27 May 2021    | Content updated
 07 Jul 2021    | ReadMe update
 20 Dec 2021    | Improve User Experience
+12 May 2022    | Add new features in existing SDK
 
 

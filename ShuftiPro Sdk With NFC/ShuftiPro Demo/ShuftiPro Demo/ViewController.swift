@@ -69,6 +69,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
     override func viewWillAppear(_ animated: Bool) {
         
@@ -295,14 +296,17 @@ class ViewController: UIViewController {
                 "show_privacy_policy": "1",
                 "show_consent": "1",
                 "verification_Mode" : "image",
-                
+                "allow_online" : "1",
+                "allow_offline" : "1",
                 
             ]
             //MARK:- Ocr
 
             if faceVerification == true {
                 dataDictionary["face"] = [
-                    "proof": ""
+                    "proof": "",
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
                 ]
             }
             if documentVerification == true  {
@@ -328,6 +332,8 @@ class ViewController: UIViewController {
                     "issue_date": "",
                     "fetch_enhanced_data": "",
                     "nfc_verification" : "\(documentNFCVerification)",
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
 
                 ]
             }
@@ -356,6 +362,8 @@ class ViewController: UIViewController {
                     "issue_date": "",
                     "fetch_enhanced_data": "",
                     "nfc_verification" : "\(documentTwoNFCVerification)",
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
 
                     
                 ]
@@ -374,6 +382,8 @@ class ViewController: UIViewController {
                         "utility_bill",
                         "bank_statement"
                     ],
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
                 ]
             }
             
@@ -385,6 +395,8 @@ class ViewController: UIViewController {
                     "supported_types": [
                         "printed"
                   ],
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
                 ]
             }
             if twoFactorVerification == true {

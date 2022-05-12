@@ -1,9 +1,11 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShuftiPro
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShuftiPro
 import AVFoundation
 import AVKit
+import Accelerate
 import CoreGraphics
+import CoreVideo
 import Foundation
 import MessageUI
 @_exported import ShuftiPro
@@ -11,6 +13,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 import VideoToolbox
+import Vision
 import WebKit
 import _Concurrency
 @_hasMissingDesignatedInitializers public class Reachability {
@@ -26,6 +29,12 @@ import _Concurrency
   @objc public func shuftiProVerification(requestObject dataObjectObj: [Swift.String : Any], authKeys: [Swift.String : Swift.String], parentVC pvc: UIKit.UIViewController, configs: [Swift.String : Any]?, completion: @escaping (_ result: Any) -> ())
   @objc override dynamic public init()
   @objc deinit
+}
+extension UIKit.UIImage {
+  convenience public init?(pixelBuffer: CoreVideo.CVPixelBuffer)
+  public func scaledImage(with size: CoreGraphics.CGSize) -> UIKit.UIImage?
+}
+public enum Constant {
 }
 extension UIKit.UIDevice {
   @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String

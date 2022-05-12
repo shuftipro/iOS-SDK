@@ -954,5 +954,6 @@ If you have any questions/queries regarding implementation SDK please feel free 
 Date            | Description 
 --------------- | ------------
 26 Apr 2022     | Live AutoCapture SDK
+12 May 2022    | Add new features in existing SDK
 
 

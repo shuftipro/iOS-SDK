@@ -3,9 +3,15 @@
 # What Is This?
 Shufti Pro is a SaaS provider. We provides quick and accurate digital identity and document verification. E-KYC using government-issued documents like ID card, passport, driving license and even credit/debit cards, etc. has never been easier. Shufti Pro allows for simple and easy ID checks online, securing the virtual trading platforms and FinTech institutions against scams, frauds and money launderers.
 
-**Shufti Pro’s AI & HI hybrid technology ensures 99.6% accurate results and quickest response time.**
+<p float="center">
+  <img src="images/01.png" width="250" />
+  <img src="images/02.png" width="250" /> 
+  <img src="images/03.png" width="250" />
+  <img src="images/04.png" width="250" />
+  <img src="images/05.png" width="250" /> 
+  <img src="images/06.png" width="250" />
+</p>
 
-Shufti Pro’s API supports verification with and without OCR. 
 ## Table of contents
 * [General Requirements](#general-requirements)
 * [Permissions](#permissions)
@@ -86,8 +92,12 @@ let requestObject: [String: Any] = [
             "show_privacy_policy" : "",
             "verification_mode": "",
             "background_checks" : "",
+            "allow_online" : "1",
+            "allow_offline" : "1"
 
-            "face": ["proof": ""
+            "face": ["proof": "",
+                    "allow_online" : "1",
+                    "allow_offline" : "1"
             ],
 
             "document": [
@@ -110,7 +120,9 @@ let requestObject: [String: Any] = [
                  "document_number": "",
                  "expiry_date": "",
                  "issue_date": "",
-                 "fetch_enhanced_data": "1"
+                 "fetch_enhanced_data": "1",
+                 "allow_online" : "1",
+                 "allow_offline" : "1"
              ],
             "document_two": [
                  "proof": "",
@@ -132,7 +144,9 @@ let requestObject: [String: Any] = [
                  "document_number": "",
                  "expiry_date": "",
                  "issue_date": "",
-                 "fetch_enhanced_data": "1"
+                 "fetch_enhanced_data": "1",
+                 "allow_online" : "1",
+                 "allow_offline" : "1"
              ],
              "address": [
                  "proof": "",
@@ -148,13 +162,17 @@ let requestObject: [String: Any] = [
                      "utility_bill",
                      "bank_statement"
                  ],
+                  "allow_online" : "1",
+                  "allow_offline" : "1"
              ],
              "consent":[
                "proof" : "",
                "text" : "",
                "supported_types" :[
                  "printed"
-               ]
+               ],
+                "allow_online" : "1",
+                "allow_offline" : "1"
              ]
         ]
 ```
@@ -172,8 +190,12 @@ let requestObject: [String: Any] = [
             "show_privacy_policy" : "",
             "verification_mode": "",
             "background_checks" : "",
+            "allow_online" : "1",
+            "allow_offline" : "1"
 
-            "face": ["proof": ""
+            "face": ["proof": "",
+                     "allow_online" : "1",
+                     "allow_offline" : "1"
             ],
 
             "document": [
@@ -196,7 +218,9 @@ let requestObject: [String: Any] = [
                  "document_number": "2323-5629-5465-9990",
                  "expiry_date": "2025-10-10",
                  "issue_date": "2015-10-10",
-                 "fetch_enhanced_data": "1"
+                 "fetch_enhanced_data": "1",
+                 "allow_online" : "1",
+                 "allow_offline" : "1"
              ],
 
                 "document_two": [
@@ -219,7 +243,9 @@ let requestObject: [String: Any] = [
                  "document_number": "2323-5629-5465-9990",
                  "expiry_date": "2025-10-10",
                  "issue_date": "2015-10-10",
-                 "fetch_enhanced_data": "1"
+                 "fetch_enhanced_data": "1",
+                 "allow_online" : "1",
+                 "allow_offline" : "1"
              ],
              "address": [
                  "proof": "",
@@ -235,13 +261,17 @@ let requestObject: [String: Any] = [
                      "utility_bill",
                      "bank_statement"
                  ],
+                  "allow_online" : "1",
+                  "allow_offline" : "1"
              ],
              "consent":[
                "proof" : "",
                "text" : "This is a customized text",
                "supported_types" :[
                  "printed"
-               ]
+               ],
+                "allow_online" : "1",
+                "allow_offline" : "1"
              ]
         ]
 ```
@@ -413,6 +443,21 @@ All verification services are optional. You can provide Shufti Pro a single serv
   
   This parameter displays a screen to collect consent from end-user before the verification process starts. If the value is set 1, the screen will be displayed to end-user. If the value is set 0, the consent screen will not be displayed.
   
+  * ## allow_online
+    
+    Required: **No**  
+    Type: **string**  
+    Accepted Values: **0**, **1**
+    
+  This key specifies if the proof needs to be captured. The 1 value means that the user must capture the proof for verification. This parameter also has priority over allow_offline parameter if both are set to 0.
+
+* ## allow_offline
+    
+    Required: **No**  
+    Type: **string**  
+    Accepted Values: **0**, **1**
+    
+  This key specifies if the proof needs to be uploaded. The 1 value means that the user must upload the proof for verification.
 
 <!-- -------------------------------------------------------------------------------- -->
 * ## Face
@@ -883,11 +928,6 @@ Note: These test IDs only be usefull in Iframe SDK.
 ## Contact
 If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com).
 
-
-
-## Contact
-If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com).
-
 ## Copyright
 2017- 22 © Shufti Pro Ltd.
 
@@ -906,4 +946,4 @@ Date            | Description
 08 Nov 2021 | Remove request timeout time and added support of WKWebview.
 01 Dec 2021 | Bugs fixes and UI improvements.
 28 Mar 2022 | Bug fixes and improve user experience
-
+12 May 2022    | Add new features in existing SDK

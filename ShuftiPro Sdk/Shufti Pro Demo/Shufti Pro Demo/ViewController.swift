@@ -180,6 +180,8 @@ class ViewController: UIViewController {
                 "show_consent" : "1",
                 "show_privacy_policy" : "1",
                 "show_results" : "1",
+                "allow_online" : "1",
+                "allow_offline" : "1",
     
 
             ]
@@ -187,7 +189,9 @@ class ViewController: UIViewController {
 
             if faceVerification == true {
                 dataDictionary["face"] = [
-                    "proof": ""
+                    "proof": "",
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
                 ]
             }
             if documentVerification == true  {
@@ -212,6 +216,8 @@ class ViewController: UIViewController {
                     "expiry_date": "",
                     "issue_date": "",
                     "fetch_enhanced_data": "",
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
                 ]
             }
 
@@ -235,6 +241,8 @@ class ViewController: UIViewController {
                     "expiry_date": "",
                     "issue_date": "",
                     "fetch_enhanced_data": "",
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
 
                 ]
             }
@@ -250,6 +258,8 @@ class ViewController: UIViewController {
                         "utility_bill",
                         "bank_statement"
                     ],
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
                 ]
             }
 
@@ -260,6 +270,8 @@ class ViewController: UIViewController {
                     "supported_types": [
                         "printed"
                   ],
+                    "allow_online" : "1",
+                    "allow_offline" : "1",
                 ]
             }
             if backgroundVerification == true {

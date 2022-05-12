@@ -378,22 +378,22 @@
   {
     "name": "Aland Islands",
     "iso_code": "AX",
-    "nationality": null
+    "nationality": "Aland Islands"
   },
   {
     "name": "Guernsey",
     "iso_code": "GG",
-    "nationality": null
+    "nationality": "Guernsey"
   },
   {
     "name": "Man Island",
     "iso_code": "IM",
-    "nationality": null
+    "nationality": "Man Island"
   },
   {
     "name": "Jersey",
     "iso_code": "JE",
-    "nationality": null
+    "nationality": "Man Island"
   },
   {
     "name": "Montenegro",
@@ -743,7 +743,7 @@
   {
     "name": "Saint Martin",
     "iso_code": "MF",
-    "nationality": null
+    "nationality": "Saint Martin"
   },
   {
     "name": "Wallis and Futuna",
@@ -828,7 +828,7 @@
   {
     "name": "Saint Barthelemy",
     "iso_code": "BL",
-    "nationality": null
+    "nationality": "Saint Barthelemy"
   },
   {
     "name": "Austria",
