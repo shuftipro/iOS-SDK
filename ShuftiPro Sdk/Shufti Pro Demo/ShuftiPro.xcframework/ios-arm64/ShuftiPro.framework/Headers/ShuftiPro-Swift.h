@@ -190,7 +190,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import AVFoundation;
 @import CoreGraphics;
-@import CoreMedia;
 @import Foundation;
 @import MessageUI;
 @import ObjectiveC;
@@ -252,54 +251,11 @@ SWIFT_CLASS("_TtC9ShuftiPro7CallApi")
 @end
 
 @class UILabel;
-@class UIButton;
 @class UIImageView;
-@class AVCaptureFileOutput;
-@class NSURL;
-@class AVCaptureConnection;
+@class UIButton;
+@class UISwipeGestureRecognizer;
 @class NSString;
 @class NSBundle;
-
-SWIFT_CLASS("_TtC9ShuftiPro8CameraVc")
-@interface CameraVc : UIViewController <AVCaptureFileOutputRecordingDelegate, NSURLSessionTaskDelegate>
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified cameraView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified titleView;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified recordingView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified countDownLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleOnCamera;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified recordButton;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified backButton;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified switchCameraBtn;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified flashBtn;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified flashImg;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backBtnImg;
-- (void)viewWillAppear:(BOOL)animated;
-- (void)viewDidLoad;
-- (void)viewWillDisappear:(BOOL)animated;
-- (void)viewDidDisappear:(BOOL)animated;
-- (IBAction)capture:(UIButton * _Nonnull)sender;
-- (IBAction)switchCameraBtnPressed:(id _Nonnull)sender;
-- (IBAction)backBtnPressedOnCamera:(id _Nonnull)sender;
-- (IBAction)torchSwitch:(id _Nonnull)sender;
-- (void)switchCamera;
-- (void)captureOutput:(AVCaptureFileOutput * _Nonnull)output didFinishRecordingToOutputFileAtURL:(NSURL * _Nonnull)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> * _Nonnull)connections error:(NSError * _Nullable)error;
-- (void)cameraErrorMessageWithCamErrMsg:(NSString * _Nonnull)camErrMsg;
-- (void)zoomIn;
-- (void)zoomOut;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class AVCapturePhotoOutput;
-@class AVCaptureResolvedPhotoSettings;
-@class AVCaptureBracketedStillImageSettings;
-
-@interface CameraVc (SWIFT_EXTENSION(ShuftiPro)) <AVCapturePhotoCaptureDelegate>
-- (void)captureOutput:(AVCapturePhotoOutput * _Nonnull)captureOutput didFinishProcessingPhotoSampleBuffer:(CMSampleBufferRef _Nullable)photoSampleBuffer previewPhotoSampleBuffer:(CMSampleBufferRef _Nullable)previewPhotoSampleBuffer resolvedSettings:(AVCaptureResolvedPhotoSettings * _Nonnull)resolvedSettings bracketSettings:(AVCaptureBracketedStillImageSettings * _Nullable)bracketSettings error:(NSError * _Nullable)error;
-@end
-
-
-@class UISwipeGestureRecognizer;
 
 SWIFT_CLASS("_TtC9ShuftiPro9CameraVc2")
 @interface CameraVc2 : UIViewController <AVCaptureFileOutputRecordingDelegate>
@@ -343,13 +299,17 @@ SWIFT_CLASS("_TtC9ShuftiPro9CameraVc2")
 
 @class AVCaptureMetadataOutput;
 @class AVMetadataObject;
+@class AVCaptureConnection;
 
 @interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro)) <AVCaptureMetadataOutputObjectsDelegate>
 - (void)captureOutput:(AVCaptureMetadataOutput * _Nonnull)captureOutput didOutputMetadataObjects:(NSArray<AVMetadataObject *> * _Nonnull)metadataObjects fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
 
 
+@class AVCapturePhotoOutput;
 @class AVCapturePhoto;
+@class AVCaptureFileOutput;
+@class NSURL;
 
 @interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro)) <AVCapturePhotoCaptureDelegate>
 - (void)captureOutput:(AVCapturePhotoOutput * _Nonnull)output didFinishProcessingPhoto:(AVCapturePhoto * _Nonnull)photo error:(NSError * _Nullable)error;

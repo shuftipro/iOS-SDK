@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ShuftiPro-Swift.h</key>
 		<data>
-		gFE2oHHI0B27XndaFB11jDa+HWs=
+		uh4VZANqE+7M1bZ8NAPZ2seLqlo=
 		</data>
 		<key>Headers/ShuftiPro.h</key>
 		<data>
@@ -238,7 +238,7 @@
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O9E11OCvEb3nUKUW7J8ai1jp7Fw=
+		eUR85LbWEqrogVxd9oxROsI6pX0=
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -250,7 +250,7 @@
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		O9E11OCvEb3nUKUW7J8ai1jp7Fw=
+		eUR85LbWEqrogVxd9oxROsI6pX0=
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -262,7 +262,7 @@
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bG3s/V1R9cAyVsHSw39smEj2/1g=
+		snR85mLtcjAG/FN0E/sam0GX5ZM=
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		bG3s/V1R9cAyVsHSw39smEj2/1g=
+		snR85mLtcjAG/FN0E/sam0GX5ZM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -361,7 +361,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eGs4BuPoVEo6W96abUeV5X6aZVOd8dKYhzHgrX8DCeA=
+			111bU1LJ2SmZRRpih2ARZLZxS6VkZoykCG38ffA8CEc=
 			</data>
 		</dict>
 		<key>Headers/ShuftiPro.h</key>
@@ -746,7 +746,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			spEDWc6dhYFQFQFFxUNhWzaMujinFQ+Y6HharJ6hRh8=
+			MPezJv/maVYSrCMb0O8sknpVulUWzXaCMPgd4LwdC8U=
 			</data>
 		</dict>
 		<key>Modules/ShuftiPro.swiftmodule/arm64.swiftdoc</key>
@@ -767,7 +767,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			spEDWc6dhYFQFQFFxUNhWzaMujinFQ+Y6HharJ6hRh8=
+			MPezJv/maVYSrCMb0O8sknpVulUWzXaCMPgd4LwdC8U=
 			</data>
 		</dict>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -788,7 +788,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0cNYWA7kwxnijvM9miAI+35gVePfZqF9qSxpGevhfRw=
+			XZohpbYN5H4p/HecCiLmXn5yiI6MzPbhAbEnnqIpeuw=
 			</data>
 		</dict>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64.swiftdoc</key>
@@ -809,7 +809,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0cNYWA7kwxnijvM9miAI+35gVePfZqF9qSxpGevhfRw=
+			XZohpbYN5H4p/HecCiLmXn5yiI6MzPbhAbEnnqIpeuw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
