@@ -86,7 +86,7 @@ let requestObject: [String: Any] = [
             "show_results" : "",
             "show_consent" : "",
             "show_privacy_policy" : "",
-            "verification_Mode": "",
+            "verification_mode": "",
             "background_checks" : "",
             "allow_online" : "1",
             "allow_offline" : "1"
@@ -188,7 +188,7 @@ let requestObject: [String: Any] = [
             "show_results" : "",
             "show_consent" : "",
             "show_privacy_policy" : "",
-            "verification_Mode": "",
+            "verification_mode": "",
             "background_checks" : "",
             "allow_online" : "1",
             "allow_offline" : "1"
@@ -425,7 +425,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   During a verification request, we make several server to server calls to keep you updated about the verification state. This way you can update the request status at your end even if the customer is lost midway through the process.
 
-* ## verification_Mode
+* ## verification_mode
 
   Required: **No**  
   Type: **string**  

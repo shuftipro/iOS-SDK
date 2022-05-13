@@ -295,7 +295,7 @@ class ViewController: UIViewController {
                 "redirect_url" : "https://www.mydummy.shuftipro.com/",
                 "show_privacy_policy": "1",
                 "show_consent": "1",
-                "verification_Mode" : "image",
+                "verification_mode" : "image",
                 "allow_online" : "1",
                 "allow_offline" : "1",
                 
