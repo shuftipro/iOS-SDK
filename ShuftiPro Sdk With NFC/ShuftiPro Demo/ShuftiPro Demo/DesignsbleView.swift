@@ -2,8 +2,8 @@
 //  DesignsbleView.swift
 //  Shufti Pro Demo
 //
-//  Created by Zaid Ahmed IoS on 09/10/2020.
-//  Copyright © 2020 Programmers Force. All rights reserved.
+//  Created by Swift Developer on 9/24/18.
+//  Copyright © 2018 Programmers Force. All rights reserved.
 //
 
 import Foundation

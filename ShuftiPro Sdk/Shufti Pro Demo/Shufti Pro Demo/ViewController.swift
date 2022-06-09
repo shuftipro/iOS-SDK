@@ -11,6 +11,7 @@ import ShuftiPro
 
 class ViewController: UIViewController {
 
+
     let clientIdStr = "xxx-xxx-xxx" // your client id here
     let secretKeyStr = "xxx-xxx-xxx" // your secret key here
     let accessToken = "xxx-xxx-xxx" // your accessToken here
@@ -176,7 +177,7 @@ class ViewController: UIViewController {
                 "email": "ad@example.com",
                 "callback_url": "http://www.example.com",
                 "redirect_url" : "https://www.mydummy.shuftipro.com/",
-                "verification_mode" : "image",
+                "verification_mode" : "video",
                 "show_consent" : "1",
                 "show_privacy_policy" : "1",
                 "show_results" : "1",
@@ -276,6 +277,11 @@ class ViewController: UIViewController {
             }
             if backgroundVerification == true {
                 dataDictionary["background_checks"] = ""
+            }
+            
+            if twoFactorVerification == true {
+                dataDictionary["phone"] = ""
+
             }
             
             configs = [

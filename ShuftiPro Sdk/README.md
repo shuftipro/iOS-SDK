@@ -415,9 +415,9 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   Required: **No**  
   Type: **string**  
-  Accepted Values: **image_only, video_only**
+  Accepted Values: **image_only, video_only , any**
 
-  Verification mode defines what types of proofs are allowed for a verification. In case of 'video_only' user will upload videos and images if verification mode is 'image_only'. 
+  Verification mode defines what types of proofs are allowed for a verification. In case of video_only user will upload videos and if verification mode is image_only, user will upload images. The any mode allows both types of proofs.
 
 * ## show_privacy_policy
 
