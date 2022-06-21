@@ -4,12 +4,12 @@
 Shufti Pro is a SaaS provider. We provides quick and accurate digital identity and document verification. E-KYC using government-issued documents like ID card, passport, driving license and even credit/debit cards, etc. has never been easier. Shufti Pro allows for simple and easy ID checks online, securing the virtual trading platforms and FinTech institutions against scams, frauds and money launderers.
 
 <p float="center">
-  <img src="images/01.png" width="250" />
-  <img src="images/02.png" width="250" /> 
-  <img src="images/03.png" width="250" />
-  <img src="images/04.png" width="250" />
-  <img src="images/05.png" width="250" /> 
-  <img src="images/06.png" width="250" />
+  <img src="https://github.com/shuftipro/iOS-SDK/blob/master/images/01.png" width="250" />
+  <img src="https://github.com/shuftipro/iOS-SDK/blob/master/images/02.png" width="250" /> 
+  <img src="https://github.com/shuftipro/iOS-SDK/blob/master/images/03.png" width="250" />
+  <img src="https://github.com/shuftipro/iOS-SDK/blob/master/images/04.png" width="250" />
+  <img src="https://github.com/shuftipro/iOS-SDK/blob/master/images/05.png" width="250" /> 
+  <img src="https://github.com/shuftipro/iOS-SDK/blob/master/images/06.png" width="250" />
 </p>
 
 ## Table of contents
