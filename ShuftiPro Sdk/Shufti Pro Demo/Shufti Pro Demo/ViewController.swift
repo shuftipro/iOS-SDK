@@ -177,7 +177,7 @@ class ViewController: UIViewController {
                 "email": "ad@example.com",
                 "callback_url": "http://www.example.com",
                 "redirect_url" : "https://www.mydummy.shuftipro.com/",
-                "verification_mode" : "video",
+                "verification_mode" : "image",
                 "show_consent" : "1",
                 "show_privacy_policy" : "1",
                 "show_results" : "1",

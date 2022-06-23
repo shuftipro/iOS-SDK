@@ -26,6 +26,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>We need your camera access to verify you</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We need your microphone access to verify you</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
