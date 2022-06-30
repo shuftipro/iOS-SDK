@@ -61,7 +61,7 @@ For more guidance watch this guided image. [here](nfcGuide.png)
 
 
 ## SDK Version:
-Currently our updated SDK version is 1.0.13
+Currently our updated SDK version is 1.0.18
 
 ## Verification
 In order to get verified, customers will have themselves verified through their mobile phones. They will do it through the merchant's mobile application. Merchant will collect the information and send us the data for verification. The Merchant shall provide us with the proofs(Videos). We will not collect them directly from the user.
