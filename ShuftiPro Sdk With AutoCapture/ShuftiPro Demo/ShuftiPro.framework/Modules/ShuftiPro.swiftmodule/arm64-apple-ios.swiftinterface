@@ -9,6 +9,8 @@ import CoreVideo
 import Foundation
 import MLKit
 import MessageUI
+import MobileCoreServices
+import PDFKit
 @_exported import ShuftiPro
 import Swift
 import SystemConfiguration

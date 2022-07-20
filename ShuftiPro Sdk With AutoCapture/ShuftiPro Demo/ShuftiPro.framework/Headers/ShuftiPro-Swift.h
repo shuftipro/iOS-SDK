@@ -304,18 +304,18 @@ SWIFT_CLASS("_TtC9ShuftiPro9CameraVc2")
 @interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro)) <UIGestureRecognizerDelegate>
 @end
 
-@class AVCaptureMetadataOutput;
-@class AVMetadataObject;
-@class AVCaptureConnection;
-
-@interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro)) <AVCaptureMetadataOutputObjectsDelegate>
-- (void)captureOutput:(AVCaptureMetadataOutput * _Nonnull)captureOutput didOutputMetadataObjects:(NSArray<AVMetadataObject *> * _Nonnull)metadataObjects fromConnection:(AVCaptureConnection * _Nonnull)connection;
-@end
-
 @class AVCaptureOutput;
+@class AVCaptureConnection;
 
 @interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro)) <AVCaptureVideoDataOutputSampleBufferDelegate>
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
+@end
+
+@class AVCaptureMetadataOutput;
+@class AVMetadataObject;
+
+@interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro)) <AVCaptureMetadataOutputObjectsDelegate>
+- (void)captureOutput:(AVCaptureMetadataOutput * _Nonnull)captureOutput didOutputMetadataObjects:(NSArray<AVMetadataObject *> * _Nonnull)metadataObjects fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
 
 
@@ -624,7 +624,7 @@ SWIFT_CLASS("_TtC9ShuftiPro19UploadOrTakePhotoVc")
 
 
 SWIFT_CLASS("_TtC9ShuftiPro13UploadVideoVc")
-@interface UploadVideoVc : UIViewController
+@interface UploadVideoVc : UIViewController <UIDocumentPickerDelegate>
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified imagePreview;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLbl;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified powerdByLbl;
@@ -656,6 +656,13 @@ SWIFT_CLASS("_TtC9ShuftiPro13UploadVideoVc")
 
 @interface UploadVideoVc (SWIFT_EXTENSION(ShuftiPro)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
+@end
+
+@class UIDocumentPickerViewController;
+
+@interface UploadVideoVc (SWIFT_EXTENSION(ShuftiPro))
+- (void)documentPicker:(UIDocumentPickerViewController * _Nonnull)controller didPickDocumentsAtURLs:(NSArray<NSURL *> * _Nonnull)urls;
+- (void)documentPickerWasCancelled:(UIDocumentPickerViewController * _Nonnull)controller;
 @end
 
 @class UINavigationBar;

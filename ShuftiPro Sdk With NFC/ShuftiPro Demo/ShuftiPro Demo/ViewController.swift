@@ -11,8 +11,9 @@ import ShuftiPro
 
 class ViewController: UIViewController {
     
-    let clientIdStr = "xxx-xxx-xxx"// your client id here
-    let secretKeyStr = "xxx-xxx-xxx"// your secret key here
+
+    let clientIdStr =  "xxx-xxx-xxx"  // your client id here
+    let secretKeyStr =  "xxx-xxx-xxx"  // your secret key h
     let accessToken = "xxx-xxx-xxx" // your accessToken here
     var referenceKey = ""
     var showRatingScreen = false
@@ -416,7 +417,7 @@ class ViewController: UIViewController {
             ]
             
             configs = [
-                "openWebView" : "false",
+                "open_webview" : "false",
                 "async" : "false"
             ]
             
