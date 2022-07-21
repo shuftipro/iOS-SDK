@@ -532,6 +532,7 @@ SWIFT_CLASS("_TtC9ShuftiPro8ResultVc")
 
 SWIFT_CLASS("_TtC9ShuftiPro9ShuftiPro")
 @interface ShuftiPro : NSObject
+- (NSString * _Nonnull)getUniqueReference SWIFT_WARN_UNUSED_RESULT;
 - (void)shuftiProVerificationWithRequestObject:(NSDictionary<NSString *, id> * _Nonnull)dataObjectObj authKeys:(NSDictionary<NSString *, NSString *> * _Nonnull)authKeys parentVC:(UIViewController * _Nonnull)pvc configs:(NSDictionary<NSString *, id> * _Nullable)configs completion:(void (^ _Nonnull)(id _Nonnull))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

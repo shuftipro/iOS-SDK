@@ -36,6 +36,7 @@ import _Concurrency
   public var topBarTintColor: Swift.String?
   public var cancelButtonTextColor: Swift.String?
   public var showNavBar: Swift.Bool
+  @objc public func getUniqueReference() -> Swift.String
   @objc public func shuftiProVerification(requestObject dataObjectObj: [Swift.String : Any], authKeys: [Swift.String : Swift.String], parentVC pvc: UIKit.UIViewController, configs: [Swift.String : Any]?, completion: @escaping (_ result: Any) -> ())
   @objc override dynamic public init()
   @objc deinit

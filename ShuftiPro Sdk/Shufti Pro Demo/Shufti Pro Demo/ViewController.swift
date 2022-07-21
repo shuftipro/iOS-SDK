@@ -12,7 +12,8 @@ import ShuftiPro
 class ViewController: UIViewController {
 
 
-    let clientIdStr = "xxx-xxx-xxx" // your client id here
+
+    let clientIdStr = "xxx-xxx-xxx"  // your client id here
     let secretKeyStr = "xxx-xxx-xxx" // your secret key here
     let accessToken = "xxx-xxx-xxx" // your accessToken here
     var authKeys = Dictionary<String, String>()
@@ -163,15 +164,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func continueBtnPressed(_ sender: Any) {
+        
+        let shufti = ShuftiPro()
+        let uniqueReference = shufti.getUniqueReference()
 
 
         if faceVerification == true || documentVerification == true || documentTwoVerification == true || addressVerification == true || concentVerification == true || backgroundVerification == true || twoFactorVerification == true{
-            let referenceKey = "SDK-iOS-\(UIDevice.current.identifierForVendor!.uuidString)\(NSDate())"
 
 
 
             dataDictionary = [
-                "reference": referenceKey,
+                "reference": uniqueReference,
                 "country": "",
                 "language": "EN",
                 "email": "ad@example.com",
@@ -297,7 +300,6 @@ class ViewController: UIViewController {
             ]
 
 
-            let shufti = ShuftiPro()
 
             shufti.shuftiProVerification(requestObject: dataDictionary, authKeys: authKeys, parentVC: self, configs: configs) { (result) in
                  print("Got response from sdk: \(result)")

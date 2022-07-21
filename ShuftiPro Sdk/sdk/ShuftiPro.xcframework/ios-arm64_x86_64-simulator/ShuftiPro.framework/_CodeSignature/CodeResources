@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ShuftiPro-Swift.h</key>
 		<data>
-		L279DxuPiw8g3k9At8CKJkTh7m8=
+		pcea3U1wA/zZev6cCgB7HqxKVg0=
 		</data>
 		<key>Headers/ShuftiPro.h</key>
 		<data>
@@ -334,11 +334,11 @@
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Oce5+i+Nup3/q4HXhuktGgiYTBU=
+		m8V+y0F82PKKENBTG3so/S4Ycms=
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DIHYJ407xVOKNpRz2SBN/UBqpD4=
+		ZuLPmXd6ywEfp44Ho5ILOMzTX5s=
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -346,11 +346,11 @@
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SHSSjrRDiEn9DmW6B+5mZKdwYpk=
+		iOcUAU2engx1p8hBe1qYohoD3iY=
 		</data>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WLi6sOJBVwl5WjEOWb5KgV7FM0k=
+		Bf1P+ryoyuyPCBFN0aK1l50TtBE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -437,7 +437,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U9R4zjXFm4XrDmsM2F85GJT3YJ40/8wejXo7GWQ5Wso=
+			Fy5kuor/KxA7n+4CGYrioy3w43lmda50MfFKgW6qzkY=
 			</data>
 		</dict>
 		<key>Headers/ShuftiPro.h</key>
@@ -990,14 +990,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			48HRR/vDmgTvo8bVsurcYc7UzLng3du2xzQxPMcQvE8=
+			aHIE6y3JMalyf4Bxn5On5c3KEhFUl1lzuzfYNvAj/+E=
 			</data>
 		</dict>
 		<key>Modules/ShuftiPro.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dxqc83rTNbsoS6Gfqy3UNHIe4vLIhVh1dvQeGE/HtLQ=
+			8LO7OJv53GjJG19UiSY5jG6BWKL/hSUBtT91HMNygAE=
 			</data>
 		</dict>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1011,14 +1011,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ztKDbtQQoU75hWo/bFfzkV7uMenBClTTN68fTtNgSHo=
+			7YMjLzaDiNLpo0XbKobCb4o3mO0YbspiDImUCZINL3s=
 			</data>
 		</dict>
 		<key>Modules/ShuftiPro.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kP54kgfq5mFdtBZbnsdaVkHzVVXxpEE4oUAbTFRYDWE=
+			ooqfWh2rKXrFlbPeaV58Fc43fXhCodZ0WBFrOyVSlIU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
