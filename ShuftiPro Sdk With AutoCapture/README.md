@@ -303,7 +303,7 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
   let configs = [
                 "openWebView" : "false",
                 "aysnc" : "false",
-                "autoCapture" : "true"
+                "autoCapture" : true
   ]
 ```
 
