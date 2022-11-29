@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 357"><defs>
+
+	<style>
+		.cls-1,.cls-2{fill:none;stroke:#0d997b;stroke-miterlimit:10;}.cls-1{stroke-width:38px;fill-rule:evenodd;}.cls-2{stroke-width:12px;}
+
+		#tick{
+
+			<!-- opacity:0; -->
+			animation: tick-anim 4s linear infinite ;
+			
+		  	stroke-dashoffset: 340;
+		  	stroke-dasharray: 340;
+		  	<!-- animation-duration:1s; -->
+		  	<!-- animation-delay:0.5s ; -->
+
+		  	
+		}
+
+		@keyframes tick-anim{
+
+
+		  0%,10%{
+		   <!-- opacity:0; -->
+		   stroke-dashoffset: 340;
+		  }
+		  30%,100%{
+		  <!-- opacity:1; -->
+		   stroke-dashoffset: 0;
+		  }
+
+
+		
+			
+
+		}
+
+	#circle{
+
+		<!-- opacity:0; -->
+		animation: circle-anim 4s linear infinite ;
+		
+	  	stroke-dashoffset: 1100;
+	  	stroke-dasharray: 1100;
+	  	animation-delay:0.7s;
+	  	
+	  	
+
+	  	
+	}
+
+	@keyframes circle-anim{
+
+
+	  0%,10%{
+	   <!-- opacity:0; -->
+	   stroke-dashoffset: 1100;
+	  }
+	  50%,80%{
+	  opacity:1;
+	   stroke-dashoffset: 0;
+	  }
+
+	  81%{
+	    opacity:0;
+	    stroke-dashoffset: 0;
+	  }
+
+	  100%{
+	    opacity:0;
+	    stroke-dashoffset: 0;
+	  }
+
+
+
+	}
+	</style></defs>
+	<g id="tick"><polyline class="cls-1" points="63.18 179.09 144.31 261.64 292.14 109.06"/></g>
+	<g id="circle"><circle class="cls-2" cx="178.5" cy="178.5" r="172.5"/></g>
+</svg>

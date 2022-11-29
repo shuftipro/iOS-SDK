@@ -1,0 +1,11 @@
+framework module NFCPassportReader {
+  umbrella header "NFCPassportReader-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module NFCPassportReader.Swift {
+    header "NFCPassportReader-Swift.h"
+    requires objc
+}

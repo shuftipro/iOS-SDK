@@ -1,33 +1,23 @@
 [![](https://raw.githubusercontent.com/shuftipro/RESTful-API-v1.2/master/assets/banner.jpg)](https://www.shuftipro.com/)
 
-# DEPRECATED
-This repository has been deprecated. Please visit [CORE-SDK](https://github.com/shuftipro/iOS-Core-SDK) for further updates.
+# What is Shufti Pro?
+Shufti Pro, UK-based Software as a Service (SaaS) provider is a pioneer in offering real-time identity verification services across 230+ countries and territories, helping businesses to comply with KYC, KYB and AML regulations. The solution also helps companies to determine and overcome the fraud risk with its fully automated ID verification services including document authentication, face verification, consent verification, facial biometric recognition, phone verification, anti-money laundering screening and 2-factor authentication.
 
-# What Is This?
-Shufti Pro is a SaaS provider. We provides quick and accurate digital identity and document verification. E-KYC using government-issued documents like ID card, passport, driving license and even credit/debit cards, etc. has never been easier. Shufti Pro allows for simple and easy ID checks online, securing the virtual trading platforms and FinTech institutions against scams, frauds and money launderers.
-
-<p float="center">
-  <img src="images/01.png" width="250" />
-  <img src="images/02.png" width="250" /> 
-  <img src="images/03.png" width="250" />
-  <img src="images/04.png" width="250" />
-  <img src="images/05.png" width="250" /> 
-  <img src="images/06.png" width="250" />
-</p>
+A user-friendly interface with an easy API integration procedure enables businesses to onboard legit customers seamlessly and helps to develop trustworthy B2B relationships. Shufti Pro’s ID verification services are fit for all industries including FinTechs, Virtual asset service providers, banks and much more. Choosing Shufti Pro can fight crimes, increase productivity, and enhance conversion rate, everything in just less than a second.
 
 ## Table of contents
 * [General Requirements](#general-requirements)
 * [Permissions](#permissions)
 * [SDK Installation Guide](#sdk-installation-guide)
 * [SDK Version](#sdk-version)
-* [Verifications](#verification)
-* [Integration](#Integration)
-* [JSON Object](#Json-Object-With-Ocr)
-* [Auth Key Object Parameters ](#Auth-Key-Object-Parameters)
-* [Config Object Parameters ](#Config-Object-Parameters)
-* [Sample Request](#Sample-Request)
-* [JSON Object Parameters](#Request-Parameters)
-* [HTTP Codes](#HTTP-Codes)
+* [Verification Types You Can Get](#verification-types-you-can-get)
+* [Integration](#integration)
+* [Initiate Request](#initiate-request)
+* [Auth Key Object Parameters ](#auth-key-object-parameters)
+* [Config Object Parameters ](#config-object-parameters)
+* [Request Object Parameters](#request-object-parameters)
+* [Customisations ](#customisations)
+* [HTTP Codes](#http-codes)
 * [Status Response](#status-response)
 * [Test IDs](#test-ids)
 * [Contact](#contact)
@@ -37,7 +27,7 @@ Shufti Pro is a SaaS provider. We provides quick and accurate digital identity a
 # Basic Setup
 ## General Requirements
 Followings are minimum requirements for SDK:
-- iOS 11.0 and higher
+- iOS 13.0 and higher
 - Internet connection
 
 Supported architectures in SDK:
@@ -47,41 +37,35 @@ Supported architectures in SDK:
 Application Info.plist must contain an **Privacy - Camera Usage Description** and **Privacy - Microphone Usage Description** key with a explanation to end-user about how the app uses this data.
 
 ## SDK Installation Guide
->### Installation through Cocoapods
    
  For Swift version 4 & 5
-```sh
-pod 'ShuftiPro', :tag => '2.0.9', :git => "https://github.com/shuftipro/iOS-binary-pod"
-```
 
->### Manuall installation
-1. Copy “ShuftiPro.framework” into your project folder.
+1. 
+```sh
+ pod 'Socket.IO-Client-Swift'
+```
+2. Copy “ShuftiPro.framework” into your project folder.
 2.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
 3.  Add “ShuftiPro.framework” in Embeded Binaries.
 
 ## SDK Version:
-Currently our updated SDK version is 2.0.9
+Currently our updated SDK version is 3.4.0
 
-## Verification
-In order to get verified, customers will have themselves verified through their mobile phones. They will do it through the merchant's mobile application. Merchant will collect the information and send data to Shufti Pro for verification. The Merchant shall provide the proofs(Images/Videos). Shufti Pro will not collect them directly from the user.
+## Verification Types You Can Get:
+Shufti Pro’s services come in three variations. You have an option of choosing all or any one of them that fulfills your client's requirements. Following are the types of verification services;
 
-* ### With OCR
-In verification with OCR, it means that the merchant has not provided us proofs (images/videos) and also no data in some or all datapoints (Name, DOB etc.). In this verification Shufti Pro will perform extraction of data from those proofs and finally verify the data.
+**With OCR:** Verification services API embedded with OCR technology can extract personally identifiable information from user’s ID documents and authenticate them as a part of a single identity verification process.
 
-* ### Without OCR
-In verification without OCR, merchant gives us the data in all datapoints (Name, DOB etc.) but the proofs are provide by the user then Shufti Pro just have to verify the data. No direct customer interaction takes place in this kind of verification.
+**Without OCR:** In case you are choosing this service, your clients need to provide additional proof of data in the form of identity documents other than verification information.
 
-* ### Verification through Hybrid view
-If you opt for mobile verification with Shufti Pro’s hybrid view, a web-view built upon HTML 5 will be displayed to the end-user. All data points and fields are adequately defined in the hybrid view. The format for sending verification data will be a JSON object, similar to other mobile verification formats (OCR and Non-OCR). If your send true in [openWebView](#openwebview) parameter then verification through hybrid view will be started else verification with OCR or without OCR (based upon JSON object) will be triggered.
-
-For more details on technical requirements for Verification with Rest API, kindly visit Shufti Pro’s resource page here.  
+**Verification Through Hybrid View:** Shufti Pro’s hybrid view includes mobile verifications along with a web view built on HTML 5 that will show the results to the end-user. The verification data will be sent through a JSON object, quite similar to OCR/Non-OCR in the mobile authentication formats. In case the value for OpenViewParameter is set to true, the hybrid view will be enabled, else the other models will be triggered.
 
 ## Integration: 
 See the sample project provided to learn the most common use. Make sure to build on real device.
 ```sh
 import ShuftiPro
 ```
-## JSON Object With Ocr
+## Request Object
 ```sh
 let requestObject: [String: Any] = [
             "reference": "Unique reference",
@@ -89,12 +73,10 @@ let requestObject: [String: Any] = [
             "language": "EN",
             "email": "johndoe@example.com",
             "callback_url": "http://www.example.com",
-            "phone" : "",
             "show_results" : "",
             "show_consent" : "",
             "show_privacy_policy" : "",
             "verification_mode": "",
-            "background_checks" : "",
             "allow_online" : "1",
             "allow_offline" : "1"
 
@@ -179,105 +161,7 @@ let requestObject: [String: Any] = [
              ]
         ]
 ```
-## JSON Object Without Ocr
-```sh
-let requestObject: [String: Any] = [
-            "reference": "Unique reference",
-            "country": "",
-            "language": "EN",
-            "email": "johndoe@example.com",
-            "callback_url": "http://www.example.com",
-            "phone" : "",
-            "show_results" : "",
-            "show_consent" : "",
-            "show_privacy_policy" : "",
-            "verification_mode": "",
-            "background_checks" : "",
-            "allow_online" : "1",
-            "allow_offline" : "1"
 
-            "face": ["proof": "",
-                     "allow_online" : "1",
-                     "allow_offline" : "1"
-            ],
-
-            "document": [
-                 "proof": "",
-                 "additional_proof" :"",
-
-                 "supported_types": [
-                     "passport",
-                     "id_card",
-                     "driving_license",
-                     "credit_or_debit_card"
-                    ],
-                 "name": [
-                     "first_name": "John",
-                     "last_name": "Carter",
-                     "middle_name": "Doe"
-                ],
-                "backside_proof_required": "0",
-                 "dob": "1992-10-10",
-                 "document_number": "2323-5629-5465-9990",
-                 "expiry_date": "2025-10-10",
-                 "issue_date": "2015-10-10",
-                 "fetch_enhanced_data": "1",
-                 "allow_online" : "1",
-                 "allow_offline" : "1"
-             ],
-
-                "document_two": [
-                 "proof": "",
-                 "additional_proof" :"",
-
-                 "supported_types": [
-                     "passport",
-                     "id_card",
-                     "driving_license",
-                     "credit_or_debit_card"
-                    ],
-                 "name": [
-                     "first_name": "John",
-                     "last_name": "Carter",
-                     "middle_name": "Doe"
-                ],
-                 "backside_proof_required": "0",
-                 "dob": "1992-10-10",
-                 "document_number": "2323-5629-5465-9990",
-                 "expiry_date": "2025-10-10",
-                 "issue_date": "2015-10-10",
-                 "fetch_enhanced_data": "1",
-                 "allow_online" : "1",
-                 "allow_offline" : "1"
-             ],
-             "address": [
-                 "proof": "",
-                 "full_address": "3339 Maryland Avenue, Largo, Florida",
-                 "name": [
-                     "first_name": "John",
-                     "last_name": "Carter",
-                     "middle_name": "Doe",
-                     "fuzzy_match": ""
-                 ],
-                 "supported_types": [
-                     "id_card",
-                     "utility_bill",
-                     "bank_statement"
-                 ],
-                  "allow_online" : "1",
-                  "allow_offline" : "1"
-             ],
-             "consent":[
-               "proof" : "",
-               "text" : "This is a customized text",
-               "supported_types" :[
-                 "printed"
-               ],
-                "allow_online" : "1",
-                "allow_offline" : "1"
-             ]
-        ]
-```
 ## Auth Keys
 Auth keys can be made in two ways. First is by using **clientId** and **secretKey**, other one is by providing **accessToken**.<br>
 You can read more about **accessToken** [here](https://api.shuftipro.com/api/docs/#access-token)
@@ -305,7 +189,7 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
   ]
 ```
 
-## Sample Request
+## Initiate Request
 Make an instance <br>
 
 ```sh
@@ -349,22 +233,21 @@ In this object, we add authorization Key in verification request.
 In this object, we add extra configuration of verification that the user wants.
 * ## async
    Required: **No**  
-  Type: **string**  
-  Accepted Values: **, "true", "false"**
+  Type: **Bool**  
+  Accepted Values: **, true, false**
 
    If async value is set to true you'll instantly get the user's control back so you don't have to wait for the verification results. When a request is completed you'll automatically get a callback. 
 * ## open_webview
 
   Required: **No**  
-  Type: **string**  
-  Accepted Values: **"true", "false"**
+  Type: **Bool**  
+  Accepted Values: **true, false**
 
   This boolean type of parameter is used to identify if you want to perform verification in its hybrid view.
   If open_webview is true, it means that the user wants verification in **hybrid view**. If false, then the user wants verification with **OCR or Without OCR**. The value is false by default.
 
-
-
-# Request Parameters
+                                                  
+# Request Object Parameters
 
 It is important to note here that each service module is independent of other and each one of them is activated according to the nature of request received from you. There are a total of six services which include face, document, address, consent, phone and background_checks.
 
@@ -416,7 +299,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
 * ## verification_mode
 
-  Required: **No**  
+  Required: **Yes**  
   Type: **string**  
   Accepted Values: **image_only, video_only ,any**
 
@@ -516,6 +399,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
   **Example 1** ["driving_license"]  
   **Example 2** ["id_card", "credit_or_debit_card", "passport"]
 
+  For complete list visit [here](https://api.shuftipro.com/api/docs/#supported-types).
   * <h3>name</h3>
 
   Required: **No**  
@@ -725,7 +609,6 @@ For Details on additional_data object go to [Additional Data](https://api.shufti
 
   Required: **No**  
   Type: **array**
-
   Text provided in the consent verification can be verified by handwritten documents or printed documents.
 
   Supported Types              |
@@ -837,6 +720,28 @@ For Details on additional_data object go to [Additional Data](https://api.shufti
   Provide a valid date. Please note that the date should be before today. 
   Example 1990-12-31
 
+# Customisations
+ShuftiPro supports a set of customization options that will influence the appearance of the button, font Color and verification flow modal. You can easily customize the all options by creating ShuftiPro Object.
+
+Make an instance <br>
+
+```sh
+let instance = ShuftiPro()
+
+instance.buttonTextColor = .white
+instance.buttonBackgroundColor = .blue
+instance.fontColor = .black
+```
+
+To apply and use dark theme/mode in SDK, initialise the SDK with provided parameter in config object.
+```sh
+  let configs = [
+                "dark_mode" : true,
+  ]
+```
+* ## Localization <br>
+  Add your own Localizable.strings file to your project using standard iOS localization mechanism. To change a specific text override corresponding key in [this](https://github.com/shuftipro/iOS-Core-SDK/blob/main/ShuftiPro%20Sdk/Shufti%20Pro%20Demo/en.lproj/Localizable.strings) Localizable.strings file.
+
  
 
 ## HTTP Codes
@@ -897,7 +802,7 @@ Note: <b>request.invalid</b> response with <b>HTTP status code 400</b> means the
 ```json
 {
   "reference": "17374217",
-  "event": "request.declined",
+  "event": "request.invalid",
   "error": "",
   "verification_url": ""
 }
@@ -910,7 +815,7 @@ Address | Document |
 --------------- | ------------ | 
 id_card | id_card 
 passport  | passport  
-driving_license | driving_lisence
+driving_license | driving_license
 utility_bill | credit_or_debit_card 
 bank_statement |
 rent_agreement |
@@ -929,25 +834,7 @@ Note: These test IDs only be usefull in Iframe SDK.
 [![](https://api.shuftipro.com/api/docs/images/test_ids/fake_ID_card-02.png)](https://api.shuftipro.com/api/docs/images/test_ids/fake_ID_card-02.png)
 
 ## Contact
-If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:support@shuftipro.com).
+If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:tech@shuftipro.com).
 
 ## Copyright
 2017- 22 © Shufti Pro Ltd.
-
-## Revision History
-
-Date            | Description 
---------------- | ------------
-20 Jan 2021    | Added all verifications(verification with OCR, without OCR and restful API) in one sdk.
-4  Feb 2021    | Updated binaries with increased request timeout.
-26 Mar 2021    | Bugs fixes and UI improvements. 
-29 Mar 2021    | Issue fixes in consent screen.
-29 Apr 2021    | Reduce sdk size.
-18 May 2021    | Improve user experience.
-27 May 2021    | Content updated.
-07 Jul 2021    | ReadMe updated.
-08 Nov 2021    | Remove request timeout time and added support of WKWebview.
-01 Dec 2021    | Bugs fixes and UI improvements.
-28 Mar 2022    | Bug fixes and improve user experience
-12 May 2022    | Add new features in existing SDK
-
