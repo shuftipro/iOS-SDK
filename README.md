@@ -44,6 +44,20 @@ Application Info.plist must contain an **Privacy - Camera Usage Description** an
 ```sh
  pod 'Socket.IO-Client-Swift'
 ```
+Please make sure to add the following post-install hook to your Podfile.
+
+```
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if ['iProov', 'Socket.IO-Client-Swift', 'Starscream'].include? target.name
+      target.build_configurations.each do |config|
+          config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      end
+    end
+  end
+end
+```
+
 2. Copy “ShuftiPro.framework” into your project folder.
 2.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
 3.  Add “ShuftiPro.framework” in Embeded Binaries.
