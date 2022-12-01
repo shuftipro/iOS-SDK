@@ -4,7 +4,6 @@
 
 Shufti Pro’s API supports verification with and without OCR also user can perform NFC verfication of their documents. 
 ## Table of contents
-* [General Requirements](#general-requirements)
 * [Permissions](#permissions)
 * [SDK Installation Guide](#sdk-installation-guide)
 
@@ -45,8 +44,8 @@ end
 ```
 
 2. Copy “ShuftiPro.framework” into your project folder.
-3.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
-4.  Add “ShuftiPro.framework” in Embeded Binaries.
+3. In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
+4. Drop “ShuftiPro.framework” in Embeded Binaries.
 5. Make sure your in your xcode project build settings "Validate Workspace" is set to "Yes"
 
 
