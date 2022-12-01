@@ -5,6 +5,7 @@ Shufti Pro, UK-based Software as a Service (SaaS) provider is a pioneer in offer
 
 A user-friendly interface with an easy API integration procedure enables businesses to onboard legit customers seamlessly and helps to develop trustworthy B2B relationships. Shufti Pro’s ID verification services are fit for all industries including FinTechs, Virtual asset service providers, banks and much more. Choosing Shufti Pro can fight crimes, increase productivity, and enhance conversion rate, everything in just less than a second.
 
+
 ## Table of contents
 * [General Requirements](#general-requirements)
 * [SDK Installation Guide](#sdk-installation-guide)

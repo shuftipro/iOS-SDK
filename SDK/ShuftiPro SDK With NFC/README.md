@@ -7,8 +7,6 @@ Shufti Pro’s API supports verification with and without OCR also user can perf
 * [Permissions](#permissions)
 * [SDK Installation Guide](#sdk-installation-guide)
 
-
-
 ## Permissions:
 * ### Application Info.plist must contain an **Privacy - Camera Usage Description** , **Privacy - Microphone Usage Description**  and  **Privacy - NFC Scan Usage Description**key with a explanation to end-user about how the app uses this data.
 * ### And Open your Info.plist file as Source Code add these lines inside dict tag.
