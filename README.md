@@ -7,7 +7,6 @@ A user-friendly interface with an easy API integration procedure enables busines
 
 ## Table of contents
 * [General Requirements](#general-requirements)
-* [Permissions](#permissions)
 * [SDK Installation Guide](#sdk-installation-guide)
 * [SDK Version](#sdk-version)
 * [Verification Types You Can Get](#verification-types-you-can-get)
@@ -34,34 +33,9 @@ Followings are minimum requirements for SDK:
 Supported architectures in SDK:
 - armv7 and arm64 for devices
 
-## Permissions:
-Application Info.plist must contain an **Privacy - Camera Usage Description** and **Privacy - Microphone Usage Description** key with a explanation to end-user about how the app uses this data.
-
 ## SDK Installation Guide
-   
- For Swift version 4 & 5
-
-1. 
-```sh
- pod 'Socket.IO-Client-Swift'
-```
-Please make sure to add the following post-install hook to your Podfile.
-
-```
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    if ['iProov', 'Socket.IO-Client-Swift', 'Starscream'].include? target.name
-      target.build_configurations.each do |config|
-          config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-      end
-    end
-  end
-end
-```
-
-2. Copy “ShuftiPro.framework” into your project folder.
-2.  In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
-3.  Add “ShuftiPro.framework” in Embeded Binaries.
+   - [ShuftiPro SDK](https://github.com/shuftipro/iOS-SDK/tree/master/SDK/ShuftiPro%20SDK)
+   - [ShuftiPro SDK With NFC](https://github.com/shuftipro/iOS-SDK/tree/master/SDK/ShuftiPro%20SDK%20With%20NFC)
 
 ## SDK Version:
 Currently our updated SDK version is 3.4.0
@@ -218,7 +192,7 @@ instance.shuftiProVerification(requestObject: "your-request-object",
 
     print(result) // Callback response for verification verified/declined
     let reponse = result as! NSDictionary
-    if reponse.value(forKey: "event") as! String == "verification.accepted" {
+    if reponse.value(forKey: "event") as? String == "verification.accepted" {
         // Verified: Do something
     }else{
         // Declined: Do something

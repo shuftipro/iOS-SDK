@@ -2,22 +2,13 @@
 
 # ShuftiPro NFC SDK
 
-Shufti Pro’s API supports verification with and without OCR. 
+Shufti Pro’s API supports verification with and without OCR also user can perform NFC verfication of their documents. 
 ## Table of contents
 * [General Requirements](#general-requirements)
 * [Permissions](#permissions)
 * [SDK Installation Guide](#sdk-installation-guide)
-* [SDK Version](#sdk-version)
 
-# Basic Setup
-## General Requirements
-Followings are minimum requirements for SDK:
-- iOS 13.0 and higher
-- Internet connection
-- Xcode version should be latest
 
-Supported architectures in SDK:
-- armv7 and arm64 for devices
 
 ## Permissions:
 * ### Application Info.plist must contain an **Privacy - Camera Usage Description** , **Privacy - Microphone Usage Description**  and  **Privacy - NFC Scan Usage Description**key with a explanation to end-user about how the app uses this data.
