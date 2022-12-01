@@ -29,6 +29,7 @@ A user-friendly interface with an easy API integration procedure enables busines
 Followings are minimum requirements for SDK:
 - iOS 13.0 and higher
 - Internet connection
+- Xcode version should be latest
 
 Supported architectures in SDK:
 - armv7 and arm64 for devices
@@ -72,7 +73,7 @@ Shufti Pro’s services come in three variations. You have an option of choosing
 
 **Without OCR:** In case you are choosing this service, your clients need to provide additional proof of data in the form of identity documents other than verification information.
 
-**Verification Through Hybrid View:** Shufti Pro’s hybrid view includes mobile verifications along with a web view built on HTML 5 that will show the results to the end-user. The verification data will be sent through a JSON object, quite similar to OCR/Non-OCR in the mobile authentication formats. In case the value for OpenViewParameter is set to true, the hybrid view will be enabled, else the other models will be triggered.
+**Verification Through Hybrid View:** Shufti Pro’s hybrid view includes mobile verifications along with a web view built on HTML 5 that will show the results to the end-user. The verification data will be sent through a JSON object, quite similar to OCR/Non-OCR in the mobile authentication formats. In case the value for open_webview is set to true, the hybrid view will be enabled, else the other models will be triggered.
 
 ## Integration: 
 See the sample project provided to learn the most common use. Make sure to build on real device.
@@ -90,9 +91,9 @@ let requestObject: [String: Any] = [
             "show_results" : "",
             "show_consent" : "",
             "show_privacy_policy" : "",
-            "verification_mode": "",
+            "verification_mode": "image_only",
             "allow_online" : "1",
-            "allow_offline" : "1"
+            "allow_offline" : "1",
 
             "face": ["proof": "",
                     "allow_online" : "1",
@@ -166,9 +167,10 @@ let requestObject: [String: Any] = [
              ],
              "consent":[
                "proof" : "",
-               "text" : "",
+               "text" : "my consent note",
                "supported_types" :[
-                 "printed"
+                 "printed",
+                 "handwritten"
                ],
                 "allow_online" : "1",
                 "allow_offline" : "1"
@@ -183,7 +185,7 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
 
  let authKeys = [
                 "auth_type" : "basic_auth",
-                "client_Id" : "xxxxx-xxxxx-xxxxx",
+                "client_id" : "xxxxx-xxxxx-xxxxx",
                 "secret_key": "xxxxx-xxxxx-xxxxx"
 
   ]
@@ -198,8 +200,8 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
 ## Configs
 ```sh
   let configs = [
-                "open_webview" : "false",
-                "aysnc" : "false"
+                "open_webview" : false,
+                "aysnc" : false
   ]
 ```
 
@@ -323,7 +325,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   Required:  **No**  
   Type: **string** <Br>
-  Accepted Values: **"0",   "1"**
+  Accepted Values: **0, 1**
   This key specifies if privacy policy will be shown to user or not. If show_privacy_policy is  “0”, then privacy policy is not shown. If “1”, then privacy policy is shown to result screen. 
 
   
@@ -331,7 +333,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   Required: **No**  <Br>
   Type: **string** <Br>
-  Accepted Values: **"0",   "1"**
+  Accepted Values: **0,1**
   
   This key specifies that is verification result show to user or not. If show_results is "0" than verification result  not show to user and send to merchant. If show_results is "1" than verification result show to user.
 
@@ -339,7 +341,7 @@ All verification services are optional. You can provide Shufti Pro a single serv
 
   Required: **No**  <Br>
   Type: **string** <Br>
-  Accepted Values: **"0",   "1"**
+  Accepted Values: **0,1**
   
   This parameter displays a screen to collect consent from end-user before the verification process starts. If the value is set 1, the screen will be displayed to end-user. If the value is set 0, the consent screen will not be displayed.
   

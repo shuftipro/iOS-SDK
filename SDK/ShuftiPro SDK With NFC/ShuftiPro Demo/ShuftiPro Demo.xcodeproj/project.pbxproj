@@ -18,7 +18,8 @@
 		A628E62F267CCC680010F85C /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A628E62B267CCC680010F85C /* OpenSans-ExtraBold.ttf */; };
 		A628E630267CCC680010F85C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A628E62C267CCC680010F85C /* OpenSans-Bold.ttf */; };
 		A628E631267CCC680010F85C /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A628E62D267CCC680010F85C /* OpenSans-Semibold.ttf */; };
-		B6A1E2162758F70A002DF2B9 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B69E728C2938CD73006CF46D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B69E728E2938CD73006CF46D /* Localizable.strings */; };
+		B6A1E2162758F70A002DF2B9 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B6A4F9C5282CE44E002AED6C /* ShuftiPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A4F9C3282CE447002AED6C /* ShuftiPro.framework */; platformFilter = ios; };
 		B6A4F9C6282CE44E002AED6C /* ShuftiPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6A4F9C3282CE447002AED6C /* ShuftiPro.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F0F1AD84903220D2DCC2DA41 /* Pods_ShuftiPro_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F500D8C6A2C7FBB961A78C9E /* Pods_ShuftiPro_Demo.framework */; };
@@ -31,7 +32,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B6A1E2162758F70A002DF2B9 /* BuildFile in Embed Frameworks */,
+				B6A1E2162758F70A002DF2B9 /* (null) in Embed Frameworks */,
 				B6A4F9C6282CE44E002AED6C /* ShuftiPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -55,6 +56,7 @@
 		A628E62B267CCC680010F85C /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		A628E62C267CCC680010F85C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		A628E62D267CCC680010F85C /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		B69E728D2938CD73006CF46D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B6A4F9C3282CE447002AED6C /* ShuftiPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShuftiPro.framework; sourceTree = "<group>"; };
 		F500D8C6A2C7FBB961A78C9E /* Pods_ShuftiPro_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShuftiPro_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55A9FC0B70D697C9EAE2AE4 /* Pods-ShuftiPro Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuftiPro Demo.debug.xcconfig"; path = "Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		A628E466267CC8F50010F85C /* ShuftiPro Demo */ = {
 			isa = PBXGroup;
 			children = (
+				B69E72892938CD5F006CF46D /* Localizable File */,
 				A628E629267CCC590010F85C /* Fonts */,
 				A628E47C267CC9250010F85C /* ShuftiPro Demo.entitlements */,
 				A628E467267CC8F50010F85C /* AppDelegate.swift */,
@@ -135,6 +138,14 @@
 				A628E62D267CCC680010F85C /* OpenSans-Semibold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B69E72892938CD5F006CF46D /* Localizable File */ = {
+			isa = PBXGroup;
+			children = (
+				B69E728E2938CD73006CF46D /* Localizable.strings */,
+			);
+			path = "Localizable File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				A628E630267CCC680010F85C /* OpenSans-Bold.ttf in Resources */,
 				A628E62E267CCC680010F85C /* OpenSans-Regular.ttf in Resources */,
 				A628E46F267CC8F50010F85C /* Main.storyboard in Resources */,
+				B69E728C2938CD73006CF46D /* Localizable.strings in Resources */,
 				A628E631267CCC680010F85C /* OpenSans-Semibold.ttf in Resources */,
 				A628E62F267CCC680010F85C /* OpenSans-ExtraBold.ttf in Resources */,
 			);
@@ -262,6 +274,15 @@
 				A628E473267CC8F80010F85C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B69E728E2938CD73006CF46D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B69E728D2938CD73006CF46D /* en */,
+			);
+			name = Localizable.strings;
+			path = "../../../Localizable File";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

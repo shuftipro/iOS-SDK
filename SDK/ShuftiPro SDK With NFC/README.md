@@ -14,6 +14,7 @@ Shufti Pro’s API supports verification with and without OCR.
 Followings are minimum requirements for SDK:
 - iOS 13.0 and higher
 - Internet connection
+- Xcode version should be latest
 
 Supported architectures in SDK:
 - armv7 and arm64 for devices
@@ -36,22 +37,20 @@ For more guidance watch this guided image. [here](nfcGuide.png)
 1. Add these dependencies into your project's pod file.
 ```
     pod 'NFCPassportReader', git:'https://github.com/AndyQ/NFCPassportReader.git'
-    
+    pod 'Socket.IO-Client-Swift'
 ```
 Please make sure to add the following post-install hook to your Podfile.
 
 ```
 post_install do |installer|
   installer.pods_project.targets.each do |target|
-    if ['NFCPassportReader'].include? target.name
+    if ['iProov', 'Socket.IO-Client-Swift', 'Starscream','NFCPassportReader'].include? target.name
       target.build_configurations.each do |config|
           config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       end
     end
   end
 end
-
-
 ```
 
 2. Copy “ShuftiPro.framework” into your project folder.

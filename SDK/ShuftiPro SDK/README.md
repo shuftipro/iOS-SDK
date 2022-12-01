@@ -754,7 +754,7 @@ To apply and use dark theme/mode in SDK, initialise the SDK with provided parame
   ]
 ```
 * ## Localization <br>
-  Add your own Localizable.strings file to your project using standard iOS localization mechanism. To change a specific text override corresponding key in [this](https://github.com/shuftipro/iOS-Core-SDK/blob/main/ShuftiPro%20Sdk/Shufti%20Pro%20Demo/en.lproj/Localizable.strings) Localizable.strings file.
+  Add your own Localizable.strings file to your project using standard iOS localization mechanism. To change a specific text override corresponding key in Localizable.strings file attached in Demo app.
 
  
 
