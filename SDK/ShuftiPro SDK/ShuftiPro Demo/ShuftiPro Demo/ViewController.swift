@@ -11,7 +11,9 @@ import ShuftiPro
 
 class ViewController: UIViewController {
 
-    let clientIdStr = "xxx-xxx-xxx"  // your client id here
+
+    
+    let clientIdStr = "xxx-xxx-xxx" // your client id here
     let secretKeyStr = "xxx-xxx-xxx" // your secret key here
     let accessToken = "xxx-xxx-xxx" // your accessToken here
     var referenceKey = ""

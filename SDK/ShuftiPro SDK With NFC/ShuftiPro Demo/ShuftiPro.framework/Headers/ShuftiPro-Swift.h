@@ -343,8 +343,8 @@ SWIFT_CLASS("_TtC9ShuftiPro9CameraVc2")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified retryAutoCaptureBtn;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timerCounter;
 @property (nonatomic, weak) IBOutlet RAProgressRing * _Null_unspecified counterView;
-- (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidLoad;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (void)viewDidLayoutSubviews;
@@ -364,6 +364,7 @@ SWIFT_CLASS("_TtC9ShuftiPro9CameraVc2")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class AVCapturePhotoOutput;
 @class AVCapturePhoto;
 
@@ -374,29 +375,22 @@ SWIFT_CLASS("_TtC9ShuftiPro9CameraVc2")
 @class AVCaptureOutput;
 @class AVCaptureConnection;
 
-@interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro)) <AVCaptureMetadataOutputObjectsDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro)) <AVCaptureVideoDataOutputSampleBufferDelegate>
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
 
 
-@class AVCaptureMetadataOutput;
-@class AVMetadataObject;
+
 
 @interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro))
-- (void)captureOutput:(AVCaptureMetadataOutput * _Nonnull)output didOutputMetadataObjects:(NSArray<AVMetadataObject *> * _Nonnull)metadataObjects fromConnection:(AVCaptureConnection * _Nonnull)connection;
+- (void)updateInstructionTimer;
 @end
-
 
 @class AVCaptureFileOutput;
 @class NSURL;
 
 @interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro))
 - (void)captureOutput:(AVCaptureFileOutput * _Nonnull)output didFinishRecordingToOutputFileAtURL:(NSURL * _Nonnull)outputFileURL fromConnections:(NSArray<AVCaptureConnection *> * _Nonnull)connections error:(NSError * _Nullable)error;
-@end
-
-
-@interface CameraVc2 (SWIFT_EXTENSION(ShuftiPro))
-- (void)updateInstructionTimer;
 @end
 
 @class UIImage;
