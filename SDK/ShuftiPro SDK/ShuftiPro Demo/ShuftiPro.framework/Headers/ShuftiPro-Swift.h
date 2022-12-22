@@ -571,7 +571,16 @@ SWIFT_CLASS("_TtC9ShuftiPro13InstructionVc")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified faceLabel1;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified faceLabel2;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified faceLabel3;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified mainInstructionView;
+@property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified instructionsScrollView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified instructionsSubView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified InstructionImage;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified InstructionsHeading;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified instructionsText1;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified instructionsText2;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified instructionsText3;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidDisappear:(BOOL)animated;
 - (void)instructionNotificationWithNotification:(NSNotification * _Nonnull)notification;
 - (IBAction)dismissBtn:(id _Nonnull)sender;
@@ -708,6 +717,10 @@ SWIFT_CLASS("_TtC9ShuftiPro18SupportedTypesCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified proceedImg;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified proceedView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified leftBorderView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified rightBorderView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified topBorderView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified bottomBorderView;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
@@ -823,7 +836,6 @@ SWIFT_CLASS("_TtC9ShuftiPro19UploadOrTakePhotoVc")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified videoImg;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified footerImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified footerLabel;
-@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified takeFormCameraView;
 - (void)viewDidLoad;
 - (void)viewWillDisappear:(BOOL)animated;
 - (IBAction)takePhotoBtnPressed:(id _Nonnull)sender;
