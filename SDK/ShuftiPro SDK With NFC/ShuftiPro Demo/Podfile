@@ -6,9 +6,8 @@ target 'ShuftiPro Demo' do
   use_frameworks!
 
   # Pods for ShuftiPro Demo
-  pod 'NFCPassportReader',:tag => '1.1.7', git:'https://github.com/AndyQ/NFCPassportReader.git'
-  pod 'Socket.IO-Client-Swift'
-
+  
+ pod 'ShuftiProNFC', :tag => '3.4.1', :git => "https://github.com/shuftipro/ios-nfc-binary-pod.git"
 
 end
 
@@ -17,7 +16,7 @@ end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
-    if ['iProov', 'Socket.IO-Client-Swift', 'Starscream' ,'NFCPassportReader'].include? target.name
+    if ['Socket.IO-Client-Swift', 'Starscream' ,'NFCPassportReader', 'lottie-ios'].include? target.name
       target.build_configurations.each do |config|
           config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       end

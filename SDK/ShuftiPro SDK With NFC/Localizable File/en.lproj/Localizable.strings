@@ -1,7 +1,7 @@
 
 "Something Missing" = "Something Missing";
 
-"Something is missing, please make sure you have entered client Id , secret Key and auth type." = "Something is missing, please make sure you have entered client Id , secret Key and auth type.";
+"Something is missing, please make sure you have entered client id , secret key and auth type." = "Something is missing, please make sure you have entered client id , secret key and auth type.";
 
 "Something is missing, please make sure you have entered access token." = "Something is missing, please make sure you have entered access token.";
 "Invalid auth type , please make sure you have entered correct auth type." = "Invalid auth type , please make sure you have entered correct auth type.";
@@ -37,7 +37,13 @@
 "Complete document should be inside the box." = "Complete document should be inside the box.";
 "Document should be lighted without any glare." = "Document should be lighted without any glare.";
 "Document information should be readable." = "Document information should be readable.";
+
+"Entire face should be inside the oval." = "Entire face should be inside the oval.";
+"Selfie should be lighted without any glare" = "Selfie should be lighted without any glare";
+"Remove any accessories (e.g., glasses, hat)." = "Remove any accessories (e.g., glasses, hat).";
+ 
 "Selfie Instructions" = "Selfie Instructions";
+
 "Face inside Oval and Clear" = "Face inside Oval and Clear";
 "Use proper lighting" = "Use proper lighting";
 "Remove accessories" = "Remove accessories" ;

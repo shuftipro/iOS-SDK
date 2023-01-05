@@ -13,9 +13,9 @@ class ViewController: UIViewController {
 
 
     
-    let clientIdStr = "xxx-xxx-xxx" // your client id here
-    let secretKeyStr = "xxx-xxx-xxx" // your secret key here
-    let accessToken = "xxx-xxx-xxx" // your accessToken here
+    let clientIdStr = "" // your client id here
+    let secretKeyStr = "" // your secret key here
+    let accessToken = "" // your accessToken here
     var referenceKey = ""
     var showRatingScreen = false
     var authKeys = Dictionary<String, String>()
@@ -161,7 +161,7 @@ class ViewController: UIViewController {
                 "redirect_url" : "https://www.mydummy.shuftipro.com/",
                 "show_privacy_policy": "1",
                 "show_consent": "1",
-                "verification_mode" : "image",
+                "verification_mode" : "image_only",
                 "allow_offline" : "1",
                 "allow_online" : "1"
                 

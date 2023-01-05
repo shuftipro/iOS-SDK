@@ -22,17 +22,18 @@ For more guidance watch this guided image. [here](nfcGuide.png)
 
 
 ## SDK Installation Guide
-1. Add these dependencies into your project's pod file.
+>### Installation through Cocoapods
+
+ Add this dependency into your project's Podfile.
 ```
-    pod 'NFCPassportReader', git:'https://github.com/AndyQ/NFCPassportReader.git'
-    pod 'Socket.IO-Client-Swift'
+  pod 'ShuftiProNFC', :tag => '3.4.1', :git => "https://github.com/shuftipro/ios-nfc-binary-pod.git"
 ```
 Please make sure to add the following post-install hook to your Podfile.
 
 ```
 post_install do |installer|
   installer.pods_project.targets.each do |target|
-    if ['iProov', 'Socket.IO-Client-Swift', 'Starscream','NFCPassportReader'].include? target.name
+    if ['lottie-ios', 'Socket.IO-Client-Swift', 'Starscream','NFCPassportReader'].include? target.name
       target.build_configurations.each do |config|
           config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       end
@@ -41,14 +42,8 @@ post_install do |installer|
 end
 ```
 
-2. Copy “ShuftiPro.framework” into your project folder.
-3. In xcode select your project -> your project under TARGETS -> General -> Embeded Binaries
-4. Drop “ShuftiPro.framework” in Embeded Binaries.
-5. Make sure your in your xcode project build settings "Validate Workspace" is set to "Yes"
-
-
 ## SDK Version:
-Currently our updated SDK version is 3.4.0
+Currently our updated SDK version is 3.4.1
 
 # Request Parameters
 Parameters are explained [here](https://github.com/shuftipro/iOS-SDK#auth-keys).

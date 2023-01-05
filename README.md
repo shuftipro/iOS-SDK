@@ -9,7 +9,6 @@ A user-friendly interface with an easy API integration procedure enables busines
 ## Table of contents
 * [General Requirements](#general-requirements)
 * [SDK Installation Guide](#sdk-installation-guide)
-* [SDK Version](#sdk-version)
 * [Verification Types You Can Get](#verification-types-you-can-get)
 * [Integration](#integration)
 * [Initiate Request](#initiate-request)
@@ -38,8 +37,6 @@ Supported architectures in SDK:
    - [ShuftiPro SDK](https://github.com/shuftipro/iOS-SDK/tree/master/SDK/ShuftiPro%20SDK)
    - [ShuftiPro SDK With NFC](https://github.com/shuftipro/iOS-SDK/tree/master/SDK/ShuftiPro%20SDK%20With%20NFC)
 
-## SDK Version:
-Currently our updated SDK version is 3.4.0
 
 ## Verification Types You Can Get:
 Shufti Pro’s services come in three variations. You have an option of choosing all or any one of them that fulfills your client's requirements. Following are the types of verification services;
