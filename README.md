@@ -824,5 +824,10 @@ Note: These test IDs only be usefull in Iframe SDK.
 ## Contact
 If you have any questions/queries regarding implementation SDK please feel free to contact our [tech support](mailto:tech@shuftipro.com).
 
+## Revision History
+- **Version 3.4.3**
+    - **Tap to focus** functionality added
+    - Image pixelation issue resolved
+
 ## Copyright
 2017- 22 © Shufti Pro Ltd.
