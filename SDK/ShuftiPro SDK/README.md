@@ -19,7 +19,7 @@ Shufti Pro’s API supports verification with and without OCR.
 
  Add this pod into your Podfile.
 ```sh
-pod 'ShuftiPro', :tag => '3.4.3', :git => "https://github.com/shuftipro/iOS-binary-pod"
+pod 'ShuftiPro', :tag => '3.4.4', :git => "https://github.com/shuftipro/iOS-binary-pod"
 ```
 Please make sure to add the following post-install hook to your Podfile.
 
@@ -35,6 +35,6 @@ post_install do |installer|
 end
 ```
 ## SDK Version:
-Currently our updated SDK version is 3.4.3
+Currently our updated SDK version is 3.4.4
 # Request Parameters
 Parameters are explained [here](https://github.com/shuftipro/iOS-SDK#auth-keys).

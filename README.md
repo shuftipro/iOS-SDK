@@ -828,6 +828,8 @@ If you have any questions/queries regarding implementation SDK please feel free 
 - **Version 3.4.3**
     - **Tap to focus** functionality added
     - Image pixelation issue resolved
+ - **Version 3.4.4**
+    - Fix iOS 16 thread issues
 
 ## Copyright
 2017- 22 © Shufti Pro Ltd.
