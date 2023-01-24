@@ -280,7 +280,9 @@ class ViewController: UIViewController {
             
             configs = [
                 "open_webview" : false,
-                "async" : false
+                "async" : false,
+                "base_url" : "",
+                "video_kyc" : false
             ]
             
             
