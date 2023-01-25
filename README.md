@@ -234,13 +234,6 @@ In this object, we add extra configuration of verification that the user wants.
   This boolean type of parameter is used to identify if you want to perform verification in its hybrid view.
   If open_webview is true, it means that the user wants verification in **hybrid view**. If false, then the user wants verification with **OCR or Without OCR**. The value is false by default.
 
-* ## base_url
-
-  Required: **No**  
-  Type: **String**  
-
-  User can provide his own base url , which shuftipro sdk will use for api calling.
-
 * ## video_kyc
 
   Required: **No**  
@@ -846,7 +839,7 @@ If you have any questions/queries regarding implementation SDK please feel free 
  - **Version 3.4.4**
     - Fix iOS 16 thread issues
 - **Version 3.4.5**
-    - Allow user to add video_kyc and base_url to configs object.
+    - Add video kyc service in our SDK.
 
 ## Copyright
 2017- 22 © Shufti Pro Ltd.
