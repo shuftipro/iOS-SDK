@@ -173,7 +173,8 @@ You can read more about **accessToken** [here](https://api.shuftipro.com/api/doc
 ```sh
   let configs = [
                 "open_webview" : false,
-                "aysnc" : false
+                "aysnc" : false,
+                "video_kyc" : false
   ]
 ```
 

@@ -7,7 +7,7 @@ target 'ShuftiPro Demo' do
 
   # Pods for ShuftiPro Demo
   
- pod 'ShuftiProNFC', :tag => '3.4.4', :git => "https://github.com/shuftipro/ios-nfc-binary-pod.git"
+ pod 'ShuftiProNFC', :tag => '3.4.5', :git => "https://github.com/shuftipro/ios-nfc-binary-pod.git"
 
 end
 

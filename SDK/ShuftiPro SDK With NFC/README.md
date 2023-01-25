@@ -26,7 +26,7 @@ For more guidance watch this guided image. [here](nfcGuide.png)
 
  Add this dependency into your project's Podfile.
 ```
-  pod 'ShuftiProNFC', :tag => '3.4.4', :git => "https://github.com/shuftipro/ios-nfc-binary-pod.git"
+  pod 'ShuftiProNFC', :tag => '3.4.5', :git => "https://github.com/shuftipro/ios-nfc-binary-pod.git"
 ```
 Please make sure to add the following post-install hook to your Podfile.
 
@@ -43,7 +43,7 @@ end
 ```
 
 ## SDK Version:
-Currently our updated SDK version is 3.4.4
+Currently our updated SDK version is 3.4.5
 
 # Request Parameters
 Parameters are explained [here](https://github.com/shuftipro/iOS-SDK#auth-keys).
