@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,7 +19,7 @@
 		A628E630267CCC680010F85C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A628E62C267CCC680010F85C /* OpenSans-Bold.ttf */; };
 		A628E631267CCC680010F85C /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A628E62D267CCC680010F85C /* OpenSans-Semibold.ttf */; };
 		B296C02799379DFEE09BC6CB /* Pods_ShuftiPro_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5516F2F5CD37F4DB0EF856B0 /* Pods_ShuftiPro_Demo.framework */; };
-		B6A1E2162758F70A002DF2B9 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6A1E2162758F70A002DF2B9 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B6A1E2162758F70A002DF2B9 /* BuildFile in Embed Frameworks */,
+				B6A1E2162758F70A002DF2B9 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,7 +400,6 @@
 					"$(BUILT_PRODUCT_DIR)/ShuftiPro",
 					"$(BUILT_PRODUCT_DIR)/NFCPassportReader",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shufti.guthub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,7 +432,6 @@
 					"$(BUILT_PRODUCT_DIR)/ShuftiPro",
 					"$(BUILT_PRODUCT_DIR)/NFCPassportReader",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shufti.guthub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

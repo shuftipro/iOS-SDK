@@ -2,7 +2,6 @@
 //  SceneDelegate.swift
 //  ShuftiPro Demo
 //
-//  Created by Zaid Ahmed IoS on 18/06/2021.
 //
 
 import UIKit

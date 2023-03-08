@@ -3,7 +3,6 @@
 //  Shufti Pro Demo
 //
 //  Created by Swift Developer on 9/24/18.
-//  Copyright © 2018 Programmers Force. All rights reserved.
 //
 
 import UIKit
