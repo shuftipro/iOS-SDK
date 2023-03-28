@@ -6,7 +6,7 @@ target 'ShuftiPro Demo' do
   use_frameworks!
 
   # Pods for ShuftiPro Demo
-pod 'ShuftiPro', :tag => '3.4.7', :git => "https://github.com/shuftipro/iOS-binary-pod"
+pod 'ShuftiPro', :tag => '3.4.8', :git => "https://github.com/shuftipro/iOS-binary-pod"
 
 
 end
