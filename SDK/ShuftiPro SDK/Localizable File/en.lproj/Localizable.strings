@@ -38,11 +38,13 @@
 "Document should be lighted without any glare." = "Document should be lighted without any glare.";
 "Document information should be readable." = "Document information should be readable.";
 
+
 "Entire face should be inside the oval." = "Entire face should be inside the oval.";
 "Selfie should be lighted without any glare" = "Selfie should be lighted without any glare";
 "Remove any accessories (e.g., glasses, hat)." = "Remove any accessories (e.g., glasses, hat).";
  
 "Selfie Instructions" = "Selfie Instructions";
+
 
 "Face inside Oval and Clear" = "Face inside Oval and Clear";
 "Use proper lighting" = "Use proper lighting";
@@ -84,8 +86,12 @@
 
 //UploadVideoVc Screen
 "Upload" = "Upload";
-"Browse to upload your file" = "Browse to upload your file";
-"Maximum photo file size 16MB" = "Maximum photo file size 16MB";
+"Upload a .jpeg, jpg, pdf, .png, .mp4 or .mov" = "Upload a .jpeg, jpg, pdf, .png, .mp4 or .mov";
+"Upload a .jpeg, jpg, pdf, or .png" = "Upload a .jpeg, jpg, pdf, or .png";
+"Upload a .mp4 or .mov" = "Upload a .mp4 or .mov";
+
+
+"Browse" = "Browse";
 "Maximum video file size 20MB" = "Maximum video file size 20MB";
 
 //ReadyToCapture Screen
@@ -173,13 +179,15 @@
 "Please provide a valid document and hold it still for a while." = "Please provide a valid document and hold it still for a while.";
 "Please bring the document closer and place it inside the box." = "Please bring the document closer and place it inside the box.";
 "Please place the face inside the oval." = "Please place the face inside the oval.";
-"The face image is blurred, please provide a clear face." = "The face image is blurred, please provide a clear face.";
+"The face image is blurred, please keep still." = "The face image is blurred, please keep still.";
 "Please bring your face closer and place it inside the oval." = "Please bring your face closer and place it inside the oval.";
 "Please look towards the camera and place the face inside the oval." = "Please look towards the camera and place the face inside the oval.";
 "Please provide front side of the document." = "Please provide front side of the document.";
 "Please provide back side of the document." = "Please provide back side of the document.";
 //ConfirmPhotoVc
 "Confirmation" = "Confirmation";
+"Is the selfie clear?" = "Is the selfie clear?";
+"Please make sure that the entire face is visible." = "Please make sure that the entire face is visible.";
 "Can you see your full face in the photo?" = "Can you see your full face in the photo?";
 "Can you see your full face in the video?" = "Can you see your full face in the video?";
 "Can you see the entire document clearly in the photo?" = "Can you see the entire document clearly in the photo?";
@@ -189,6 +197,7 @@
 "Can you see your entire face and consent note clearly in the photo?" = "Can you see your entire face and consent note clearly in the photo?";
 "Can you see your entire face and consent note clearly in the video?" = "Can you see your entire face and consent note clearly in the video?";
 "Can you see the address document clearly in the video?" = "Can you see the address document clearly in the video?";
+"Please make sure that the entire document is readable." = "Please make sure that the entire document is readable.";
 
 //NFCCameraVc Screen
 "Scan Mrz" = "Scanner Mrz";
@@ -266,7 +275,7 @@
 
 //Country Selection Vc
 "Choose your" = "Choose your";
-"issusing country/region" = "issusing country/region";
+"issuing country/region" = "issuing country/region";
 "Enter your country" = "Enter your country";
 "Your iOS version not supported with NFC" = "Your iOS version not supported with NFC";
 "I agree to the above statement, and I have read the Privacy Policy of Shufti Pro." = "I agree to the above statement, and I have read the Privacy Policy of Shufti Pro.";
