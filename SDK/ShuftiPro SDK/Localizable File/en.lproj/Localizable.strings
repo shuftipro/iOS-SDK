@@ -20,12 +20,11 @@
 "Declaration of Consent" = "Declaration of Consent";
 "Help us by taking your identity consent" = "Help us by taking your identity consent";
 "Identity Verification Consent" = "Identity Verification Consent";
-"I declare that I am at least 16 years of age; I agree to the collection, processing or storage of my personal information by Shufti Pro for the purpose(s) of identity verification; that the information I provide is true and accurate to the best of my knowledge; and I shall be fully responsible in case I provide wrong information or any of the documents I use are fake, forged, counterfeit, etc." = "I declare that I am at least 16 years of age; I agree to the collection, processing or storage of my personal information by Shufti Pro for the purpose(s) of identity verification; that the information I provide is true and accurate to the best of my knowledge; and I shall be fully responsible in case I provide wrong information or any of the documents I use are fake, forged, counterfeit, etc.";
 
 "No, Cancel" = "No, Cancel";
+"Exit" = "Exit";
 
 // Instructions Screen
-
 "Face Instructions" = "Face Instructions";
 "Document Instructions" = "Document Instructions";
 "Document Two Instructions" = "Document Two Instructions";
@@ -36,6 +35,7 @@
 "Face" = "Face";
 "Document" = "Document";
 "Document Two" = "Document Two";
+"One more document" = "One more document";
 "Address" = "Address";
 "Consent" = "Consent";
 
@@ -46,24 +46,20 @@
 "Document should be lighted without any glare." = "Document should be lighted without any glare.";
 "Document information should be readable." = "Document information should be readable.";
 
-
 "Entire face should be inside the oval." = "Entire face should be inside the oval.";
-"Selfie should be lighted without any glare" = "Selfie should be lighted without any glare";
+"Selfie should be lighted without any glare." = "Selfie should be lighted without any glare";
 "Remove any accessories (e.g., glasses, hat)." = "Remove any accessories (e.g., glasses, hat).";
  
 "Selfie Instructions" = "Selfie Instructions";
-
-
 "Face inside Oval and Clear" = "Face inside Oval and Clear";
 "Use proper lighting" = "Use proper lighting";
 "Remove accessories" = "Remove accessories" ;
 "4 corners shown — all data visible" = "4 corners shown — all data visible";
+"4 Corners Shown — Name & Address Is Visible" = "4 Corners Shown — Name & Address Is Visible";
 "Avoid Glare" = "Avoid Glare";
 "Avoid Cropped" = "Avoid Cropped";
 "Avoid Blur" = "Avoid Blur" ;
 "Keep Close" = "Keep Close";
-
-
 "Not Now"= "Not Now";
 "Confirm" = "Confirm";
 "Continue" = "Continue";
@@ -83,11 +79,13 @@
 "Handwritten Note" = "Handwritten Note";
 "Rent Agreement" = "Rent Agreement";
 "Choose a document type for verification" = "Choose a document type for verification";
+"One more document is required for verification" = "One more document is required for verification";
+"Choose a document type for address verification" = "Choose a document type for address verification";
+"Choose a document type for consent verification" = "Choose a document type for consent verification";
 "Supported Documents" = "Supported Documents";
 
 
 // UploadOrTakePhotoScreen
-
 "How will you submit the identity proof?" = "How will you submit the identity proof?";
 "Take from your camera" = "Take from your camera";
 "Upload from your device" = "Upload from your device";
@@ -98,6 +96,22 @@
 "Upload a .jpeg, jpg, pdf, or .png" = "Upload a .jpeg, jpg, pdf, or .png";
 "Upload a .mp4 or .mov" = "Upload a .mp4 or .mov";
 
+"Upload the photo page of your" = "Upload the photo page of your";
+"photo page" = "photo page";
+"Upload the front side of your" = "Upload the front side of your";
+"front side" = "front side";
+"Upload the backside of your" = "Upload the backside of your";
+"backside" = "backside";
+"Upload the consent note along with your face" = "Upload the consent note along with your face";
+"consent note" = "consent note";
+"photo/video" = "photo/video";
+"photo" = "photo";
+"video" = "video";
+"Maximum image file size allowed: 16MB" = "Maximum image file size allowed: 16MB";
+"Maximum video file size allowed: 20MB" = "Maximum video file size allowed: 20MB";
+"Maximum file size allowed: 20MB" = "Maximum file size allowed: 20MB";
+"Confirm Cancellation" = "Confirm Cancellation";
+"Are you sure you want to cancel the verification process?" = "Are you sure you want to cancel the verification process?";
 
 "Browse" = "Browse";
 "Maximum video file size 20MB" = "Maximum video file size 20MB";
@@ -126,6 +140,7 @@
 "Record a video of the second page of your" = "Record a video of the second page of your";
 "Record a video of the front side of your" = "Record a video of the front side of your";
 "Record a video of the back side of your" = "Record a video of the back side of your";
+
 //Source Type Gallery
 "Upload a photo/video of your entire face" = "Upload a photo/video of your entire face";
 "Ready to upload a photo?" = "Ready to upload a photo?";
@@ -158,9 +173,6 @@
 "Gallery" = "Gallery";
 "Downloads" = "Downloads" ;
 
-
-
-
 //Camera
 "Retry Auto-capture" = "Retry Auto-capture";
 "Take a photo" = "Take a photo";
@@ -176,6 +188,7 @@
 "Second page of the passport" = "Second page of the passport";
 "Back side of the document" = "Back side of the document";
 "Position your face inside the oval" = "Position your face inside the oval";
+"Capture consent along with your face" = "Capture consent along with your face";
 "Record a selfie" = "Record a selfie";
 "Position your face in the oval" = "Position your face in the oval";
 "Position your document in the box" = "Position your document in the box.";
@@ -192,6 +205,7 @@
 "Please look towards the camera and place the face inside the oval." = "Please look towards the camera and place the face inside the oval.";
 "Please provide front side of the document." = "Please provide front side of the document.";
 "Please provide back side of the document." = "Please provide back side of the document.";
+
 //ConfirmPhotoVc
 "Confirmation" = "Confirmation";
 "Is the selfie clear?" = "Is the selfie clear?";
@@ -211,7 +225,6 @@
 "Scan Mrz" = "Scanner Mrz";
 "Kindly fit your document MRZ in frame." = "Kindly fit your document MRZ in frame.";
 "Your Device does not support NFC" = "Your Device does not support NFC";
-
 
 //NFCScanner Vc Screen
 "NFC Verification" = "NFC Verification";
@@ -279,7 +292,9 @@
 "Sorry, Your identity is not verified." = "Sorry, Your identity is not verified.";
 "Unauthroized Request" = "Unauthroized Request";
 "Cancel" = "Cancel";
-"© Powered by" = "© Powered by";
+"Confirm Cancellation" = "Confirm Cancellation";
+"Are you sure you want to cancel the verification process?" = "Are you sure you want to cancel the verification process?";
+
 
 //Country Selection Vc
 "Choose your" = "Choose your";
