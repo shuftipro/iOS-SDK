@@ -299,6 +299,7 @@
 //Country Selection Vc
 "Choose your" = "Choose your";
 "issuing country/region" = "issuing country/region";
+"Choose your document issuing country/region" = "Choose your document issuing country/region";
 "Enter your country" = "Enter your country";
 "Your iOS version not supported with NFC" = "Your iOS version not supported with NFC";
 "I agree to the above statement, and I have read the Privacy Policy of Shufti Pro." = "I agree to the above statement, and I have read the Privacy Policy of Shufti Pro.";
