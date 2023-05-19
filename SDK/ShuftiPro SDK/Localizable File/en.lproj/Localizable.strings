@@ -277,7 +277,7 @@
 "Verification Complete" = "Verification Complete";
 "Request is unauthorized." = "Request is unauthorized.";
 "Verification Complete" = "Verification Complete";
-"Verification results will be forwarded to your merchant." = "Verification results will be forwarded to your merchant.";
+"Verification results will be forwarded to the issuer." = "Verification results will be forwarded to the issuer.";
 "No Internet Connection" = "No Internet Connection";
 "Make sure your device is connected to the internet." = "Make sure your device is connected to the internet.";
 "Shufti Pro acknowledges your right to request access or erasure of your data. You may review our" = "Shufti Pro acknowledges your right to request access or erasure of your data. You may review our";
@@ -306,4 +306,4 @@
 
 //NFC Camera
 "Position your document MRZ in the box" = "Position your document MRZ in the box";
-"Place the chip of your e-ID card on the backside of your phone to fetch data" = "Place the chip of your e-ID card on the backside of your phone to fetch data";
+"Place the chip of your e-Document on the backside of your phone to fetch data" = "Place the chip of your e-Document on the backside of your phone to fetch data";
