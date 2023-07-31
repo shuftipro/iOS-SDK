@@ -1,3 +1,3 @@
-# iOS Integration Guide
+# Welcome to our Sample SDK
 
-ShutiPro's user-friendly interface with a straightforward SDK integration procedure enables businesses to onboard customers seamlessly and helps develop trustworthy B2B relationships. Our New and improved integration guide has made it even more accessible for clients to integrate ShuftiPro as part of their application environment. You will find all the required integration instructions, from integrating IOS SDK to the response mapping, by referring to the integration guide available **[here](https://developers.shuftipro.com/docs/mobile/platforms/ios-sdk).**
+Please note that this is a sample SDK designed to provide a glimpse of our powerful features. For the actual SDK and comprehensive integration guide, please visit **[iOS Integration Guide](https://developers.shuftipro.com/docs/mobile/platforms/ios-sdk)**
