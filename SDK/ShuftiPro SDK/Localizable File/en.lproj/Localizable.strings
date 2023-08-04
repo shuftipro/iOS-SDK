@@ -1,56 +1,54 @@
-
+// General Strings
 "Something Missing" = "Something Missing";
-
 "Something is missing, please make sure you have entered client id , secret key and auth type." = "Something is missing, please make sure you have entered client id , secret key and auth type.";
-
 "Something is missing, please make sure you have entered access token." = "Something is missing, please make sure you have entered access token.";
 "Invalid auth type , please make sure you have entered correct auth type." = "Invalid auth type , please make sure you have entered correct auth type.";
-
 "Invalid verification mode , please make sure you have entered video or image." = "Invalid verification mode , please make sure you have entered video or image.";
-
-"Invalid Request" = "Invalid Request";
-
-"Open Webview key should be bool." = "Open Webview key should be bool.";
+"Invalid Request" = "Invalid Request";//Result Screen Also
 "Reference parameter cannot be empty. Please, provide a unique reference." = "Reference parameter cannot be empty. Please, provide a unique reference.";
 "Please make sure that provided country code is valid." = "Please make sure that provided country code is valid.";
-"Invalid Type" = "Invalid Type";
+"Not Now"= "Not Now";
+"Confirmation" = "Confirmation";
+"Retake" = "Retake";
+"No Internet Connection" = "No Internet Connection";
+"Make sure your device is connected to the internet." = "Make sure your device is connected to the internet.";
+"Privacy Policy" = "Privacy Policy";
+"Cancel" = "Cancel";
+"Confirm Cancellation" = "Confirm Cancellation";
+"Are you sure you want to cancel the verification process?" = "Are you sure you want to cancel the verification process?";
+"User Cancelled" = "User Cancelled";
+"Something went Wrong" = "Something went Wrong";
+"Retry" = "Retry" ;
+"Gallery" = "Gallery";
+"Downloads" = "Downloads";
+"Your Device does not support NFC" = "Your Device does not support NFC";
 
-
-//Delaration of Consent:Instructions Screen
+// Consent Screen
 "Declaration of Consent" = "Declaration of Consent";
 "Help us by taking your identity consent" = "Help us by taking your identity consent";
 "Identity Verification Consent" = "Identity Verification Consent";
-
-"No, Cancel" = "No, Cancel";
 "Exit" = "Exit";
+"Confirm" = "Confirm";
+"Continue" = "Continue";
+"OK" = "OK";
+"I agree to the above statement, and I have read the Privacy Policy of Shufti Pro." = "I agree to the above statement, and I have read the Privacy Policy of Shufti Pro.";
 
-// Instructions Screen
+// Instruction BottomSheet on Camera Screen in text form
 "Face Instructions" = "Face Instructions";
 "Document Instructions" = "Document Instructions";
-"Document Two Instructions" = "Document Two Instructions";
-"Address Instructions" = "Address Instructions";
-"Consent Instructions" = "Consent Instructions";
-
 "Selfie" = "Selfie";
 "Face" = "Face";
 "Document" = "Document";
 "Document Two" = "Document Two";
-"One more document" = "One more document";
 "Address" = "Address";
 "Consent" = "Consent";
-
 "Instructions" = "Instructions";
-
-//New Instructions
 "Complete document should be inside the box." = "Complete document should be inside the box.";
 "Document should be lighted without any glare." = "Document should be lighted without any glare.";
 "Document information should be readable." = "Document information should be readable.";
-
 "Entire face should be inside the oval." = "Entire face should be inside the oval.";
 "Selfie should be lighted without any glare." = "Selfie should be lighted without any glare";
 "Remove any accessories (e.g., glasses, hat)." = "Remove any accessories (e.g., glasses, hat).";
- 
-"Selfie Instructions" = "Selfie Instructions";
 "Face inside Oval and Clear" = "Face inside Oval and Clear";
 "Use proper lighting" = "Use proper lighting";
 "Remove accessories" = "Remove accessories" ;
@@ -60,14 +58,9 @@
 "Avoid Cropped" = "Avoid Cropped";
 "Avoid Blur" = "Avoid Blur" ;
 "Keep Close" = "Keep Close";
-"Not Now"= "Not Now";
-"Confirm" = "Confirm";
-"Continue" = "Continue";
 
 // Supported Type Screen
-"Supported Types" = "Types pris en charge";
-"Choose the type of consent note" = "Choose the type of consent note";
-"Select a document for verification" = "Select a document for verification";
+
 "Passport" = "Passport";
 "Driving License" = "Driving License";
 "Credit Or Debit Card" = "Credit Or Debit Card";
@@ -85,22 +78,20 @@
 "Supported Documents" = "Supported Documents";
 
 
-// UploadOrTakePhotoScreen
+// Proof Selection Screen
+
 "How will you submit the identity proof?" = "How will you submit the identity proof?";
 "Take from your camera" = "Take from your camera";
 "Upload from your device" = "Upload from your device";
 
-//UploadVideoVc Screen
+// Upload Screen
+
 "Upload" = "Upload";
 "Upload a .jpeg, jpg, pdf, .png, .mp4 or .mov" = "Upload a .jpeg, jpg, pdf, .png, .mp4 or .mov";
 "Upload a .jpeg, jpg, pdf, or .png" = "Upload a .jpeg, jpg, pdf, or .png";
 "Upload a .mp4 or .mov" = "Upload a .mp4 or .mov";
-
-"Upload the photo page of your" = "Upload the photo page of your";
 "photo page" = "photo page";
-"Upload the front side of your" = "Upload the front side of your";
 "front side" = "front side";
-"Upload the backside of your" = "Upload the backside of your";
 "backside" = "backside";
 "Upload the consent note along with your face" = "Upload the consent note along with your face";
 "consent note" = "consent note";
@@ -112,90 +103,27 @@
 "Maximum file size allowed: 20MB" = "Maximum file size allowed: 20MB";
 "Confirm Cancellation" = "Confirm Cancellation";
 "Are you sure you want to cancel the verification process?" = "Are you sure you want to cancel the verification process?";
-
 "Browse" = "Browse";
 "Maximum video file size 20MB" = "Maximum video file size 20MB";
-
-//ReadyToCapture Screen
-//Source Type Camera
-"Ready to take a photo?" = "Ready to take a photo?";
 "Is the document clear?" = "Is the document clear?";
-"Skip" = "Skip";
-"Take a photo of your entire face" = "Take a photo of your entire face";
-"Take a picture of the photo page of your" = "Take a picture of the photo page of your";
-"Take a picture of the second page of your" = "Take a picture of the second page of your";
-"Upload a picture of the second page of your" = "Upload a picture of the second page of your";
-"Take a photo of your" = "Take a photo of your";
-"Take a photo of the consent note along with your face" = "Take a photo of the consent note along with your face";
-"Yes, I'm Ready" = "Yes, I'm Ready";
-"Ready to record a video?" = "Ready to record a video?";
-"Record a video of your" = "Record a video of your";
-"Record a video of your entire face" = "Record a video of your entire face";
-"Take a photo of back side of your" = "Take a photo of back side of your";
-"Take a photo of front side of your" = "Take a photo of front side of your";
-"Record the back side video of your" = "Record the back side video of your";
-"Record the front side video of your" = "Record the front side video of your";
-"Record a video of the consent note with your face" = "Record a video of the consent note with your face";
-"Record a video of the photo page of your" = "Record a video of the photo page of your";
-"Record a video of the second page of your" = "Record a video of the second page of your";
-"Record a video of the front side of your" = "Record a video of the front side of your";
-"Record a video of the back side of your" = "Record a video of the back side of your";
-
-//Source Type Gallery
 "Upload a photo/video of your entire face" = "Upload a photo/video of your entire face";
-"Ready to upload a photo?" = "Ready to upload a photo?";
 "Upload a photo of your entire face" = "Upload a photo of your entire face";
-"Upload a picture of the photo page of your" = "Upload a picture of the photo page of your";
 "Upload a photo of your" = "Upload a photo of your";
-"Upload a photo of the consent note along with your face" = "Upload a photo of the consent note along with your face";
-"Ready to upload a video?" = "Ready to upload a video?";
 "Upload a video of your" = "Upload a video of your";
-"Upload a video of your entire face" = "Upload a video of your entire face";
-"Upload a photo of back side of your" = "Upload a photo of back side of your";
-"Upload a photo of front side of your" = "Upload a photo of front side of your";
-"Upload the back side video of your" = "Upload the back side video of your";
-"Upload the front side video of your" = "Upload the front side video of your";
-"Upload a video of the consent note with your face" = "Upload a video of the consent note with your face";
-"Upload a video of the photo page of your" = "Upload a video of the photo page of your";
-"Upload a video of the second page of your" = "Upload a video of the second page of your";
-"Upload a video of the front side of your" = "Upload a video of the front side of your";
-"Upload a video of the back side of your" = "Upload a video of the back side of your";
-"Upload a photo/video of the" = "Upload a photo/video of the";
-"Upload a video of the photo page of your" = "Upload a video of the photo page of your";
-"Upload a photo/video of the photo page of your" = "Upload a photo/video of the photo page of your";
-"Upload a photo/video of the second page of your" = "Upload a photo/video of the second page of your";
-"Upload a photo/video of the front side of your" = "Upload a photo/video of the front side of your";
-"Upload a photo/video of the back side of your" = "Upload a photo/video of the back side of your";
 "Upload a photo/video of your" = "Upload a photo/video of your" ;
-"Upload a video of the consent note along with your face" = "Upload a video of the consent note along with your face";
-"Upload a photo/video of the consent note along with your face" = "Upload a photo/video of the consent note along with your face";
 "Choose Option" = "Choose Option" ;
-"Gallery" = "Gallery";
-"Downloads" = "Downloads" ;
+"Skip" = "Skip";// NFCScanner
 
-//Camera
+//Camera screen
+
 "Retry Auto-capture" = "Retry Auto-capture";
-"Take a photo" = "Take a photo";
 "Record a video" = "Record a video";
-"Recording" = "Recording";
-"Confirmation" = "Confirmation";
-"Retake" = "Retake";
-"Yes, Continue" = "Yes, Continue";
-"Please bring your camera near to your document." = "Please bring your camera near to your document.";
-"Please bring your camera near to your face." = "Please bring your camera near to your face.";
-"Photo page of the passport" = "Photo page of the passport";
 "Front side of the document" = "Front side of the document";
-"Second page of the passport" = "Second page of the passport";
 "Back side of the document" = "Back side of the document";
 "Position your face inside the oval" = "Position your face inside the oval";
 "Capture consent along with your face" = "Capture consent along with your face";
 "Record a selfie" = "Record a selfie";
-"Position your face in the oval" = "Position your face in the oval";
-"Position your document in the box" = "Position your document in the box.";
-"Please fit your face in the oval." = "Please fit your face in the oval.";
-"The document does not match selected country." = "The document does not match selected country.";
 "Please provide a valid" = "Please provide a valid" ;
-"Could not verify the document in selected area." = "Could not verify the document in selected area.";
 "Please provide a valid document with all four corners being visible." = "Please provide a valid document with all four corners being visible.";
 "Please provide a valid document and hold it still for a while." = "Please provide a valid document and hold it still for a while.";
 "Please bring the document closer and place it inside the box." = "Please bring the document closer and place it inside the box.";
@@ -206,54 +134,20 @@
 "Please provide front side of the document." = "Please provide front side of the document.";
 "Please provide back side of the document." = "Please provide back side of the document.";
 
-//ConfirmPhotoVc
+// Camera Preview Screen
+
 "Confirmation" = "Confirmation";
 "Is the selfie clear?" = "Is the selfie clear?";
 "Please make sure that the entire face is visible." = "Please make sure that the entire face is visible.";
 "Can you see your full face in the photo?" = "Can you see your full face in the photo?";
-"Can you see your full face in the video?" = "Can you see your full face in the video?";
-"Can you see the entire document clearly in the photo?" = "Can you see the entire document clearly in the photo?";
-"Can you see the entire document clearly in the video?" = "Can you see the entire document clearly in the video?";
-"Can you see the entire address document clearly in the photo?" = "Can you see the entire address document clearly in the photo?";
 "Can you see the entire address document clearly in the video?" = "Can you see the entire address document clearly in the video?";
 "Can you see your entire face and consent note clearly in the photo?" = "Can you see your entire face and consent note clearly in the photo?";
 "Can you see your entire face and consent note clearly in the video?" = "Can you see your entire face and consent note clearly in the video?";
-"Can you see the address document clearly in the video?" = "Can you see the address document clearly in the video?";
 "Please make sure that the entire document is readable." = "Please make sure that the entire document is readable.";
 
-//NFCCameraVc Screen
-"Scan Mrz" = "Scanner Mrz";
-"Kindly fit your document MRZ in frame." = "Kindly fit your document MRZ in frame.";
-"Your Device does not support NFC" = "Your Device does not support NFC";
 
-//NFCScanner Vc Screen
-"NFC Verification" = "NFC Verification";
-"Scan Document" = "Scan Document";
-"Attach the NFC document to the back of your device." = "Attach the NFC document to the back of your device.";
-"Scanned Document Data" = "Scanned Document Data";
-"Confirm your card's information" = "Confirm your card's information";
-"Hold your iPhone near an NFC enabled passport." = "Hold your iPhone near an NFC enabled passport.";
-"Unexpected Error" = "Unexpected Error";
-"NFC Not Supported" = "NFC not supported";
-"No Connected Tag" = "No Connected Tag";
-"Invalid MRZ Key" = "Invalid MRZ Key";
-"Connection Lost" = "Connection Lost";
-"User Cancelled" = "User Cancelled";
-"Something went Wrong" = "Something went Wrong";
-"Do you want to try again?" = "Do you want to try again?";
-"Okay" = "Okay";
-"Retry" = "Retry" ;
-"Issuing Authority" = "Issuing Authority";
-"Doc Type" = "Doc Type";
-"Nationality" = "Nationality";
-"Expiry Date" = "Expiry Date";
-"Birth Date" = "Birth Date";
-"Gender" = "Gender";
-"Personal Number" = "Personal Number";
-"Last Name" = "Last Name";
-"First Name" = "First Name";
+// Result Screen
 
-//ResultVc Screen
 "Verification" = "Verification";
 "Verification Results" = "Verification Results";
 "Please wait.." = "Please wait..";
@@ -262,48 +156,50 @@
 "Verifying your identity" = "Verifying your identity";
 "Verifying your document" = "Verifying your document";
 "Verifying your face liveness" = "Verifying your face liveness";
-"Result" = "Result";
 "Error" = "Error";
 "Something went wrong, please try again." = "Something went wrong, please try again.";
-"Your request has timed-out" = "Your request has timed-out";
 "Verified" = "Verified";
 "Your identity has been verified." = "Your identity has been verified.";
-"Verification Declined" = "Verification Declined" ;
-"Your identity has not been verified." = "Your identity has not been verified.";
-"Your face liveness has been verified." = "Your face liveness has been verified.";
 "Your document has been verified." = "Your document has been verified.";
 "Request Invalid" =  "Request Invalid";
-"Request is unauthorized." = "Request is unauthorized.";
 "Verification Complete" = "Verification Complete";
 "Request is unauthorized." = "Request is unauthorized.";
 "Verification Complete" = "Verification Complete";
 "Verification results will be forwarded to the issuer." = "Verification results will be forwarded to the issuer.";
-"No Internet Connection" = "No Internet Connection";
-"Make sure your device is connected to the internet." = "Make sure your device is connected to the internet.";
 "Shufti Pro acknowledges your right to request access or erasure of your data. You may review our" = "Shufti Pro acknowledges your right to request access or erasure of your data. You may review our";
-"Privacy Policy" = "Privacy Policy";
 "here or contact us at" = "here or contact us at";
-"privacy@shuftipro.com" = "privacy@shuftipro.com";
 "Proceed" = "Proceed";
 "Your request has timed out." = "Your request has timed out.";
 "Request Timeout" = "Request Timeout";
-"OK" = "OK";
-"Verification Unsuccessful" = "Verification Unsuccessful";
 "Sorry, Your identity is not verified." = "Sorry, Your identity is not verified.";
-"Unauthroized Request" = "Unauthroized Request";
-"Cancel" = "Cancel";
-"Confirm Cancellation" = "Confirm Cancellation";
-"Are you sure you want to cancel the verification process?" = "Are you sure you want to cancel the verification process?";
-
 
 //Country Selection Vc
+
 "Choose your" = "Choose your";
 "issuing country/region" = "issuing country/region";
 "Choose your document issuing country/region" = "Choose your document issuing country/region";
 "Enter your country" = "Enter your country";
-"Your iOS version not supported with NFC" = "Your iOS version not supported with NFC";
-"I agree to the above statement, and I have read the Privacy Policy of Shufti Pro." = "I agree to the above statement, and I have read the Privacy Policy of Shufti Pro.";
 
-//NFC Camera
-"Position your document MRZ in the box" = "Position your document MRZ in the box";
+
+//NFCScanner Screen
+
+"NFC Verification" = "NFC Verification";
+"Scan Document" = "Scan Document";
+"Scanned Document Data" = "Scanned Document Data";
+"Confirm your card's information" = "Confirm your card's information";
+"Hold your iPhone near an NFC enabled passport." = "Hold your iPhone near an NFC enabled passport.";
+"Unexpected Error" = "Unexpected Error";
+"NFC Not Supported" = "NFC not supported";
+"No Connected Tag" = "No Connected Tag";
+"Invalid MRZ Key" = "Invalid MRZ Key";
+"Connection Lost" = "Connection Lost";
+"Do you want to try again?" = "Do you want to try again?";
+"Issuing Authority" = "Issuing Authority";
+"Doc Type" = "Doc Type";
+"Nationality" = "Nationality";
+"Expiry Date" = "Expiry Date";
+"Birth Date" = "Birth Date";
+"Personal Number" = "Personal Number";
+"Last Name" = "Last Name";
+"First Name" = "First Name";
 "Place the chip of your e-Document on the backside of your phone to fetch data" = "Place the chip of your e-Document on the backside of your phone to fetch data";
