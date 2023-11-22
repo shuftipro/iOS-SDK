@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: 0934ea72212cdfcb29d03c976c326575981672df
+PODS:
+  - ShuftiPro (3.6.9):
+    - Socket.IO-Client-Swift
+  - Socket.IO-Client-Swift (16.1.0):
+    - Starscream (~> 4.0.6)
+  - Starscream (4.0.6)
 
-COCOAPODS: 1.11.3
+DEPENDENCIES:
+  - ShuftiPro
+
+SPEC REPOS:
+  trunk:
+    - ShuftiPro
+    - Socket.IO-Client-Swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  ShuftiPro: 360df4af90583cffda41ee44fb5db28fd0b8d02f
+  Socket.IO-Client-Swift: ee4b8f80a3db18dd7f32b266ddf273310609443c
+  Starscream: fb2c4510bebf908c62bd383bcf05e673720e91fd
+
+PODFILE CHECKSUM: f2a078447d16fb6269edf961fc5e5c0f64c2c594
+
+COCOAPODS: 1.13.0

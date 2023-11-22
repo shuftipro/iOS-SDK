@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Algeria"
+  },
+  {
+    "name": "Botswana"
+  },
+  {
+    "name": "Cape Verde"
+  },
+  {
+    "name": "Egypt"
+  },
+  {
+    "name": "Gabon"
+  },
+  {
+    "name": "Ghana"
+  },
+  {
+    "name": "Kenya"
+  },
+  {
+    "name": "Lesotho"
+  },
+  {
+    "name": "Madagascar"
+  },
+  {
+    "name": "Mauritania"
+  },
+  {
+    "name": "Morocco"
+  },
+  {
+    "name": "Mozambique"
+  },
+  {
+    "name": "Namibia"
+  },
+  {
+    "name": "Nigeria"
+  },
+  {
+    "name": "Rwanda"
+  },
+  {
+    "name": "Tanzania"
+  },
+  {
+    "name": "Togo"
+  },
+  {
+    "name": "Tunisia"
+  },
+  {
+    "name": "Somalia"
+  },
+  {
+    "name": "South Sudan"
+  },
+  {
+    "name": "Sudan"
+  },
+  {
+    "name": "Zimbabwe"
+  },
+  {
+    "name": "Afghanistan"
+  },
+  {
+    "name": "Armenia"
+  },
+  {
+    "name": "Azerbaijan"
+  },
+  {
+    "name": "Bangladesh"
+  },
+  {
+    "name": "Brunei"
+  },
+  {
+    "name": "Cambodia"
+  },
+  {
+    "name": "China"
+  },
+  {
+    "name": "Georgia"
+  },
+  {
+    "name": "Hong Kong"
+  },
+  {
+    "name": "India"
+  },
+  {
+    "name": "Indonesia"
+  },
+  {
+    "name": "Iran"
+  },
+  {
+    "name": "Iraq"
+  },
+  {
+    "name": "Israel"
+  },
+  {
+    "name": "Japan"
+  },
+  {
+    "name": "Kazakhstan"
+  },
+  {
+    "name": "Kuwait"
+  },
+  {
+    "name": "Laos"
+  },
+  {
+    "name": "Lebanon"
+  },
+  {
+    "name": "Macau"
+  },
+  {
+    "name": "Malaysia"
+  },
+  {
+    "name": "Maldives"
+  },
+  {
+    "name": "Mongolia"
+  },
+  {
+    "name": "Nepal"
+  },
+  {
+    "name": "Oman"
+  },
+  {
+    "name": "Philippines"
+  },
+  {
+    "name": "Qatar"
+  },
+  {
+    "name": "Saudi Arabia"
+  },
+  {
+    "name": "Singapore"
+  },
+  {
+    "name": "South Korea"
+  },
+  {
+    "name": "Taiwan"
+  },
+  {
+    "name": "Tajikistan"
+  },
+  {
+    "name": "Thailand"
+  },
+  {
+    "name": "Turkey"
+  },
+  {
+    "name": "Turkmenistan"
+  },
+  {
+    "name": "United Arab Emirates"
+  },
+  {
+    "name": "Uzbekistan"
+  },
+  {
+    "name": "Vietnam"
+  },
+  {
+    "name": "Austria"
+  },
+  {
+    "name": "Belgium"
+  },
+  {
+    "name": "Bulgaria"
+  },
+  {
+    "name": "Croatia"
+  },
+  {
+    "name": "Cyprus"
+  },
+  {
+    "name": "Czech Republic"
+  },
+  {
+    "name": "Denmark"
+  },
+  {
+    "name": "Estonia"
+  },
+  {
+    "name": "Finland"
+  },
+  {
+    "name": "France"
+  },
+  {
+    "name": "Germany"
+  },
+  {
+    "name": "Greece"
+  },
+  {
+    "name": "Hungary"
+  },
+  {
+    "name": "Ireland"
+  },
+  {
+    "name": "Italy"
+  },
+  {
+    "name": "Latvia"
+  },
+  {
+    "name": "Lithuania"
+  },
+  {
+    "name": "Malta"
+  },
+  {
+    "name": "Netherlands"
+  },
+  {
+    "name": "Poland"
+  },
+  {
+    "name": "Portugal"
+  },
+  {
+    "name": "Romania"
+  },
+  {
+    "name": "Slovakia"
+  },
+  {
+    "name": "Slovenia"
+  },
+  {
+    "name": "Spain"
+  },
+  {
+    "name": "Sweden"
+  },
+  {
+    "name": "Iceland"
+  },
+  {
+    "name": "Liechtenstein"
+  },
+  {
+    "name": "Norway"
+  },
+  {
+    "name": "Switzerland"
+  },
+  {
+    "name": "Albania"
+  },
+  {
+    "name": "Bosnia and Herzegovina"
+  },
+  {
+    "name": "Kosovo"
+  },
+  {
+    "name": "Sovereign Military Order of Malta"
+  },
+  {
+    "name": "Moldova"
+  },
+  {
+    "name": "Montenegro"
+  },
+  {
+    "name": "North Macedonia"
+  },
+  {
+    "name": "Russia"
+  },
+  {
+    "name": "Serbia"
+  },
+  {
+    "name": "Ukraine"
+  },
+  {
+    "name": "United Kingdom"
+  },
+  {
+    "name": "Canada"
+  },
+  {
+    "name": "Costa Rica"
+  },
+  {
+    "name": "Honduras"
+  },
+  {
+    "name": "Mexico"
+  },
+  {
+    "name": "Panama"
+  },
+  {
+    "name": "Saint Vincent and the Grenadines"
+  },
+  {
+    "name": "United States"
+  },
+  {
+    "name": "Argentina"
+  },
+  {
+    "name": "Bolivia"
+  },
+  {
+    "name": "Brazil"
+  },
+  {
+    "name": "Chile"
+  },
+  {
+    "name": "Colombia"
+  },
+  {
+    "name": "Ecuador"
+  },
+  {
+    "name": "Peru"
+  },
+  {
+    "name": "Uruguay"
+  },
+  {
+    "name": "Venezuela"
+  },
+  {
+    "name": "Australia"
+  },
+  {
+    "name": "Fiji"
+  },
+  {
+    "name": "New Zealand"
+  }
+]

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -141,6 +141,7 @@
 				A628E461267CC8F50010F85C /* Frameworks */,
 				A628E462267CC8F50010F85C /* Resources */,
 				A6EDC6ED268DE964005312CC /* Embed Frameworks */,
+				63C809627CEDB31D5AB417BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +202,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		63C809627CEDB31D5AB417BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EEEBCC55ED6A44FC0D874661 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,6 +418,7 @@
 					"$(BUILT_PRODUCT_DIR)/ShuftiPro",
 					"$(BUILT_PRODUCT_DIR)/NFCPassportReader",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = spBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -432,6 +451,7 @@
 					"$(BUILT_PRODUCT_DIR)/ShuftiPro",
 					"$(BUILT_PRODUCT_DIR)/NFCPassportReader",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = spBundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

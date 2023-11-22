@@ -1,0 +1,84 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ShuftiPro
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import Accelerate
+import CommonCrypto
+import CoreGraphics
+import CoreNFC
+import CoreVideo
+import CryptoKit
+import DeveloperToolsSupport
+import Foundation
+import MessageUI
+import MobileCoreServices
+import Network
+import PDFKit
+@_exported import ShuftiPro
+import SocketIO
+import Starscream
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import VideoToolbox
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class UIUtilities {
+  public static func imageOrientation(fromDevicePosition devicePosition: AVFoundation.AVCaptureDevice.Position = .back) -> UIKit.UIImage.Orientation
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Reachability {
+  @objc deinit
+}
+public struct DocType {
+}
+public enum DocumentType {
+  case idCard
+  case drivingLicence
+  case passport
+  case creditOrDebitCard
+  case utilityBills
+  case bankStatement
+  case anyDoc
+  case printed
+  case handwritten
+  public static func == (a: ShuftiPro.DocumentType, b: ShuftiPro.DocumentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class ShuftiPro : ObjectiveC.NSObject {
+  public var fontColor: UIKit.UIColor
+  public var buttonTextColor: UIKit.UIColor
+  public var loaderPrimaryColor: UIKit.UIColor
+  public var loaderSecondaryColor: UIKit.UIColor
+  public var buttonBackgroundColor: UIKit.UIColor
+  public var cameraFontColor: UIKit.UIColor
+  @objc public func getUniqueReference() -> Swift.String
+  @objc public func shuftiProVerification(requestObject dataObjectObj: [Swift.String : Any], authKeys: [Swift.String : Swift.String], parentVC pvc: UIKit.UIViewController, configs: [Swift.String : Any]?, completion: @escaping (_ result: Any) -> ())
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIImage {
+  convenience public init?(pixelBuffer: CoreVideo.CVPixelBuffer)
+  public func scaledImage(with size: CoreFoundation.CGSize) -> UIKit.UIImage?
+}
+public enum Constant {
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+}
+extension Foundation.Data {
+  public func sha256() -> Swift.String
+}
+extension Swift.String {
+  public func sha256() -> Swift.String
+}
+extension ShuftiPro.DocumentType : Swift.Equatable {}
+extension ShuftiPro.DocumentType : Swift.Hashable {}

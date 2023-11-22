@@ -1,3 +1,32 @@
-PODFILE CHECKSUM: fec9f1d46aab8060aca2e2ad3809583710f929d2
+PODS:
+  - NFCPassportReader (1.1.7):
+    - OpenSSL-Universal (= 1.1.180)
+  - OpenSSL-Universal (1.1.180)
+  - ShuftiProNFC (3.6.7):
+    - NFCPassportReader (= 1.1.7)
+    - Socket.IO-Client-Swift
+  - Socket.IO-Client-Swift (16.1.0):
+    - Starscream (~> 4.0.6)
+  - Starscream (4.0.6)
 
-COCOAPODS: 1.11.3
+DEPENDENCIES:
+  - ShuftiProNFC
+
+SPEC REPOS:
+  trunk:
+    - NFCPassportReader
+    - OpenSSL-Universal
+    - ShuftiProNFC
+    - Socket.IO-Client-Swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  NFCPassportReader: 7d8e4aa1b1a42d5f83db1e49a40691ff92da9679
+  OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
+  ShuftiProNFC: 06a96c0d86ae9a54bff94bd699e08f4b7f59a08d
+  Socket.IO-Client-Swift: ee4b8f80a3db18dd7f32b266ddf273310609443c
+  Starscream: fb2c4510bebf908c62bd383bcf05e673720e91fd
+
+PODFILE CHECKSUM: 4ba68a0363d91aa2fb001b125a41c2234ee29d75
+
+COCOAPODS: 1.13.0
