@@ -18,8 +18,8 @@
 		A628E62F267CCC680010F85C /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A628E62B267CCC680010F85C /* OpenSans-ExtraBold.ttf */; };
 		A628E630267CCC680010F85C /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A628E62C267CCC680010F85C /* OpenSans-Bold.ttf */; };
 		A628E631267CCC680010F85C /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A628E62D267CCC680010F85C /* OpenSans-Semibold.ttf */; };
-		B296C02799379DFEE09BC6CB /* Pods_ShuftiPro_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5516F2F5CD37F4DB0EF856B0 /* Pods_ShuftiPro_Demo.framework */; };
-		B6A1E2162758F70A002DF2B9 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6A1E2162758F70A002DF2B9 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B98CE111E2C1ED8DE37D5379 /* Pods_ShuftiPro_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4E28330746B114D01F83F4 /* Pods_ShuftiPro_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B6A1E2162758F70A002DF2B9 /* (null) in Embed Frameworks */,
+				B6A1E2162758F70A002DF2B9 /* BuildFile in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,9 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3B50554EDF015176071F0BC2 /* Pods-ShuftiPro Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuftiPro Demo.release.xcconfig"; path = "Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo.release.xcconfig"; sourceTree = "<group>"; };
-		5516F2F5CD37F4DB0EF856B0 /* Pods_ShuftiPro_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShuftiPro_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94A294F009832A567DAEB5EE /* Pods-ShuftiPro Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuftiPro Demo.debug.xcconfig"; path = "Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		984B327D2137050CDC996715 /* Pods-ShuftiPro Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuftiPro Demo.debug.xcconfig"; path = "Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A628E464267CC8F50010F85C /* ShuftiPro Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShuftiPro Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A628E467267CC8F50010F85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A628E469267CC8F50010F85C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +51,8 @@
 		A628E62B267CCC680010F85C /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		A628E62C267CCC680010F85C /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		A628E62D267CCC680010F85C /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		B26F0918DB0D8D76887C12C8 /* Pods-ShuftiPro Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShuftiPro Demo.release.xcconfig"; path = "Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo.release.xcconfig"; sourceTree = "<group>"; };
+		BD4E28330746B114D01F83F4 /* Pods_ShuftiPro_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShuftiPro_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B296C02799379DFEE09BC6CB /* Pods_ShuftiPro_Demo.framework in Frameworks */,
+				B98CE111E2C1ED8DE37D5379 /* Pods_ShuftiPro_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,10 +70,18 @@
 		3F2EE321476E72381A9C5C32 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				94A294F009832A567DAEB5EE /* Pods-ShuftiPro Demo.debug.xcconfig */,
-				3B50554EDF015176071F0BC2 /* Pods-ShuftiPro Demo.release.xcconfig */,
+				984B327D2137050CDC996715 /* Pods-ShuftiPro Demo.debug.xcconfig */,
+				B26F0918DB0D8D76887C12C8 /* Pods-ShuftiPro Demo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		51629A6E9F15E77D589FC140 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD4E28330746B114D01F83F4 /* Pods_ShuftiPro_Demo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A628E45B267CC8F50010F85C = {
@@ -82,7 +90,7 @@
 				A628E466267CC8F50010F85C /* ShuftiPro Demo */,
 				A628E465267CC8F50010F85C /* Products */,
 				3F2EE321476E72381A9C5C32 /* Pods */,
-				A889530E05B5928027E3EA56 /* Frameworks */,
+				51629A6E9F15E77D589FC140 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,14 +129,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		A889530E05B5928027E3EA56 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5516F2F5CD37F4DB0EF856B0 /* Pods_ShuftiPro_Demo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,12 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A628E478267CC8F80010F85C /* Build configuration list for PBXNativeTarget "ShuftiPro Demo" */;
 			buildPhases = (
-				EEEBCC55ED6A44FC0D874661 /* [CP] Check Pods Manifest.lock */,
+				CB1959BAF21D31D3993DD82A /* [CP] Check Pods Manifest.lock */,
 				A628E460267CC8F50010F85C /* Sources */,
 				A628E461267CC8F50010F85C /* Frameworks */,
 				A628E462267CC8F50010F85C /* Resources */,
 				A6EDC6ED268DE964005312CC /* Embed Frameworks */,
-				63C809627CEDB31D5AB417BE /* [CP] Embed Pods Frameworks */,
+				2D2207AF19241AE865DB0BDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,7 +202,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		63C809627CEDB31D5AB417BE /* [CP] Embed Pods Frameworks */ = {
+		2D2207AF19241AE865DB0BDA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,7 +219,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShuftiPro Demo/Pods-ShuftiPro Demo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EEEBCC55ED6A44FC0D874661 /* [CP] Check Pods Manifest.lock */ = {
+		CB1959BAF21D31D3993DD82A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,7 +395,7 @@
 		};
 		A628E479267CC8F80010F85C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94A294F009832A567DAEB5EE /* Pods-ShuftiPro Demo.debug.xcconfig */;
+			baseConfigurationReference = 984B327D2137050CDC996715 /* Pods-ShuftiPro Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,7 +428,7 @@
 		};
 		A628E47A267CC8F80010F85C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B50554EDF015176071F0BC2 /* Pods-ShuftiPro Demo.release.xcconfig */;
+			baseConfigurationReference = B26F0918DB0D8D76887C12C8 /* Pods-ShuftiPro Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

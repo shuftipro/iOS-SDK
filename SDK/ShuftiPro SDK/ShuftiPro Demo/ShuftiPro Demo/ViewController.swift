@@ -142,7 +142,7 @@ class ViewController: UIViewController {
     }
     @IBAction func continuedBtnPressed(_ sender: Any) {
         
-        let shufti = ShuftiPro()
+        let shufti = Shufti()
         let uniqueReference =  shufti.getUniqueReference()
         
         
